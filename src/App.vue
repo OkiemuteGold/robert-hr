@@ -1,0 +1,110 @@
+<template>
+    <div id="app">
+        <TheHeader />
+
+        <main class="site-main page-spacing">
+            <ThePageBanner />
+
+            <transition name="fade" mode="out-in">
+                <router-view />
+            </transition>
+        </main>
+
+        <TheFooter />
+    </div>
+</template>
+
+<script>
+import TheHeader from "@/components/header/TheHeader";
+import ThePageBanner from "@/components/banners/ThePageBanner";
+import TheFooter from "@/components/footer/TheFooter";
+
+export default {
+    components: {
+        TheHeader,
+        ThePageBanner,
+        TheFooter,
+    },
+};
+</script>
+
+<style>
+:root {
+    --orangeLight: #f99a02;
+    --orangeDark: #dd9218;
+    --black1: #222222;
+    --black2: #222220;
+    --errorColor: #ff3232;
+}
+
+#app,
+body {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* color: #2c3e50; */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* page transition */
+.fade-enter-active,
+.fade-leave-active {
+    -o-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+    transform: scale(0.975);
+}
+
+.page-enter,
+.page-leave-to {
+    opacity: 0;
+    -o-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+}
+
+.page-enter-active,
+.page-leave-active {
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.page-enter-to,
+.page-leave {
+    opacity: 1;
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+/* header route-active */
+.ow-navigation .nav.navbar-nav > li:hover > a,
+.ow-navigation .nav.navbar-nav > li > a.active {
+    background-color: transparent;
+    color: #ffc619;
+}
+
+a {
+    text-decoration-skip-ink: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+</style>
