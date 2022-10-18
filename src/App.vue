@@ -30,19 +30,17 @@ export default {
 
 <style>
 :root {
-    --orangeLight: #f99a02;
-    --orangeDark: #dd9218;
-    --black1: #222222;
-    --black2: #222220;
+    --yellowLight: #ffc619;
+    --yellowDark: #dd9218;
+    --black1: #111;
     --errorColor: #ff3232;
 }
 
 #app,
 body {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-family: "Work Sans", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* color: #2c3e50; */
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -96,7 +94,7 @@ body {
 .ow-navigation .nav.navbar-nav > li:hover > a,
 .ow-navigation .nav.navbar-nav > li > a.active {
     background-color: transparent;
-    color: #ffc619;
+    color: var(--yellowLight);
 }
 
 a {

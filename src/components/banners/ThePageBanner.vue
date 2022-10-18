@@ -2,19 +2,25 @@
     <div
         :class="[
             currentSitePage == 'Home',
-            ['About', 'Services', 'Studs'].includes(currentSitePage),
-            ['Contact', 'FAQs', 'NotFound'].includes(currentSitePage),
+            ['About', 'Studs', 'Studs01', 'Studs02', 'Gallery'].includes(
+                currentSitePage
+            ),
+            ['Contact', 'FourZeroFour'].includes(currentSitePage),
         ]"
     >
         <BannerHome v-if="currentSitePage == 'Home'" v-once />
 
         <BannerInner
-            v-if="['About', 'Services', 'Studs'].includes(currentSitePage)"
+            v-if="
+                ['About', 'Studs', 'Studs01', 'Studs02', 'Gallery'].includes(
+                    currentSitePage
+                )
+            "
             v-once
         />
 
         <BannerEmpty
-            v-if="['Contact', 'FAQs', 'NotFound'].includes(currentSitePage)"
+            v-if="['Contact', 'FourZeroFour'].includes(currentSitePage)"
             v-once
         />
     </div>

@@ -1,26 +1,16 @@
 <template>
-    <div class="page-header" data-padding="top">
+    <div class="page-header">
         <div class="container">
-            <div class="row" data-padding="smtop">
+            <div class="row">
                 <div class="col-12">
-                    <div class="sectiontitle-element--center">
-                        <h1 class="big">{{ bannerSettings.title }}</h1>
-                        <p>
+                    <div class="section-header">
+                        <h1 v-if="bannerSettings.title">
+                            {{ bannerSettings.title }}
+                        </h1>
+                        <p v-if="bannerSettings.description">
                             {{ bannerSettings.description }}
                         </p>
-                        <!-- <p>Please ensure to check the link and try again</p>
-                        <router-link
-                            :to="{ name: 'NotFound' }"
-                            class="btn--big--round"
-                            >Return Home</router-link
-                        > -->
                     </div>
-                </div>
-            </div>
-
-            <div class="row mt-20">
-                <div class="col-12">
-                    <div class="separator-element"></div>
                 </div>
             </div>
         </div>
@@ -31,5 +21,12 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
+.section-header {
+    margin-bottom: 45px;
+}
+
+.section-header p {
+    margin-bottom: 0;
+}
 </style>

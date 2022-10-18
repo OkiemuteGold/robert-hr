@@ -86,85 +86,59 @@
                                         >About Us</router-link
                                     >
                                 </li>
-                                <li>
-                                    <a href="services.html" title="Services"
-                                        >Services</a
-                                    >
-                                </li>
                                 <li class="dropdown">
-                                    <a
-                                        href="#"
-                                        title="Pages"
+                                    <router-link
+                                        :to="{ name: 'Studs' }"
+                                        aria-label="Studs"
                                         class="dropdown-toggle"
                                         role="button"
                                         aria-haspopup="true"
                                         aria-expanded="false"
-                                        >Pages</a
+                                        >Studs</router-link
                                     >
                                     <i class="ddl-switch fa fa-angle-down"></i>
                                     <ul class="dropdown-menu">
+                                        <!-- <li
+                                            v-for="(
+                                                route, index
+                                            ) in studDropdownRoutes"
+                                            :key="index"
+                                        >
+                                            <router-link
+                                                :to="route.link"
+                                                :aria-label="route.name"
+                                                >{{ route.name }}</router-link
+                                            >
+                                        </li> -->
+
                                         <li>
-                                            <a
-                                                href="pricing-plans.html"
-                                                title="Pricing Plans"
-                                                >Pricing Plans</a
+                                            <router-link
+                                                :to="{ name: 'Studs01' }"
+                                                aria-label="Studs01"
+                                                >Studs01</router-link
                                             >
                                         </li>
                                         <li>
-                                            <a
-                                                href="gallery.html"
-                                                title="Gallery"
-                                                >Gallery</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="features.html"
-                                                title="Features"
-                                                >Features</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a href="search.html" title="Search"
-                                                >Search</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a href="404.html" title="404"
-                                                >404</a
-                                            >
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a
-                                        href="blog.html"
-                                        title="Latest News"
-                                        class="dropdown-toggle"
-                                        role="button"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        >Latest News</a
-                                    >
-                                    <i class="ddl-switch fa fa-angle-down"></i>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a href="blog.html" title="Blog"
-                                                >Blog</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="blog-post.html"
-                                                title="Blog Post"
-                                                >Blog Post</a
+                                            <router-link
+                                                :to="{ name: 'Studs02' }"
+                                                aria-label="Studs02"
+                                                >Studs02</router-link
                                             >
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="contact-us.html" title="Contact Us"
-                                        >Contact Us</a
+                                    <router-link
+                                        :to="{ name: 'Gallery' }"
+                                        aria-label="Gallery"
+                                        >Gallery</router-link
+                                    >
+                                </li>
+                                <li>
+                                    <router-link
+                                        :to="{ name: 'Contact' }"
+                                        aria-label="Contact"
+                                        >Contact Us</router-link
                                     >
                                 </li>
                             </ul>
@@ -201,7 +175,21 @@
 </template>
 
 <script>
-export default {};
+export default {
+    data() {
+        return {
+            // studDropdownRoutes: [
+            //     {
+            //         name: "Stud01",
+            //         link: "/studs/stud01",
+            //     },
+            //     {
+            //         name: "Stud02",
+            //     },
+            // ],
+        };
+    },
+};
 </script>
 
 <style>
