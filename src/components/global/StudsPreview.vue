@@ -8,26 +8,19 @@
                 </div>
 
                 <div class="custom-nav">
-                    <a class="btn prev">
-                        <i
-                            class="fa fa-angle-left"
-                            aria-hidden="true"
-                            @click="$refs.prev.click()"
-                        >
-                        </i>
+                    <a class="btn prev" @click="$refs.prev.click()">
+                        <i class="fa fa-angle-left" aria-hidden="true"> </i>
                     </a>
-                    <a class="btn next">
-                        <i
-                            class="fa fa-angle-right"
-                            aria-hidden="true"
-                            @click="$refs.next.click()"
-                        >
-                        </i>
+                    <a class="btn next" @click="$refs.next.click()">
+                        <i class="fa fa-angle-right" aria-hidden="true"> </i>
                     </a>
                 </div>
             </div>
 
-            <div class="col-md-8 col-sm-12 col-xs-12 process-box">
+            <div
+                class="col-md-8 col-sm-12 col-xs-12 process-box"
+                v-if="allStudItems && allStudItems.length"
+            >
                 <carousel
                     :items="1"
                     :autoplay="false"
@@ -42,7 +35,7 @@
                 >
                     <div v-for="(item, index) in allStudItems" :key="index">
                         <img
-                            :src="item.imgUrl"
+                            :src="item.imageUrl"
                             :alt="item.alt"
                             width="253"
                             height="244"

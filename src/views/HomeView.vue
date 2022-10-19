@@ -3,189 +3,8 @@
         <HomeIntro />
         <HomeAbout />
         <StudsPreview />
-
-        <!-- Gallery Section -->
-        <div class="gallery-section container-fluid no-padding">
-            <div class="section-padding"></div>
-            <!-- Container -->
-            <div class="container">
-                <!-- Section Header -->
-                <div class="section-header">
-                    <h5>From Our Gallery</h5>
-                    <h3>From Our Training Center</h3>
-                </div>
-                <!-- Section Header /- -->
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <div class="gallery-box">
-                        <img
-                            alt="Gallery"
-                            src="@/assets/images/gallery-1.jpg"
-                            width="373"
-                            height="273"
-                        />
-                        <div class="gallery-box-hover">
-                            <p>
-                                These Happy Days are yours and mine Happy Days I
-                                have always
-                            </p>
-                        </div>
-                        <div class="gallery-content">
-                            <a href="gallery.html"
-                                ><i class="fa fa-link" aria-hidden="true"></i
-                            ></a>
-                            <h3>Training For An Event</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <div class="gallery-box">
-                        <img
-                            alt="Gallery"
-                            src="@/assets/images/gallery-2.jpg"
-                            width="373"
-                            height="273"
-                        />
-                        <div class="gallery-box-hover">
-                            <p>
-                                These Happy Days are yours and mine Happy Days I
-                                have always
-                            </p>
-                        </div>
-                        <div class="gallery-content">
-                            <a href="gallery.html"
-                                ><i class="fa fa-link" aria-hidden="true"></i
-                            ></a>
-                            <h3>Training For An Event</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <div class="gallery-box">
-                        <img
-                            alt="Gallery"
-                            src="@/assets/images/gallery-3.jpg"
-                            width="373"
-                            height="273"
-                        />
-                        <div class="gallery-box-hover">
-                            <p>
-                                These Happy Days are yours and mine Happy Days I
-                                have always
-                            </p>
-                        </div>
-                        <div class="gallery-content">
-                            <a href="gallery.html"
-                                ><i class="fa fa-link" aria-hidden="true"></i
-                            ></a>
-                            <h3>Training For An Event</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <div class="gallery-box">
-                        <img
-                            alt="Gallery"
-                            src="@/assets/images/gallery-4.jpg"
-                            width="373"
-                            height="273"
-                        />
-                        <div class="gallery-box-hover">
-                            <p>
-                                These Happy Days are yours and mine Happy Days I
-                                have always
-                            </p>
-                        </div>
-                        <div class="gallery-content">
-                            <a href="gallery.html"
-                                ><i class="fa fa-link" aria-hidden="true"></i
-                            ></a>
-                            <h3>Training For An Event</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <div class="gallery-box">
-                        <img
-                            alt="Gallery"
-                            src="@/assets/images/gallery-5.jpg"
-                            width="373"
-                            height="273"
-                        />
-                        <div class="gallery-box-hover">
-                            <p>
-                                These Happy Days are yours and mine Happy Days I
-                                have always
-                            </p>
-                        </div>
-                        <div class="gallery-content">
-                            <a href="gallery.html"
-                                ><i class="fa fa-link" aria-hidden="true"></i
-                            ></a>
-                            <h3>Training For An Event</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <div class="gallery-box">
-                        <img
-                            alt="Gallery"
-                            src="@/assets/images/gallery-6.jpg"
-                            width="373"
-                            height="273"
-                        />
-                        <div class="gallery-box-hover">
-                            <p>
-                                These Happy Days are yours and mine Happy Days I
-                                have always
-                            </p>
-                        </div>
-                        <div class="gallery-content">
-                            <a href="gallery.html"
-                                ><i class="fa fa-link" aria-hidden="true"></i
-                            ></a>
-                            <h3>Training For An Event</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Container /- -->
-            <div class="padding-70"></div>
-        </div>
-        <!-- Gallery Section /- -->
-
-        <!-- Our Courses -->
-        <div class="our-courses container-fluid no-padding">
-            <div class="section-padding"></div>
-            <!-- Container -->
-            <div class="container">
-                <!-- Section Header -->
-                <div class="section-header">
-                    <h5>Our Process</h5>
-                    <h3>How To Join Our Courses</h3>
-                </div>
-                <!-- Section Header /- -->
-                <div class="courses-box">
-                    <div class="col-md-4 col-sm-4 col-xs-6 courses-content">
-                        <a href="#"><span class="icon icon-File"></span></a>
-                        <h3>Select Your Course</h3>
-                        <span>1</span>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-6 courses-content">
-                        <a href="#"><span class="icon icon-Headset"></span></a>
-                        <h3>Contact Our Trainers</h3>
-                        <span>2</span>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-6 courses-content">
-                        <a href="#"><span class="icon icon-Like"></span></a>
-                        <h3>Join The Classes</h3>
-                        <span>3</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Container /- -->
-            <div class="section-padding"></div>
-        </div>
-        <!-- Our Courses /- -->
+        <GalleryPreview />
+        <SectionProcess />
 
         <!-- Team Section -->
         <div class="team-section container-fluid no-padding">
@@ -745,6 +564,8 @@
 import HomeIntro from "@/components/home/HomeIntro";
 import HomeAbout from "@/components/home/HomeAbout";
 import StudsPreview from "@/components/global/StudsPreview";
+import GalleryPreview from "@/components/global/GalleryPreview";
+import SectionProcess from "@/components/global/SectionProcess";
 
 import "@/mixins";
 import { mapActions } from "vuex";
@@ -755,6 +576,8 @@ export default {
         HomeIntro,
         HomeAbout,
         StudsPreview,
+        GalleryPreview,
+        SectionProcess,
     },
 
     methods: {
