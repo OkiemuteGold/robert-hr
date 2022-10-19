@@ -1,7 +1,5 @@
 <template>
-    <!-- Photo Slider -->
     <div class="photo-slider container-fluid no-padding">
-        <!-- Main Carousel -->
         <div
             id="main-carousel"
             class="carousel slide carousel-fade"
@@ -18,6 +16,7 @@
                 <li data-target="#main-carousel" data-slide-to="1">02</li>
                 <li data-target="#main-carousel" data-slide-to="2">03</li>
             </ol>
+
             <div role="listbox" class="carousel-inner">
                 <div class="item active">
                     <img
@@ -28,8 +27,8 @@
                     />
                     <div class="carousel-caption">
                         <h5>Welcome To Roberto Horse Riding</h5>
-                        <h3>Our kingdom For A Horse</h3>
-                        <p>A Horse Is Worth More Than Riches</p>
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
                 </div>
                 <div class="item">
@@ -40,9 +39,9 @@
                         src="@/assets/images/slider-2.jpg"
                     />
                     <div class="carousel-caption">
-                        <h5>Best Equestrian Club</h5>
-                        <h3>Way To Challenge Is On Horseback</h3>
-                        <p>Horses Lend Us The Wings We Lack</p>
+                        <h5>Roberto Horse Riding</h5>
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
                 </div>
                 <div class="item">
@@ -53,9 +52,9 @@
                         src="@/assets/images/slider-3.jpg"
                     />
                     <div class="carousel-caption">
-                        <h5>Just Ride With us</h5>
-                        <h3>Our Horses Feeds Your Souls</h3>
-                        <p>Horse Racing Is Waning In Popularity.</p>
+                        <h5>Roberto Horse Riding</h5>
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
                 </div>
                 <a
@@ -76,9 +75,7 @@
                 </a>
             </div>
         </div>
-        <!-- Main Carousel /-  -->
     </div>
-    <!-- Photo Slider /- -->
 </template>
 
 <script>

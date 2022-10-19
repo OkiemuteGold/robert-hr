@@ -1,149 +1,8 @@
 <template>
     <div class="home">
-        <!-- Intro Section  -->
-        <div class="intro-section container-fluid no-padding">
-            <div class="col-md-4 col-sm-6 col-xs-6 no-padding">
-                <div class="intro-content">
-                    <img src="@/assets/images/intro-ic-1.png" alt="intro-ic" />
-                    <h5>Experienced</h5>
-                    <h3>Instructors</h3>
-                    <p>
-                        Then along come two they got nothin' but their jeans.
-                        These days are all Happy and Free these days
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-6 no-padding">
-                <div class="intro-content">
-                    <img src="@/assets/images/intro-ic-2.png" alt="intro-ic" />
-                    <h5>Safety &amp;</h5>
-                    <h3>Award Winning</h3>
-                    <p>
-                        Then along come two they got nothin' but their jeans.
-                        These days are all Happy and Free these days
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-6 no-padding">
-                <div class="intro-content">
-                    <img src="@/assets/images/intro-ic-3.png" alt="intro-ic" />
-                    <h5>Perfectly</h5>
-                    <h3>Trained Horses</h3>
-                    <p>
-                        Then along come two they got nothin' but their jeans.
-                        These days are all Happy and Free these days
-                    </p>
-                </div>
-            </div>
-        </div>
-        <!-- Intro Section -->
-
-        <div class="intro-about container-fluid no-padding">
-            <div class="section-padding"></div>
-            <!-- Container -->
-            <div class="container">
-                <!-- Section Header -->
-                <div class="section-header">
-                    <h5>From the Founder!</h5>
-                    <h3>About Roberto Horse Riding</h3>
-                </div>
-                <!-- Section Header /- -->
-                <div class="intro-about-content">
-                    <p>
-                        A shadowy flight into the dangerous world of a man who
-                        does not exist. They call him Flipper Flipper faster
-                        than lightning. No one you see is smarter than he. And
-                        we'll do it our way yes our way.
-                        <span>Make all our dreams come true</span> for me and
-                        you. Till the one day when the lady met this fellow and
-                        they knew it was much more than a hunch.
-                    </p>
-                    <a href="#" title="Read More">Read More</a>
-                    <a href="#" title="Contact Us" class="contact-us"
-                        >Contact Us</a
-                    >
-                </div>
-            </div>
-            <!-- Container /- -->
-            <div class="section-padding"></div>
-        </div>
-
-        <!-- Process Section -->
-        <div class="process-section container-fluid no-padding">
-            <!-- Container -->
-            <div class="container">
-                <div class="col-md-4 col-sm-4 col-xs-6">
-                    <!-- Section Header -->
-                    <div class="section-header">
-                        <h5>Our Best Programs</h5>
-                        <h3>Our Courses</h3>
-                    </div>
-                    <!-- Section Header /- -->
-                    <div class="custom-nav">
-                        <a class="btn prev"
-                            ><i class="fa fa-angle-left" aria-hidden="true"></i
-                        ></a>
-                        <a class="btn next"
-                            ><i class="fa fa-angle-right" aria-hidden="true"></i
-                        ></a>
-                    </div>
-                </div>
-                <div class="col-md-8 col-sm-8 col-xs-12 process-box">
-                    <div class="process-carousel">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <img
-                                src="@/assets/images/process-1.jpg"
-                                alt="process"
-                                width="253"
-                                height="244"
-                            />
-                            <div class="process-content">
-                                <span
-                                    ><img
-                                        src="@/assets/images/process-ic-1.png"
-                                        alt="process-ic"
-                                /></span>
-                                <h3>Special Courses</h3>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <img
-                                src="@/assets/images/process-2.jpg"
-                                alt="process"
-                                width="253"
-                                height="244"
-                            />
-                            <div class="process-content">
-                                <span
-                                    ><img
-                                        src="@/assets/images/process-ic-2.png"
-                                        alt="process-ic"
-                                /></span>
-                                <h3>Special Courses</h3>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <img
-                                src="@/assets/images/process-3.jpg"
-                                alt="process"
-                                width="253"
-                                height="244"
-                            />
-                            <div class="process-content">
-                                <span
-                                    ><img
-                                        src="@/assets/images/process-ic-3.png"
-                                        alt="process-ic"
-                                /></span>
-                                <h3>Special Courses</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Container /- -->
-        </div>
-        <!-- Process Section /- -->
+        <HomeIntro />
+        <HomeAbout />
+        <StudsPreview />
 
         <!-- Gallery Section -->
         <div class="gallery-section container-fluid no-padding">
@@ -883,12 +742,20 @@
 </template>
 
 <script>
+import HomeIntro from "@/components/home/HomeIntro";
+import HomeAbout from "@/components/home/HomeAbout";
+import StudsPreview from "@/components/global/StudsPreview";
+
 import "@/mixins";
 import { mapActions } from "vuex";
 
 export default {
     name: "HomeView",
-    components: {},
+    components: {
+        HomeIntro,
+        HomeAbout,
+        StudsPreview,
+    },
 
     methods: {
         ...mapActions(["setCurrentPage"]),

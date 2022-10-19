@@ -75,87 +75,8 @@
                     <span class="corner-right-bottom"></span>
                 </div>
             </div>
-            <!-- Container /- -->
-            <div class="padding-70"></div>
         </div>
         <!-- Feature Section -->
-
-        <!-- Process Section -->
-        <div class="process-section container-fluid no-padding">
-            <!-- Container -->
-            <div class="container">
-                <div class="col-md-4 col-sm-4 col-xs-6">
-                    <!-- Section Header -->
-                    <div class="section-header">
-                        <h5>Our Best Programs</h5>
-                        <h3>Our Courses</h3>
-                    </div>
-                    <!-- Section Header /- -->
-                    <div class="custom-nav">
-                        <a class="btn prev"
-                            ><i class="fa fa-angle-left" aria-hidden="true"></i
-                        ></a>
-                        <a class="btn next"
-                            ><i class="fa fa-angle-right" aria-hidden="true"></i
-                        ></a>
-                    </div>
-                </div>
-                <div class="col-md-8 col-sm-8 col-xs-12 process-box">
-                    <div class="process-carousel">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <img
-                                src="@/assets/images/process-1.jpg"
-                                alt="process"
-                                width="253"
-                                height="244"
-                            />
-                            <div class="process-content">
-                                <span
-                                    ><img
-                                        src="@/assets/images/process-ic-1.png"
-                                        alt="process-ic"
-                                /></span>
-                                <h3>Special Courses</h3>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <img
-                                src="@/assets/images/process-2.jpg"
-                                alt="process"
-                                width="253"
-                                height="244"
-                            />
-                            <div class="process-content">
-                                <span
-                                    ><img
-                                        src="@/assets/images/process-ic-2.png"
-                                        alt="process-ic"
-                                /></span>
-                                <h3>Special Courses</h3>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <img
-                                src="@/assets/images/process-3.jpg"
-                                alt="process"
-                                width="253"
-                                height="244"
-                            />
-                            <div class="process-content">
-                                <span
-                                    ><img
-                                        src="@/assets/images/process-ic-3.png"
-                                        alt="process-ic"
-                                /></span>
-                                <h3>Special Courses</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Container /- -->
-        </div>
-        <!-- Process Section /- -->
 
         <!-- Chooseus Section -->
         <div class="chooseus-section container-fluid no-padding">
