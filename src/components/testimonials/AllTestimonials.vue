@@ -237,10 +237,4 @@ export default {
     -webkit-transform: scale(0.95);
     transform: scale(0.95);
 }
-
-@media (max-width: 767px) {
-    /* .testimonial-carousel-wrapper {
-        margin-top: 40px;
-    } */
-}
 </style>

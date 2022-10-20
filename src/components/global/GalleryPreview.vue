@@ -1,10 +1,9 @@
 <template>
     <div class="gallery-section container-fluid no-padding">
-        <div class="section-padding"></div>
+        <div class="padding-70"></div>
 
         <div class="container">
             <div class="section-header">
-                <h5>From Our Gallery</h5>
                 <h3>From Our Training Center</h3>
             </div>
 

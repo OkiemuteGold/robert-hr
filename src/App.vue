@@ -105,4 +105,8 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.latest-blog .blog-carousel .owl-carousel .owl-dots {
+    margin-top: 40px !important;
+}
 </style>
