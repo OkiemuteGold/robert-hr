@@ -1,5 +1,5 @@
 <template>
-    <div class="studs01">
+    <div class="studs">
         <!-- Feature Section -->
         <div
             class="
@@ -11,23 +11,19 @@
             "
         >
             <div class="section-padding"></div>
-            <!-- Container -->
+
             <div class="container">
-                <!-- Section Header -->
                 <div class="section-header">
-                    <h5>Advantages</h5>
+                    <!-- <h5>Advantages</h5> -->
                     <h3>Our Special Features</h3>
                 </div>
-                <!-- Section Header /- -->
+
                 <div class="intro-about-content">
                     <p>
-                        A shadowy flight into the dangerous world of a man who
-                        does not exist. They call him Flipper Flipper faster
-                        than lightning. No one you see is smarter than he. And
-                        we'll do it our way yes our way.
-                        <span>Make all our dreams come true</span> for me and
-                        you. Till the one day when the lady met this fellow and
-                        they knew it was much more than a hunch.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Est nesciunt quasi hic dolor pariatur.
+                        <span>Lorem ipsum dolor sit amet.</span> Lorem autem
+                        culpa consequuntur tempore vel laudantium.
                     </p>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-6 info-content">
@@ -75,100 +71,20 @@
                     <span class="corner-right-bottom"></span>
                 </div>
             </div>
-            <!-- Container /- -->
-            <div class="padding-70"></div>
         </div>
         <!-- Feature Section -->
-
-        <!-- Process Section -->
-        <div class="process-section container-fluid no-padding">
-            <!-- Container -->
-            <div class="container">
-                <div class="col-md-4 col-sm-4 col-xs-6">
-                    <!-- Section Header -->
-                    <div class="section-header">
-                        <h5>Our Best Programs</h5>
-                        <h3>Our Courses</h3>
-                    </div>
-                    <!-- Section Header /- -->
-                    <div class="custom-nav">
-                        <a class="btn prev"
-                            ><i class="fa fa-angle-left" aria-hidden="true"></i
-                        ></a>
-                        <a class="btn next"
-                            ><i class="fa fa-angle-right" aria-hidden="true"></i
-                        ></a>
-                    </div>
-                </div>
-                <div class="col-md-8 col-sm-8 col-xs-12 process-box">
-                    <div class="process-carousel">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <img
-                                src="@/assets/images/process-1.jpg"
-                                alt="process"
-                                width="253"
-                                height="244"
-                            />
-                            <div class="process-content">
-                                <span
-                                    ><img
-                                        src="@/assets/images/process-ic-1.png"
-                                        alt="process-ic"
-                                /></span>
-                                <h3>Special Courses</h3>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <img
-                                src="@/assets/images/process-2.jpg"
-                                alt="process"
-                                width="253"
-                                height="244"
-                            />
-                            <div class="process-content">
-                                <span
-                                    ><img
-                                        src="@/assets/images/process-ic-2.png"
-                                        alt="process-ic"
-                                /></span>
-                                <h3>Special Courses</h3>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <img
-                                src="@/assets/images/process-3.jpg"
-                                alt="process"
-                                width="253"
-                                height="244"
-                            />
-                            <div class="process-content">
-                                <span
-                                    ><img
-                                        src="@/assets/images/process-ic-3.png"
-                                        alt="process-ic"
-                                /></span>
-                                <h3>Special Courses</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Container /- -->
-        </div>
-        <!-- Process Section /- -->
 
         <!-- Chooseus Section -->
         <div class="chooseus-section container-fluid no-padding">
             <div class="section-padding"></div>
-            <!-- Container -->
+
             <div class="container">
-                <!-- Section Header -->
                 <div class="section-header">
-                    <h5>Sports Society</h5>
+                    <!-- <h5>Sports Society</h5> -->
                     <h3>Reasons to Choose Us</h3>
                 </div>
-                <!-- Section Header /- -->
-                <div class="col-md-6 col-sm-12 col-xs-12">
+
+                <!-- <div class="col-md-6 col-sm-12 col-xs-12">
                     <div
                         class="panel-group"
                         id="accordion"
@@ -311,8 +227,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-sm-12 col-xs-12">
+                </div> -->
+
+                <div class="col-md-12 col-sm-12 col-xs-12">
                     <!-- Video Section -->
                     <div class="video-section">
                         <div class="video-section-content">
@@ -332,8 +249,8 @@
                     <!-- Video Section /- -->
                 </div>
             </div>
-            <!-- Container /- -->
-            <div class="padding-70"></div>
+
+            <div class="section-padding"></div>
         </div>
         <!-- Chooseus Section -->
     </div>
@@ -364,3 +281,10 @@ export default {
     },
 };
 </script>
+
+<style scoped>
+.video-section {
+    max-width: 500px;
+    margin: auto;
+}
+</style>

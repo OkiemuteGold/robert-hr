@@ -10,24 +10,20 @@
                 no-padding
             "
         >
-            <div class="section-padding"></div>
-            <!-- Container -->
+            <div class="padding-70"></div>
+
             <div class="container">
-                <!-- Section Header -->
                 <div class="section-header">
-                    <h5>Advantages</h5>
+                    <!-- <h5>Advantages</h5> -->
                     <h3>Our Special Features</h3>
                 </div>
-                <!-- Section Header /- -->
+
                 <div class="intro-about-content">
                     <p>
-                        A shadowy flight into the dangerous world of a man who
-                        does not exist. They call him Flipper Flipper faster
-                        than lightning. No one you see is smarter than he. And
-                        we'll do it our way yes our way.
-                        <span>Make all our dreams come true</span> for me and
-                        you. Till the one day when the lady met this fellow and
-                        they knew it was much more than a hunch.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Est nesciunt quasi hic dolor pariatur.
+                        <span>Lorem ipsum dolor sit amet.</span> Lorem autem
+                        culpa consequuntur tempore vel laudantium.
                     </p>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-6 info-content">
@@ -80,16 +76,15 @@
 
         <!-- Chooseus Section -->
         <div class="chooseus-section container-fluid no-padding">
-            <div class="section-padding"></div>
-            <!-- Container -->
+            <div class="padding-70"></div>
+
             <div class="container">
-                <!-- Section Header -->
                 <div class="section-header">
-                    <h5>Sports Society</h5>
+                    <!-- <h5>Sports Society</h5> -->
                     <h3>Reasons to Choose Us</h3>
                 </div>
-                <!-- Section Header /- -->
-                <div class="col-md-6 col-sm-12 col-xs-12">
+
+                <!-- <div class="col-md-6 col-sm-12 col-xs-12">
                     <div
                         class="panel-group"
                         id="accordion"
@@ -232,8 +227,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-sm-12 col-xs-12">
+                </div> -->
+
+                <div class="col-md-12 col-sm-12 col-xs-12">
                     <!-- Video Section -->
                     <div class="video-section">
                         <div class="video-section-content">
@@ -253,8 +249,8 @@
                     <!-- Video Section /- -->
                 </div>
             </div>
-            <!-- Container /- -->
-            <div class="padding-70"></div>
+
+            <div class="section-padding"></div>
         </div>
         <!-- Chooseus Section -->
     </div>
@@ -285,3 +281,10 @@ export default {
     },
 };
 </script>
+
+<style scoped>
+.video-section {
+    max-width: 500px;
+    margin: auto;
+}
+</style>
