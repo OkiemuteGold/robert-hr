@@ -24,7 +24,7 @@
                 <img src="@/assets/images/icon-train.png" alt="train icon" />
                 <h5>Perfectly</h5>
                 <h3>Trained Horses</h3>
-                <p>We have perfectly trained and healthy horses</p>
+                <p>Our horses are well trained and healthy</p>
             </div>
         </div>
     </div>

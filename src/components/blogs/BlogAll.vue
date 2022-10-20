@@ -11,7 +11,6 @@
 
                 <div v-if="AllBlogPosts && AllBlogPosts.length > 0">
                     <carousel
-                        :items="2"
                         :autoplay="true"
                         :nav="false"
                         :dots="true"

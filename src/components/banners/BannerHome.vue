@@ -5,7 +5,7 @@
             class="carousel slide carousel-fade"
             data-ride="carousel"
         >
-            <ol class="carousel-indicators">
+            <!-- <ol class="carousel-indicators">
                 <li
                     data-target="#main-carousel"
                     data-slide-to="0"
@@ -15,7 +15,7 @@
                 </li>
                 <li data-target="#main-carousel" data-slide-to="1">02</li>
                 <li data-target="#main-carousel" data-slide-to="2">03</li>
-            </ol>
+            </ol> -->
 
             <div role="listbox" class="carousel-inner">
                 <div class="item active">
@@ -26,8 +26,8 @@
                         src="@/assets/images/slider-1.jpg"
                     />
                     <div class="carousel-caption">
-                        <h5>Welcome To Roberto Horse Riding</h5>
-                        <h3>Lorem ipsum dolor sit.</h3>
+                        <!-- <h5>Welcome To Roberto Horse Riding</h5> -->
+                        <h3>Welcome To Roberto Horse Riding</h3>
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
                 </div>
@@ -83,4 +83,31 @@ export default {};
 </script>
 
 <style scoped>
+.carousel-inner > .item > img {
+    min-height: 75vh;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.photo-slider .carousel-caption h3 {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 639px) {
+    .photo-slider .carousel-caption h3 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 515px) {
+    .photo-slider .carousel-caption h3 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .photo-slider .carousel-caption p {
+        font-size: 18px;
+    }
+}
 </style>
