@@ -50,16 +50,16 @@ export default {};
     font-weight: 500;
     background-color: var(--yellowLight);
     color: var(--black1);
-    border: 2px solid transparent;
+    border: 2px solid var(--yellowLight);
     outline: none;
     padding: 13px 30px;
     letter-spacing: 1.95px;
     text-transform: uppercase;
     text-decoration: none;
-    -o-transition: all 1s ease 0s;
-    -moz-transition: all 1s ease 0s;
-    -webkit-transition: all 1s ease 0s;
-    transition: all 1s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
 }
 
 .section-header a:hover {

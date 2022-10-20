@@ -14,9 +14,9 @@
                     :key="index"
                     class="col-md-4 col-sm-4 col-xs-6 courses-content"
                 >
-                    <a href="javascript:void(0)"
+                    <span class="inner"
                         ><span :class="`icon ${step.icon}`"></span
-                    ></a>
+                    ></span>
                     <h3>{{ step.title }}</h3>
                     <span>{{ index + 1 }}</span>
                 </div>
@@ -63,6 +63,29 @@ export default {
     left: 30px;
     right: 0;
     width: 100%;
+}
+
+.our-courses .courses-content .inner {
+    background-color: #fff;
+    border-radius: 100%;
+    color: #111;
+    display: inline-block;
+    font-size: 22px;
+    height: 91px;
+    width: 91px;
+    line-height: 91px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+.our-courses .courses-content .inner:hover {
+    background-color: #fcd846;
 }
 
 @media (max-width: 767px) {

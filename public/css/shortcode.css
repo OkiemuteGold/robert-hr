@@ -136,10 +136,10 @@
   width: 52px;
   line-height: 92px;
   text-align: center;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .photo-slider .carousel-control i:hover {
   color: #111;
@@ -159,10 +159,10 @@
   padding-top: 130px;
   padding-bottom: 130px;
   margin-top: -20px;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .intro-section .intro-content::before,
 .intro-section .intro-content::after {
@@ -171,10 +171,10 @@
   bottom: 0;
   height: 0;
   width: 0;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .intro-section .intro-content::before {
   right: 0;
@@ -264,10 +264,10 @@
   margin-right: 18px;
   text-transform: uppercase;
   text-decoration: none;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .intro-about .intro-about-content a:hover {
   border-color: #111;
@@ -278,10 +278,10 @@
   border: 2px solid #111;
   background-color: transparent;
   color: #111;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .intro-about .intro-about-content a.contact-us:hover {
   background-color: #ffc619;
@@ -406,19 +406,19 @@
   top: 30%;
   padding: 0 40px;
   opacity: 0;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .gallery-box:hover::before,
 .gallery-box:hover .gallery-box-hover {
   opacity: 1;
-  transition: opacity 2s ease-in; /* vendorless fallback */
-  -o-transition: opacity 2s ease-in; /* opera */
-  -ms-transition: opacity 2s ease-in; /* IE 10 betas, not needed in final build. */
-  -moz-transition: opacity 2s ease-in; /* Firefox */
-  -webkit-transition: opacity 2s ease-in; /*safari and chrome */
+  transition: opacity 1s ease-in; /* vendorless fallback */
+  -o-transition: opacity 1s ease-in; /* opera */
+  -ms-transition: opacity 1s ease-in; /* IE 10 betas, not needed in final build. */
+  -moz-transition: opacity 1s ease-in; /* Firefox */
+  -webkit-transition: opacity 1s ease-in; /*safari and chrome */
 }
 .gallery-content {
   background-color: #f8c119;
@@ -428,10 +428,10 @@
   right: 0;
   opacity: 0;
   margin: 0 auto;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .gallery-box:hover .gallery-content {
   bottom: 0;
@@ -535,10 +535,10 @@
   position: absolute;
   left: 0;
   text-decoration: none;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .our-courses .courses-content a:hover {
   background-color: #fcd846;
@@ -558,10 +558,10 @@
   position: absolute;
   top: 50px;
   left: 0;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .our-courses .courses-content > span:hover {
   background-color: #fff;
@@ -584,10 +584,10 @@
   border-top: 2px solid transparent;
   display: inline-block;
   width: 100%;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .team-section .team-content h3 {
   color: #111;
@@ -621,10 +621,10 @@
   text-decoration: none;
   text-align: center;
   opacity: 0;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .team-section .team-content ul li a:hover {
   background-color: #ffc619;
@@ -767,10 +767,10 @@
 }
 .testimonial-section .lSSlideOuter .lSPager.lSGallery li {
   padding: 10px 0 10px 10px;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .testimonial-section .lSSlideOuter .lSPager.lSGallery li.active,
 .testimonial-section .lSSlideOuter .lSPager.lSGallery li:hover {
@@ -828,10 +828,10 @@
 .latest-blog .latest-blog-content h3.entry-title a {
   color: #111;
   text-decoration: none;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .latest-blog .latest-blog-content h3.entry-title a:hover {
   color: #ffc619;
@@ -862,10 +862,10 @@
   font-style: italic;
   text-transform: capitalize;
   text-decoration: none;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .latest-blog .latest-blog-content a.read-more:hover {
   color: #ffc619;
@@ -947,10 +947,10 @@
   letter-spacing: 0.3px;
   border-bottom: 1px solid #ffc619;
   text-align: center;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .ow-pagination .pagination li:last-of-type a {
   padding: 9px 12px;
@@ -1031,10 +1031,10 @@
 .blog-post .entry-social ul li a {
   color: #777;
   font-size: 12px;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .blog-post .entry-social ul li a:hover {
   color: #ffc619;
@@ -1069,6 +1069,7 @@
   -moz-transition: all ease 1.5s;
   -o-transition: all ease 1.5s;
   -ms-transition: all ease 1.5s;
+  transition: all ease 1.5s;
 }
 .blog-post .entry-gallerylist .img-box i::after {
   background-image: url("../images/post-ic.png");
@@ -1087,10 +1088,10 @@
   -webkit-transform: translate(0%, -50%);
   -moz-transform: translate(0%, -50%);
   -ms-transform: translate(0%, -50%);
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .blog-post .entry-gallerylist .img-box i:hover::before,
 .blog-post .entry-gallerylist .img-box i:hover::after {
@@ -1148,10 +1149,10 @@
   display: inline-block;
   color: #737373;
   text-decoration: none;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .author-content .author-social li a:hover {
   color: #ffc81c;
@@ -1214,10 +1215,10 @@
   margin-left: 5px;
   font-family: "Montserrat", sans-serif;
   float: right;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .comment-section .media-content a i {
   padding-right: 5px;
@@ -1303,10 +1304,10 @@
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.56px;
   border: 1px solid transparent;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .comment-form input[type="submit"]:hover {
   border-color: #ffc81c;
@@ -1493,6 +1494,7 @@
   -moz-transition: all ease 1.5s;
   -o-transition: all ease 1.5s;
   -ms-transition: all ease 1.5s;
+  transition: all ease 1.5s;
 }
 .widget-area .widget-latestposts .latest-content i::after {
   background-image: url("../images/post-ic.png");
@@ -1511,10 +1513,10 @@
   -webkit-transform: translate(0%, -50%);
   -moz-transform: translate(0%, -50%);
   -ms-transform: translate(0%, -50%);
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .widget-area .widget-latestposts .latest-content i:hover::before,
 .widget-area .widget-latestposts .latest-content i:hover::after {
@@ -1548,10 +1550,10 @@
   margin-top: 5px;
   display: inline-block;
   width: 100%;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .widget-area .widget-latestposts .latest-content p:hover {
   color: #ffc619;
@@ -1576,10 +1578,10 @@
   letter-spacing: 0.48px;
   text-transform: uppercase;
   border: 1px solid #ffc619;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .widget-area .widget-tag > a:hover {
   background-color: #ffc619;
@@ -1604,10 +1606,10 @@
   text-align: center;
   position: relative;
   z-index: 1;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .info-section .info-box::after {
   border: 1px solid #fff;
@@ -1647,10 +1649,10 @@
   width: 10px;
   height: 10px;
   opacity: 0;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .info-section .info-content > span.corner-left-top,
 .info-section .info-content > span.corner-right-top {
@@ -1717,19 +1719,19 @@
   display: inline-block;
   position: absolute;
   opacity: 0;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .services-section .srv-box i {
   margin-bottom: 20px;
   height: 77px;
   display: inline-block;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .services-section .srv-box h5,
 .services-section .srv-box h3 {
@@ -1742,10 +1744,10 @@
   margin-bottom: 0;
   margin-top: 0;
   word-wrap: break-word;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .services-section .srv-box h3 {
   font-family: "montserratlight";
@@ -1759,10 +1761,10 @@
   line-height: 0;
   margin-top: 0;
   margin-bottom: 0;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .services-section .srv-box:hover::before {
   top: auto;
@@ -1773,10 +1775,10 @@
   border: 2px solid #fcd846;
   padding-top: 28px;
   padding-bottom: 29px;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .services-section .srv-box:hover i {
   height: 0;
@@ -1890,10 +1892,10 @@
   margin-top: 40px;
   text-transform: uppercase;
   text-decoration: none;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .price-section .price-content a:hover {
   border: 2px solid #f2cb28;
@@ -1915,10 +1917,10 @@
   vertical-align: middle;
   min-height: 150px;
   max-height: 150px;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .clients .clients-carousel .item a:hover {
   border: 1px solid #a8a8aa;
@@ -2101,10 +2103,10 @@
 .search-section .input-group-btn > .btn {
   background-color: transparent;
   padding: 6px 0;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .search-section .input-group-btn > .btn:hover {
   color: #fcd846;
@@ -2221,10 +2223,10 @@
   border-radius: 0;
   margin: 0 15px 0;
   text-decoration: none;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .contact-us input[type="submit"]:hover {
   color: #ffc619;

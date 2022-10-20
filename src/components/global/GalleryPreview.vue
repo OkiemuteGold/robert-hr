@@ -21,11 +21,11 @@
                             width="373"
                             height="273"
                         />
-                        <!-- <div class="gallery-box-hover">
+                        <div class="gallery-box-hover">
                             <p>
                                 {{ item.description }}
                             </p>
-                        </div> -->
+                        </div>
                         <div class="gallery-content">
                             <span class="inner"
                                 ><i class="fa fa-link" aria-hidden="true"></i
