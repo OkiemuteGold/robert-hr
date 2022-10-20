@@ -11,3 +11,7 @@ export const currentSitePage = (state) => {
 export const bannerSettings = (state) => {
     return state.bannerSettings;
 };
+
+export const getAllStudItems = (state) => {
+    return state.allStudItems;
+};

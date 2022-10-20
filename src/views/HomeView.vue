@@ -581,11 +581,12 @@ export default {
     },
 
     methods: {
-        ...mapActions(["setCurrentPage"]),
+        ...mapActions(["setCurrentPage", "setAllStudItems"]),
     },
 
     mounted() {
         this.setCurrentPage(this.$router.history.current.name);
+        this.setAllStudItems();
     },
 };
 </script>

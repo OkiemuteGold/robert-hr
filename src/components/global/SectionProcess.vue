@@ -14,7 +14,9 @@
                     :key="index"
                     class="col-md-4 col-sm-4 col-xs-6 courses-content"
                 >
-                    <a href="#"><span :class="`icon ${step.icon}`"></span></a>
+                    <a href="javascript:void(0)"
+                        ><span :class="`icon ${step.icon}`"></span
+                    ></a>
                     <h3>{{ step.title }}</h3>
                     <span>{{ index + 1 }}</span>
                 </div>
@@ -32,15 +34,15 @@ export default {
             allSteps: [
                 {
                     icon: "icon-File",
-                    title: "Select Horse From Facility",
+                    title: "Select A Service",
                 },
                 {
                     icon: "icon-Headset",
-                    title: "Contact Our Trainers",
+                    title: "Contact A Trainer",
                 },
                 {
                     icon: "icon-Like",
-                    title: "Get Started With Us",
+                    title: "Get Started",
                 },
             ],
         };
@@ -58,14 +60,20 @@ export default {
     height: 40px;
     position: absolute;
     top: 100%;
-    left: -50px;
+    left: 30px;
     right: 0;
     width: 100%;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .our-courses .courses-content:not(:last-child)::before {
-        left: 30px;
+        left: -20%;
+    }
+}
+
+@media (max-width: 600px) {
+    .our-courses .courses-content:not(:last-child)::before {
+        display: none;
     }
 }
 </style>

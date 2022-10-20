@@ -9,4 +9,6 @@ export default {
         currentLinkText: null,
         imageUrl: null,
     },
+
+    allStudItems: null,
 };

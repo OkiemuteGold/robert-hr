@@ -19,16 +19,16 @@
 
             <div
                 class="col-md-8 col-sm-12 col-xs-12 process-box"
-                v-if="allStudItems && allStudItems.length"
+                v-if="allStudItems && allStudItems.length > 0"
             >
                 <carousel
-                    :items="1"
                     :autoplay="false"
                     :nav="false"
                     :dots="false"
                     :margin="30"
                     :stagePadding="10"
                     :responsive="{
+                        0: { items: 1 },
                         540: { items: 3 },
                     }"
                     class="process-carousel"
@@ -63,15 +63,25 @@
 
 <script>
 import carousel from "vue-owl-carousel";
-import homeStud from "@/api/homeStuds";
+import { mapGetters } from "vuex";
 
 export default {
     components: { carousel },
 
+    computed: {
+        ...mapGetters(["getAllStudItems"]),
+    },
+
     data() {
         return {
-            allStudItems: homeStud,
+            allStudItems: null,
         };
+    },
+
+    async mounted() {
+        setTimeout(() => {
+            this.allStudItems = this.getAllStudItems;
+        }, 500);
     },
 };
 </script>

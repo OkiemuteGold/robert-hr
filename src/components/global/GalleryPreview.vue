@@ -21,15 +21,15 @@
                             width="373"
                             height="273"
                         />
-                        <div class="gallery-box-hover">
+                        <!-- <div class="gallery-box-hover">
                             <p>
                                 {{ item.description }}
                             </p>
-                        </div>
+                        </div> -->
                         <div class="gallery-content">
-                            <a href="gallery.html"
+                            <span class="inner"
                                 ><i class="fa fa-link" aria-hidden="true"></i
-                            ></a>
+                            ></span>
                             <h3>{{ item.name }}</h3>
                         </div>
                     </div>
@@ -47,11 +47,37 @@ import gallery from "@/api/gallery";
 export default {
     data() {
         return {
-            allGalleryItems: gallery,
+            allGalleryItems: null,
         };
+    },
+
+    mounted() {
+        this.allGalleryItems = gallery;
     },
 };
 </script>
 
 <style scoped>
+.gallery-content .inner {
+    background-color: #ffc619;
+    border-radius: 100%;
+    color: #111;
+    display: inline-block;
+    font-size: 18px;
+    width: 71px;
+    height: 71px;
+    margin-top: -35px;
+    line-height: 71px;
+    position: relative;
+}
+
+.gallery-section .gallery-box-hover p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 1200px) {
+    .gallery-box-hover {
+        top: 16%;
+    }
+}
 </style>

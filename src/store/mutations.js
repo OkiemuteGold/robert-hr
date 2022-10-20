@@ -12,3 +12,7 @@ export const BANNER_SETTINGS = (state, payload) => {
         imageUrl: payload.imageUrl,
     };
 };
+
+export const ALL_STUD_ITEMS = (state, payload) => {
+    state.allStudItems = payload;
+};
