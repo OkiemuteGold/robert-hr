@@ -51,6 +51,10 @@ export default {
 </script>
 
 <style scoped>
+.section-header {
+    margin-bottom: 50px;
+}
+
 .our-courses .courses-content:not(:last-child)::before {
     background-image: url(@/assets/images/courses-arrow.png);
     background-position: right center;
