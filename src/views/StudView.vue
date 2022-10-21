@@ -239,9 +239,8 @@
                                 width="565"
                                 height="352"
                             />
-                            <a
-                                class="popup-vimeo"
-                                href="https://vimeo.com/45830194"
+                            <!-- https://vimeo.com/45830194 -->
+                            <a class="popup-vimeo" href="javascript:void(0)"
                                 ><i class="fa fa-play"></i
                             ></a>
                         </div>
