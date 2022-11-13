@@ -121,19 +121,40 @@
 
                                             <li>
                                                 <router-link
-                                                    :to="{ name: 'Studs01' }"
-                                                    aria-label="Studs01"
-                                                    >Studs01</router-link
+                                                    :to="{ name: 'Stallion' }"
+                                                    aria-label="Stallion"
+                                                    >Stallion</router-link
                                                 >
                                             </li>
                                             <li>
                                                 <router-link
-                                                    :to="{ name: 'Studs02' }"
-                                                    aria-label="Studs02"
-                                                    >Studs02</router-link
+                                                    :to="{ name: 'Mares' }"
+                                                    aria-label="Mares"
+                                                    >Mares</router-link
+                                                >
+                                            </li>
+                                            <li>
+                                                <router-link
+                                                    :to="{ name: 'Foals' }"
+                                                    aria-label="Foals"
+                                                    >Foals</router-link
+                                                >
+                                            </li>
+                                            <li>
+                                                <router-link
+                                                    :to="{ name: 'Fillies' }"
+                                                    aria-label="Fillies"
+                                                    >Fillies</router-link
                                                 >
                                             </li>
                                         </ul>
+                                    </li>
+                                    <li>
+                                        <router-link
+                                            :to="{ name: 'Services' }"
+                                            aria-label="Services"
+                                            >Services</router-link
+                                        >
                                     </li>
                                     <li>
                                         <router-link
@@ -304,6 +325,18 @@ export default {
 
     .navbar-nav {
         float: right;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .navbar-fixed-top .ow-navigation .nav.navbar-nav > li {
+        margin: 0 16px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .navbar-fixed-top .ow-navigation .nav.navbar-nav > li {
+        margin: 0 22px;
     }
 }
 

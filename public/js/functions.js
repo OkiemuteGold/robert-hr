@@ -120,92 +120,92 @@
 
 		/* - Client Carousel */
 
-		if ($(".clients-carousel").length) {
-			$(".clients-carousel").owlCarousel({
-				loop: true,
-				margin: 0,
-				nav: false,
-				dots: false,
-				autoplay: false,
-				responsive: {
-					0: {
-						items: 1
-					},
-					500: {
-						items: 2
-					},
-					600: {
-						items: 3
-					},
-					1000: {
-						items: 5
-					}
-				}
-			});
-		}
+		// if ($(".clients-carousel").length) {
+		// 	$(".clients-carousel").owlCarousel({
+		// 		loop: true,
+		// 		margin: 0,
+		// 		nav: false,
+		// 		dots: false,
+		// 		autoplay: false,
+		// 		responsive: {
+		// 			0: {
+		// 				items: 1
+		// 			},
+		// 			500: {
+		// 				items: 2
+		// 			},
+		// 			600: {
+		// 				items: 3
+		// 			},
+		// 			1000: {
+		// 				items: 5
+		// 			}
+		// 		}
+		// 	});
+		// }
 
 		/* - Blog Carousel */
-		if ($(".blog-carousel").length) {
-			$(".blog-carousel").owlCarousel({
-				loop: true,
-				margin: 0,
-				nav: false,
-				dots: true,
-				autoplay: false,
-				responsive: {
-					0: {
-						items: 1
-					},
-					500: {
-						items: 1
-					},
-					991: {
-						items: 1
-					},
-					1000: {
-						items: 2
-					}
-				}
-			});
-		}
+		// if ($(".blog-carousel").length) {
+		// 	$(".blog-carousel").owlCarousel({
+		// 		loop: true,
+		// 		margin: 0,
+		// 		nav: false,
+		// 		dots: true,
+		// 		autoplay: false,
+		// 		responsive: {
+		// 			0: {
+		// 				items: 1
+		// 			},
+		// 			500: {
+		// 				items: 1
+		// 			},
+		// 			991: {
+		// 				items: 1
+		// 			},
+		// 			1000: {
+		// 				items: 2
+		// 			}
+		// 		}
+		// 	});
+		// }
 
 		/* - Process Carousel */
-		if ($(".process-carousel").length) {
-			$(".process-carousel").owlCarousel({
-				loop: true,
-				margin: 0,
-				nav: false,
-				dots: false,
-				autoplay: false,
-				responsive: {
-					0: {
-						items: 1
-					},
-					480: {
-						items: 2
-					},
-					767: {
-						items: 3
-					},
-					800: {
-						items: 2
-					},
-					991: {
-						items: 2
-					},
-					1000: {
-						items: 3
-					}
-				}
-			});
-			/* - Custom Navigation Events */
-			$(".next").on("click", function () {
-				$(".process-carousel").owlCarousel().trigger("next.owl.carousel");
-			});
-			$(".prev").on("click", function () {
-				$(".process-carousel").owlCarousel().trigger("prev.owl.carousel");
-			});
-		}
+		// if ($(".process-carousel").length) {
+		// 	$(".process-carousel").owlCarousel({
+		// 		loop: true,
+		// 		margin: 0,
+		// 		nav: false,
+		// 		dots: false,
+		// 		autoplay: false,
+		// 		responsive: {
+		// 			0: {
+		// 				items: 1
+		// 			},
+		// 			480: {
+		// 				items: 2
+		// 			},
+		// 			767: {
+		// 				items: 3
+		// 			},
+		// 			800: {
+		// 				items: 2
+		// 			},
+		// 			991: {
+		// 				items: 2
+		// 			},
+		// 			1000: {
+		// 				items: 3
+		// 			}
+		// 		}
+		// 	});
+		// 	/* - Custom Navigation Events */
+		// 	$(".next").on("click", function () {
+		// 		$(".process-carousel").owlCarousel().trigger("next.owl.carousel");
+		// 	});
+		// 	$(".prev").on("click", function () {
+		// 		$(".process-carousel").owlCarousel().trigger("prev.owl.carousel");
+		// 	});
+		// }
 
 		/* - Lightbox for Highlights Video */
 		$(".video-section a").magnificPopup({

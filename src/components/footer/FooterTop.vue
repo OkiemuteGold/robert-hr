@@ -23,18 +23,30 @@
                             >About Us</router-link
                         >
                     </li>
-
                     <li>
                         <router-link :to="{ name: 'Studs' }" aria-label="Studs"
                             >Studs</router-link
                         >
                     </li>
-
+                    <li>
+                        <router-link
+                            :to="{ name: 'Services' }"
+                            aria-label="Services"
+                            >Services</router-link
+                        >
+                    </li>
                     <li>
                         <router-link
                             :to="{ name: 'Gallery' }"
                             aria-label="Gallery"
                             >Gallery</router-link
+                        >
+                    </li>
+                    <li>
+                        <router-link
+                            :to="{ name: 'Contact' }"
+                            aria-label="Contact"
+                            >Contact Us</router-link
                         >
                     </li>
                 </ul>

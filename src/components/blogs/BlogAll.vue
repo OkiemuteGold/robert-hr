@@ -9,7 +9,7 @@
                     <h3>From Our Blog</h3>
                 </div>
 
-                <div v-if="AllBlogPosts && AllBlogPosts.length > 0">
+                <div>
                     <carousel
                         :autoplay="true"
                         :nav="false"
@@ -22,7 +22,7 @@
                         class="blog-carousel"
                     >
                         <div
-                            v-for="(blog, index) in AllBlogPosts"
+                            v-for="(blog, index) in allBlogPosts"
                             :key="index"
                             class="col-md-12 col-sm-12 col-xs-12"
                         >
@@ -85,7 +85,7 @@ export default {
 
     data() {
         return {
-            AllBlogPosts: [
+            allBlogPosts: [
                 {
                     author: "Roberto Fernandez",
                     title: "Blog Post 1",
@@ -124,7 +124,7 @@ export default {
 
 <style scoped>
 .latest-blog .owl-carousel .owl-item img {
-    min-height: 280px;
+    min-height: 300px;
     -o-object-fit: cover;
     object-fit: cover;
 }

@@ -2,9 +2,16 @@
     <div
         :class="[
             currentSitePage == 'Home',
-            ['About', 'Studs', 'Studs01', 'Studs02', 'Gallery'].includes(
-                currentSitePage
-            ),
+            [
+                'About',
+                'Studs',
+                'Stallion',
+                'Mares',
+                'Foals',
+                'Fillies',
+                'Services',
+                'Gallery',
+            ].includes(currentSitePage),
             ['Contact', 'FourZeroFour'].includes(currentSitePage),
         ]"
     >
@@ -12,9 +19,16 @@
 
         <BannerInner
             v-if="
-                ['About', 'Studs', 'Studs01', 'Studs02', 'Gallery'].includes(
-                    currentSitePage
-                )
+                [
+                    'About',
+                    'Studs',
+                    'Stallion',
+                    'Mares',
+                    'Foals',
+                    'Fillies',
+                    'Services',
+                    'Gallery',
+                ].includes(currentSitePage)
             "
             v-once
         />

@@ -2,8 +2,11 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import StudView from '../views/StudView.vue'
-import StudView01 from '../views/StudView01.vue'
-import StudView02 from '../views/StudView02.vue'
+import StallionView from '../views/StallionView.vue'
+import MaresView from '../views/MaresView.vue'
+import FoalsView from '../views/FoalsView.vue'
+import FilliesView from '../views/FilliesView.vue'
+import ServicesView from '../views/ServicesView.vue'
 import GalleryView from '../views/GalleryView.vue'
 import ContactView from '../views/ContactView.vue'
 import FourZeroFour from '../views/FourZeroFour.vue'
@@ -75,11 +78,11 @@ const routes = [
         },
     },
     {
-        path: '/studs01',
-        name: 'Studs01',
-        component: StudView01,
+        path: '/stallion',
+        name: 'Stallion',
+        component: StallionView,
         meta: {
-            title: "Roberto Horse Riding | Studs01",
+            title: "Roberto Horse Riding | Stallion",
             metaTags: [
                 {
                     name: "description",
@@ -97,21 +100,21 @@ const routes = [
         //     {
         //         path: 'studs011',
         //         name: 'Studs011',
-        //         component: StudView011,
+        //         component: StallionView1,
         //     },
         //     {
         //         path: 'studs012',
         //         name: 'Studs012',
-        //         component: StudView012,
+        //         component: StallionView2,
         //     }
         // ]
     },
     {
-        path: '/studs02',
-        name: 'Studs02',
-        component: StudView02,
+        path: '/mares',
+        name: 'Mares',
+        component: MaresView,
         meta: {
-            title: "Roberto Horse Riding | Studs02",
+            title: "Roberto Horse Riding | Mares",
             metaTags: [
                 {
                     name: "description",
@@ -125,18 +128,66 @@ const routes = [
                 },
             ],
         },
-        // children: [
-        //     {
-        //         path: 'studs021',
-        //         name: 'Studs021',
-        //         component: StudView021,
-        //     },
-        //     {
-        //         path: 'studs022',
-        //         name: 'Studs022',
-        //         component: StudView022,
-        //     }
-        // ]
+    },
+    {
+        path: '/foals',
+        name: 'Foals',
+        component: FoalsView,
+        meta: {
+            title: "Roberto Horse Riding | Foals",
+            metaTags: [
+                {
+                    name: "description",
+                    content:
+                        "Roberto Horse Riding",
+                },
+                {
+                    property: "og:description",
+                    content:
+                        "Roberto Horse Riding",
+                },
+            ],
+        },
+    },
+    {
+        path: '/fillies',
+        name: 'Fillies',
+        component: FilliesView,
+        meta: {
+            title: "Roberto Horse Riding | Fillies",
+            metaTags: [
+                {
+                    name: "description",
+                    content:
+                        "Roberto Horse Riding",
+                },
+                {
+                    property: "og:description",
+                    content:
+                        "Roberto Horse Riding",
+                },
+            ],
+        },
+    },
+    {
+        path: '/services',
+        name: 'Services',
+        component: ServicesView,
+        meta: {
+            title: "Roberto Horse Riding | Services",
+            metaTags: [
+                {
+                    name: "description",
+                    content:
+                        "Roberto Horse Riding",
+                },
+                {
+                    property: "og:description",
+                    content:
+                        "Roberto Horse Riding",
+                },
+            ],
+        },
     },
     {
         path: '/gallery',

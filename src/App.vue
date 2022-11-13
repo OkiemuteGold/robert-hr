@@ -33,7 +33,7 @@ export default {
     --yellowLight: #ffc619;
     --yellowDark: #dd9218;
     --black1: #111;
-    --errorColor: #ff3232;
+    --error: #ff3232;
 }
 
 #app,
@@ -108,5 +108,9 @@ img {
 
 .latest-blog .blog-carousel .owl-carousel .owl-dots {
     margin-top: 40px !important;
+}
+
+.intro-about .intro-about-content a.contact-us:hover {
+    color: #111;
 }
 </style>
