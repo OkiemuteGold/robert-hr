@@ -72,7 +72,7 @@ export default {
 .our-courses .courses-content .inner {
     background-color: #fff;
     border-radius: 100%;
-    color: #111;
+    color: var(--black1);
     display: inline-block;
     font-size: 22px;
     height: 91px;

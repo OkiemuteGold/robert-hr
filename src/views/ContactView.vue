@@ -38,10 +38,11 @@ export default {
         setBannerStyles() {
             this.setBannerSettings({
                 title: "Keep In Touch",
-                prevLinkText: "Home",
-                currentLinkText: "Contact Us",
                 description: null,
-                imageUrl: require("@/assets/images/about-banner.jpg"),
+                prevLinkText: null,
+                currentLinkText: null,
+                buttonUrl: null,
+                imageUrl: null,
             });
         },
     },

@@ -15,3 +15,11 @@ export const bannerSettings = (state) => {
 export const getAllStudItems = (state) => {
     return state.allStudItems;
 };
+
+export const getAllStallionHorses = (state) => {
+    return state.allStudItems;
+};
+
+export const getCurrentHorse = (state) => {
+    return state.currentHorse;
+};

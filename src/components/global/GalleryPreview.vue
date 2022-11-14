@@ -60,7 +60,7 @@ export default {
 .gallery-content .inner {
     background-color: #ffc619;
     border-radius: 100%;
-    color: #111;
+    color: var(--black1);
     display: inline-block;
     font-size: 18px;
     width: 71px;

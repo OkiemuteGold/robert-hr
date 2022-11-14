@@ -18,6 +18,7 @@
 import TheHeader from "@/components/header/TheHeader";
 import ThePageBanner from "@/components/banners/ThePageBanner";
 import TheFooter from "@/components/footer/TheFooter";
+// import { mapActions } from 'vuex';
 
 export default {
     components: {
@@ -25,6 +26,14 @@ export default {
         ThePageBanner,
         TheFooter,
     },
+
+    // methods: {
+    //     ...mapActions(["setAllStallionHorses"])
+    // },
+
+    // mounted () {
+    //     this.setAllStallionHorses();
+    // },
 };
 </script>
 
@@ -91,6 +100,11 @@ body {
 }
 
 /* header route-active */
+.ow-navigation .nav.navbar-nav li.dropdown li > a:hover,
+.ow-navigation .nav.navbar-nav li.dropdown li > a:focus {
+    color: var(--black1);
+}
+
 .ow-navigation .nav.navbar-nav > li:hover > a,
 .ow-navigation .nav.navbar-nav > li > a.active {
     background-color: transparent;
@@ -111,6 +125,6 @@ img {
 }
 
 .intro-about .intro-about-content a.contact-us:hover {
-    color: #111;
+    color: var(--black1);
 }
 </style>

@@ -1,3 +1,5 @@
+const currentHorseRouteSaved = window.localStorage.getItem("currentRoute");
+
 export default {
     currentSitePage: null,
 
@@ -11,4 +13,7 @@ export default {
     },
 
     allStudItems: null,
+    allStallionHorses: null,
+    currentHorse: null,
+    currentHorseRoute: currentHorseRouteSaved ? JSON.parse(currentHorseRouteSaved) : null,
 };

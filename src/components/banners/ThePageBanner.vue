@@ -12,7 +12,9 @@
                 'Services',
                 'Gallery',
             ].includes(currentSitePage),
-            ['Contact', 'FourZeroFour'].includes(currentSitePage),
+            ['Contact', 'StallionDetails', 'FourZeroFour'].includes(
+                currentSitePage
+            ),
         ]"
     >
         <BannerHome v-if="currentSitePage == 'Home'" v-once />
@@ -34,7 +36,11 @@
         />
 
         <BannerEmpty
-            v-if="['Contact', 'FourZeroFour'].includes(currentSitePage)"
+            v-if="
+                ['Contact', 'StallionDetails', 'FourZeroFour'].includes(
+                    currentSitePage
+                )
+            "
             v-once
         />
     </div>

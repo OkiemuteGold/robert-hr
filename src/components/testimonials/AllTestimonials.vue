@@ -191,7 +191,7 @@ export default {
 .testimonial-carousel .image .info h3 {
     font-family: "montserratlight";
     font-size: 15px;
-    color: #111;
+    color: var(--black1);
     margin-top: 0;
     margin-bottom: 5px;
 }

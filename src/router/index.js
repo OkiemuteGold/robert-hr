@@ -6,6 +6,8 @@ import StallionView from '../views/StallionView.vue'
 import MaresView from '../views/MaresView.vue'
 import FoalsView from '../views/FoalsView.vue'
 import FilliesView from '../views/FilliesView.vue'
+import StudDetailsView from '../views/StudDetailsView.vue'
+import StudDetails from '../components/studs/StudDetails.vue'
 import ServicesView from '../views/ServicesView.vue'
 import GalleryView from '../views/GalleryView.vue'
 import ContactView from '../views/ContactView.vue'
@@ -96,18 +98,6 @@ const routes = [
                 },
             ],
         },
-        // children: [
-        //     {
-        //         path: 'studs011',
-        //         name: 'Studs011',
-        //         component: StallionView1,
-        //     },
-        //     {
-        //         path: 'studs012',
-        //         name: 'Studs012',
-        //         component: StallionView2,
-        //     }
-        // ]
     },
     {
         path: '/mares',
@@ -165,6 +155,32 @@ const routes = [
                     property: "og:description",
                     content:
                         "Roberto Horse Riding",
+                },
+            ],
+        },
+    },
+    {
+        path: '/stallion/:id',
+        name: 'StallionDetails',
+        component: StudDetailsView,
+        meta: {
+            title: "Roberto Horse Riding | Stallion",
+            metaTags: [
+                {
+                    name: "description",
+                    content:
+                        "Roberto Horse Riding",
+                },
+                {
+                    property: "og:description",
+                    content:
+                        "Roberto Horse Riding",
+                },
+            ],
+            children: [
+                {
+                    path: '/stallion/:id',
+                    component: StudDetails,
                 },
             ],
         },
