@@ -1,6 +1,6 @@
 <template>
     <div class="stallion">
-        <StudDetails :horse="selectedHorse" />
+        <StudDetails :horse="selectedHorse" :category="category" />
     </div>
 </template>
 
@@ -17,6 +17,7 @@ export default {
     data() {
         return {
             selectedHorse: null,
+            category: this.$route.query.category,
         };
     },
 
@@ -52,15 +53,16 @@ export default {
     },
 
     created() {
-        this.setAllStallionHorses();
+        this.setAllStallionHorses(this.$route.query.category);
     },
 
     mounted() {
-        // console.log(
-        //     this.$route.params.id,
-        //     this.$router.history.current.name,
-        //     this.selectedHorse
-        // );
+        console.log(
+            this.$route.query.category,
+            this.$route.params.id,
+            this.$router.history.current.name,
+            this.selectedHorse
+        );
 
         this.setCurrentPage(this.$router.history.current.name);
         this.setBannerStyles();

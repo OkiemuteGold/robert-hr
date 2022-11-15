@@ -16,9 +16,9 @@ export default {
     galleryImages: null,
 
     allStallionHorses: null,
-    allMaresHorses: null,
-    allFoalsHorses: null,
-    allFilliesHorses: null,
+    // allMaresHorses: null,
+    // allFoalsHorses: null,
+    // allFilliesHorses: null,
 
     currentHorse: null,
     // currentHorseId: currentHorseIdSaved ? JSON.parse(currentHorseIdSaved) : null,

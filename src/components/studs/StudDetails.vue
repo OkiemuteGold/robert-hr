@@ -111,7 +111,7 @@
 import carousel from "vue-owl-carousel";
 
 export default {
-    props: ["horse"],
+    props: ["horse", "category"],
     components: { carousel },
 
     data() {

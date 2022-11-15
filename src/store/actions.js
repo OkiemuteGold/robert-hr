@@ -25,24 +25,41 @@ export const setAllGalleryImages = ({ commit }) => {
 };
 
 export const setAllStallionHorses = ({ commit }, payload) => {
-    payload = stallionHorses;
-    commit("ALL_STALLION_HORSES", payload);
+    let data;
+    if (payload === "stallion") {
+        data = stallionHorses;
+    }
+
+    if (payload === "mares") {
+        data = maresHorses;
+    }
+
+    if (payload === "foals") {
+        data = foalsHorses;
+    }
+
+    if (payload === "fillies") {
+        data = filliesHorses;
+    }
+
+    // console.log(data, payload);
+    commit("ALL_STALLION_HORSES", data);
 };
 
-export const setAllMaresHorses = ({ commit }, payload) => {
-    payload = maresHorses;
-    commit("ALL_MARES_HORSES", payload);
-};
+// export const setAllMaresHorses = ({ commit }, payload) => {
+//     payload = maresHorses;
+//     commit("ALL_MARES_HORSES", payload);
+// };
 
-export const setAllFoalsHorses = ({ commit }, payload) => {
-    payload = foalsHorses;
-    commit("ALL_FOALS_HORSES", payload);
-};
+// export const setAllFoalsHorses = ({ commit }, payload) => {
+//     payload = foalsHorses;
+//     commit("ALL_FOALS_HORSES", payload);
+// };
 
-export const setAllFilliesHorses = ({ commit }, payload) => {
-    payload = filliesHorses;
-    commit("ALL_FILLIES_HORSES", payload);
-};
+// export const setAllFilliesHorses = ({ commit }, payload) => {
+//     payload = filliesHorses;
+//     commit("ALL_FILLIES_HORSES", payload);
+// };
 
 export const setCurrentHorse = ({ state, commit }, id) => {
     const currentHorse = state.allStallionHorses.filter(horse => {

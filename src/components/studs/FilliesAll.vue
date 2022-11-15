@@ -32,6 +32,7 @@
                             :to="{
                                 name: 'StallionDetails',
                                 params: { id: horse.id },
+                                query: { category: studName },
                             }"
                             class="image"
                         >
@@ -46,6 +47,7 @@
                                     :to="{
                                         name: 'StallionDetails',
                                         params: { id: horse.id },
+                                        query: { category: studName },
                                     }"
                                 >
                                     {{ horse.name }}
@@ -249,22 +251,23 @@ export default {
     data() {
         return {
             filliesHorses: null,
+            studName: "fillies",
         };
     },
 
     computed: {
-        ...mapState(["allFilliesHorses"]),
+        ...mapState(["allStallionHorses"]),
     },
 
     methods: {
-        ...mapActions(["setAllFilliesHorses"]),
+        ...mapActions(["setAllStallionHorses"]),
     },
 
     mounted() {
-        this.setAllFilliesHorses();
+        this.setAllStallionHorses(this.studName);
 
-        if (this.allFilliesHorses) {
-            this.filliesHorses = this.allFilliesHorses;
+        if (this.allStallionHorses) {
+            this.filliesHorses = this.allStallionHorses;
         }
     },
 };

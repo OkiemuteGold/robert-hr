@@ -32,6 +32,7 @@
                             :to="{
                                 name: 'StallionDetails',
                                 params: { id: horse.id },
+                                query: { category: studName },
                             }"
                             class="image"
                         >
@@ -46,6 +47,7 @@
                                     :to="{
                                         name: 'StallionDetails',
                                         params: { id: horse.id },
+                                        query: { category: studName },
                                     }"
                                 >
                                     {{ horse.name }}
@@ -249,6 +251,7 @@ export default {
     data() {
         return {
             stallionHorses: null,
+            studName: "stallion",
         };
     },
 
@@ -261,7 +264,7 @@ export default {
     },
 
     mounted() {
-        this.setAllStallionHorses();
+        this.setAllStallionHorses(this.studName);
 
         if (this.allStallionHorses) {
             this.stallionHorses = this.allStallionHorses;
