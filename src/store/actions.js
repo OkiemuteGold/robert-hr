@@ -3,6 +3,9 @@
 import homeStud from "@/api/homeStuds";
 import galleryImages from "@/api/gallery";
 import stallionHorses from "@/api/stallion";
+import maresHorses from "@/api/mares";
+import foalsHorses from "@/api/foals";
+import filliesHorses from "@/api/fillies";
 
 export const setCurrentPage = ({ commit }, payload) => {
     commit("CURRENT_SITE_PAGE", payload);
@@ -24,6 +27,21 @@ export const setAllGalleryImages = ({ commit }) => {
 export const setAllStallionHorses = ({ commit }, payload) => {
     payload = stallionHorses;
     commit("ALL_STALLION_HORSES", payload);
+};
+
+export const setAllMaresHorses = ({ commit }, payload) => {
+    payload = maresHorses;
+    commit("ALL_MARES_HORSES", payload);
+};
+
+export const setAllFoalsHorses = ({ commit }, payload) => {
+    payload = foalsHorses;
+    commit("ALL_FOALS_HORSES", payload);
+};
+
+export const setAllFilliesHorses = ({ commit }, payload) => {
+    payload = filliesHorses;
+    commit("ALL_FILLIES_HORSES", payload);
 };
 
 export const setCurrentHorse = ({ state, commit }, id) => {

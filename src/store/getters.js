@@ -24,6 +24,18 @@ export const getAllStallionHorses = (state) => {
     return state.allStallionHorses;
 };
 
+export const getAllMaresHorses = (state) => {
+    return state.allMaresHorses;
+};
+
+export const getAllFoalsHorses = (state) => {
+    return state.allFoalsHorses;
+};
+
+export const getAllFilliesHorses = (state) => {
+    return state.allFilliesHorses;
+};
+
 export const getCurrentHorse = (state) => {
     return state.currentHorse;
 };

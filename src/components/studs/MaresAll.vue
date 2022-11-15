@@ -21,10 +21,10 @@
 
                 <div
                     class="all-horses-wrapper row"
-                    v-if="stallionHorses && stallionHorses.length > 0"
+                    v-if="maresHorses && maresHorses.length > 0"
                 >
                     <div
-                        v-for="horse in stallionHorses"
+                        v-for="horse in maresHorses"
                         :key="horse.id"
                         class="col-md-3 col-sm-6 col-xs-12"
                     >
@@ -243,28 +243,27 @@
 
 <script>
 import { mapActions, mapState } from "vuex";
-// import stallion from "@/api/stallion";
 
 export default {
     data() {
         return {
-            stallionHorses: null,
+            maresHorses: null,
         };
     },
 
     computed: {
-        ...mapState(["allStallionHorses"]),
+        ...mapState(["allMaresHorses"]),
     },
 
     methods: {
-        ...mapActions(["setAllStallionHorses"]),
+        ...mapActions(["setAllMaresHorses"]),
     },
 
     mounted() {
-        this.setAllStallionHorses();
+        this.setAllMaresHorses();
 
-        if (this.allStallionHorses) {
-            this.stallionHorses = this.allStallionHorses;
+        if (this.allMaresHorses) {
+            this.maresHorses = this.allMaresHorses;
         }
     },
 };

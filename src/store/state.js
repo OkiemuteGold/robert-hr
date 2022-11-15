@@ -14,7 +14,12 @@ export default {
 
     allStudItems: null,
     galleryImages: null,
+
     allStallionHorses: null,
+    allMaresHorses: null,
+    allFoalsHorses: null,
+    allFilliesHorses: null,
+
     currentHorse: null,
     // currentHorseId: currentHorseIdSaved ? JSON.parse(currentHorseIdSaved) : null,
 };

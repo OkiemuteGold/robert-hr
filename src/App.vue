@@ -116,6 +116,13 @@ a {
     text-decoration-skip-ink: auto;
 }
 
+a:hover {
+    -o-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
 img {
     max-width: 100%;
     height: auto;

@@ -25,6 +25,18 @@ export const ALL_STALLION_HORSES = (state, payload) => {
     state.allStallionHorses = payload;
 };
 
+export const ALL_MARES_HORSES = (state, payload) => {
+    state.allMaresHorses = payload;
+};
+
+export const ALL_FOALS_HORSES = (state, payload) => {
+    state.allFoalsHorses = payload;
+};
+
+export const ALL_FILLIES_HORSES = (state, payload) => {
+    state.allFilliesHorses = payload;
+};
+
 export const CURRENT_HORSE = (state, payload) => {
     state.currentHorse = payload;
 };
