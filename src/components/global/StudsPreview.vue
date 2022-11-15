@@ -66,25 +66,33 @@
 
 <script>
 import carousel from "vue-owl-carousel";
-import { mapGetters } from "vuex";
+import { mapActions, mapState } from "vuex";
 
 export default {
     components: { carousel },
 
     computed: {
-        ...mapGetters(["getAllStudItems"]),
+        ...mapState(["allStudItems"]),
+    },
+
+    created() {
+        this.setAllStudItems();
     },
 
     data() {
         return {
-            allStudItems: null,
+            studsItems: null,
         };
     },
 
-    async mounted() {
-        setTimeout(() => {
-            this.allStudItems = this.getAllStudItems;
-        }, 500);
+    methods: {
+        ...mapActions(["setAllStudItems"]),
+    },
+
+    mounted() {
+        if (this.allStudItems) {
+            this.studsItems = this.allStudItems;
+        }
     },
 };
 </script>

@@ -203,38 +203,5 @@ export default {
     color: #ffc619;
 }
 
-.custom-nav {
-    margin-top: 20px;
-    text-align: right;
-}
-
-.custom-nav a {
-    height: 33px;
-    width: 33px;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 400;
-    background-color: transparent;
-    color: var(--black1);
-    border: 1px solid var(--black1);
-    border-radius: 100%;
-    padding: 6px 12px;
-    margin-right: 8px;
-    margin-bottom: 0;
-    line-height: 1.42857143;
-    text-align: center;
-    vertical-align: middle;
-    -o-transition: 0.5s ease;
-    -moz-transition: 0.5s ease;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease;
-}
-
-.custom-nav a:hover {
-    -o-transform: scale(0.95);
-    -ms-transform: scale(0.95);
-    -moz-transform: scale(0.95);
-    -webkit-transform: scale(0.95);
-    transform: scale(0.95);
-}
+@import url(../../assets/css/custom-nav.css);
 </style>

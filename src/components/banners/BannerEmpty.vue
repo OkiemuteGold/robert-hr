@@ -22,11 +22,23 @@ export default {};
 </script>
 
 <style scoped>
+.page-header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0;
+}
+
 .section-header {
-    margin-bottom: 45px;
+    margin-bottom: 0;
+}
+
+.section-header h1 {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .section-header p {
+    margin-top: 20px;
     margin-bottom: 0;
 }
 </style>

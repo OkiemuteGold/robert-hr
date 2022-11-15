@@ -7,7 +7,6 @@ import MaresView from '../views/MaresView.vue'
 import FoalsView from '../views/FoalsView.vue'
 import FilliesView from '../views/FilliesView.vue'
 import StudDetailsView from '../views/StudDetailsView.vue'
-import StudDetails from '../components/studs/StudDetails.vue'
 import ServicesView from '../views/ServicesView.vue'
 import GalleryView from '../views/GalleryView.vue'
 import ContactView from '../views/ContactView.vue'
@@ -160,7 +159,7 @@ const routes = [
         },
     },
     {
-        path: '/stallion/:id',
+        path: '/stallion-details/:id',
         name: 'StallionDetails',
         component: StudDetailsView,
         meta: {
@@ -177,12 +176,7 @@ const routes = [
                         "Roberto Horse Riding",
                 },
             ],
-            children: [
-                {
-                    path: '/stallion/:id',
-                    component: StudDetails,
-                },
-            ],
+
         },
     },
     {

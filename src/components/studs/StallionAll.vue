@@ -31,26 +31,38 @@
                     class="all-horses-wrapper row"
                     v-if="stallionHorses && stallionHorses.length > 0"
                 >
-                    <router-link
-                        :to="{
-                            name: 'StallionDetails',
-                            params: { id: horse.id },
-                        }"
+                    <div
                         v-for="horse in stallionHorses"
                         :key="horse.id"
-                        class="col-md-3 col-sm-6 col-xs-6"
+                        class="col-md-3 col-sm-6 col-xs-12"
                     >
-                        <div class="image">
+                        <router-link
+                            :to="{
+                                name: 'StallionDetails',
+                                params: { id: horse.id },
+                            }"
+                            class="image"
+                        >
                             <img
                                 :src="horse.slideImages[0].src"
                                 :alt="horse.slideImages[0].alt"
                             />
-                        </div>
+                        </router-link>
                         <div class="info">
-                            <h3>{{ horse.name }}</h3>
-                            <p>{{ horse.info }}</p>
+                            <h3>
+                                <router-link
+                                    :to="{
+                                        name: 'StallionDetails',
+                                        params: { id: horse.id },
+                                    }"
+                                >
+                                    {{ horse.name }}
+                                </router-link>
+                            </h3>
+
+                            <p>{{ horse.breed }}</p>
                         </div>
-                    </router-link>
+                    </div>
                 </div>
             </div>
         </div>
@@ -267,11 +279,29 @@ export default {
 </script>
 
 <style scoped>
+.info-section .intro-about-content p {
+    margin-bottom: 0;
+}
+
+.all-horses-wrapper > div {
+    margin-top: 20px;
+}
+
 /* .all-horses-wrapper .image {
 } */
+
+.section-header h3 {
+    margin-top: 0;
+}
 
 .video-section {
     max-width: 500px;
     margin: auto;
+}
+
+@media (min-width: 991px) {
+    .feature-section .intro-about-content {
+        margin-bottom: 40px;
+    }
 }
 </style>

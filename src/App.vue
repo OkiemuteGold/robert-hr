@@ -18,7 +18,8 @@
 import TheHeader from "@/components/header/TheHeader";
 import ThePageBanner from "@/components/banners/ThePageBanner";
 import TheFooter from "@/components/footer/TheFooter";
-// import { mapActions } from 'vuex';
+
+// import { mapActions } from "vuex";
 
 export default {
     components: {
@@ -31,7 +32,7 @@ export default {
     //     ...mapActions(["setAllStallionHorses"])
     // },
 
-    // mounted () {
+    // mounted() {
     //     this.setAllStallionHorses();
     // },
 };

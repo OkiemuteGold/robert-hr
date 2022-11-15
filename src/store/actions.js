@@ -1,6 +1,7 @@
 // import axios from "axios";
 // import $ from "jquery";
 import homeStud from "@/api/homeStuds";
+import galleryImages from "@/api/gallery";
 import stallionHorses from "@/api/stallion";
 
 export const setCurrentPage = ({ commit }, payload) => {
@@ -16,6 +17,10 @@ export const setAllStudItems = ({ commit }, payload) => {
     commit("ALL_STUD_ITEMS", payload);
 };
 
+export const setAllGalleryImages = ({ commit }) => {
+    commit("ALL_GALLERY_IMAGES", galleryImages);
+};
+
 export const setAllStallionHorses = ({ commit }, payload) => {
     payload = stallionHorses;
     commit("ALL_STALLION_HORSES", payload);
@@ -26,14 +31,14 @@ export const setCurrentHorse = ({ state, commit }, id) => {
         return horse.id === id;
     });
 
-    commit("CURRENT_HORSE", currentHorse);
+    commit("CURRENT_HORSE", currentHorse[0]);
 };
 
-export const saveCurrentHorseRoute = ({ commit }, { routeId, historyCurrentName }) => {
-    const currentHorseRoute = window.localStorage.setItem(
-        "currentRoute",
-        JSON.stringify({ routeId, historyCurrentName })
-    );
+// export const saveCurrentHorseId = ({ commit }, routeId) => {
+//     const currentHorseId = window.localStorage.setItem(
+//         "currentRoute",
+//         JSON.stringify(routeId)
+//     );
 
-    commit("CURRENT_HORSE_ROUTE", currentHorseRoute);
-};
+//     commit("CURRENT_HORSE_ID", currentHorseId);
+// };

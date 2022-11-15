@@ -24,15 +24,12 @@ export default {
         ...mapState(["currentHorse"]),
     },
 
-    created() {
-        this.setCurrentHorse(this.$route.params.id);
-    },
-
     methods: {
         ...mapActions([
             "setCurrentPage",
             "setBannerSettings",
             "setCurrentHorse",
+            "setAllStallionHorses",
         ]),
 
         setBannerStyles() {
@@ -45,19 +42,26 @@ export default {
                 imageUrl: null,
             });
         },
-
-        getCurrentStallionHorse() {
-            if (this.currentHorse) {
-                this.selectedHorse = this.currentHorse[0];
-            }
-        },
     },
 
     beforeMount() {
-        this.getCurrentStallionHorse();
+        this.setCurrentHorse(this.$route.params.id);
+        if (this.currentHorse) {
+            this.selectedHorse = this.currentHorse;
+        }
+    },
+
+    created() {
+        this.setAllStallionHorses();
     },
 
     mounted() {
+        // console.log(
+        //     this.$route.params.id,
+        //     this.$router.history.current.name,
+        //     this.selectedHorse
+        // );
+
         this.setCurrentPage(this.$router.history.current.name);
         this.setBannerStyles();
     },

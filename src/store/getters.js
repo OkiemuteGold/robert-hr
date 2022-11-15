@@ -16,8 +16,12 @@ export const getAllStudItems = (state) => {
     return state.allStudItems;
 };
 
+export const getAllGalleryImages = (state) => {
+    return state.galleryImages;
+};
+
 export const getAllStallionHorses = (state) => {
-    return state.allStudItems;
+    return state.allStallionHorses;
 };
 
 export const getCurrentHorse = (state) => {

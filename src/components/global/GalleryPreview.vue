@@ -41,17 +41,32 @@
 </template>
 
 <script>
-import gallery from "@/api/gallery";
+// import gallery from "@/api/gallery";
+import { mapActions, mapState } from "vuex";
 
 export default {
+    computed: {
+        ...mapState(["galleryImages"]),
+    },
+
+    created() {
+        this.setAllGalleryImages();
+    },
+
     data() {
         return {
             allGalleryItems: null,
         };
     },
 
+    methods: {
+        ...mapActions(["setAllGalleryImages"]),
+    },
+
     mounted() {
-        this.allGalleryItems = gallery;
+        if (this.galleryImages) {
+            this.allGalleryItems = this.galleryImages;
+        }
     },
 };
 </script>
