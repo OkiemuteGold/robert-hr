@@ -1,7 +1,7 @@
 export default [
     {
         id: "horse-name1",
-        name: "Horse Name",
+        name: "Horse Name1",
         breed: "Arabian Horse",
         briefDetails: {
             dateOfBirth: "11/2/1992",
