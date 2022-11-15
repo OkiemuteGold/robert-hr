@@ -102,7 +102,8 @@ body {
 
 /* header route-active */
 .ow-navigation .nav.navbar-nav li.dropdown li > a:hover,
-.ow-navigation .nav.navbar-nav li.dropdown li > a:focus {
+.ow-navigation .nav.navbar-nav li.dropdown li > a:focus,
+.ow-navigation .nav.navbar-nav li.dropdown li > a.active {
     color: var(--black1);
 }
 
@@ -134,5 +135,13 @@ img {
 
 .intro-about .intro-about-content a.contact-us:hover {
     color: var(--black1);
+}
+
+@media (max-width: 991px) {
+    .ow-navigation .nav.navbar-nav li.dropdown li > a:hover,
+    .ow-navigation .nav.navbar-nav li.dropdown li > a:focus,
+    .ow-navigation .nav.navbar-nav li.dropdown li > a.active {
+        color: var(--yellowLight);
+    }
 }
 </style>

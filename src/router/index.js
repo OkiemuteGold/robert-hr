@@ -12,6 +12,8 @@ import GalleryView from '../views/GalleryView.vue'
 import ContactView from '../views/ContactView.vue'
 import FourZeroFour from '../views/FourZeroFour.vue'
 
+import $ from "jquery";
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -287,6 +289,16 @@ router.afterEach((to) => {
     Vue.nextTick(() => {
         document.title = to.meta.title || DEFAULT_TITLE;
     });
+
+    var mobileMenuToggler = $('.ow-navigation .navbar-toggle'),
+        mobileMenu = $('.ow-navigation .navbar-collapse');
+
+    if (mobileMenuToggler.attr('aria-expanded') === 'true') {
+        mobileMenuToggler.attr('aria-expanded', 'false');
+        mobileMenuToggler.removeClass("collapsed");
+        mobileMenu.attr('aria-expanded', 'false');
+        mobileMenu.removeClass("collapse");
+    }
 });
 
 export default router;

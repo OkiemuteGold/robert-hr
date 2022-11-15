@@ -67,12 +67,13 @@
                                     <span class="icon-bar"></span>
                                 </button>
 
-                                <a
+                                <router-link
+                                    :to="{ name: 'Home' }"
+                                    aria-label="Home"
                                     class="navbar-brand"
-                                    href="#index.html"
-                                    title="Logo"
-                                    ><span>Roberto HR</span></a
                                 >
+                                    <span>Roberto HR</span>
+                                </router-link>
                             </div>
 
                             <div id="navbar" class="navbar-collapse collapse">
