@@ -4,6 +4,21 @@
             <div class="padding-70"></div>
 
             <div class="container">
+                <div class="back-to-previous">
+                    <button
+                        @click="goBack"
+                        :title="'Back to ' + category + ' horses'"
+                    >
+                        <img
+                            src="@/assets/images/back-icon.png"
+                            alt="back icon"
+                            height="14"
+                            width="16"
+                        />
+                        Back to {{ category }} horses
+                    </button>
+                </div>
+
                 <div class="horse-details-container">
                     <div class="image">
                         <carousel
@@ -120,6 +135,12 @@ export default {
         };
     },
 
+    methods: {
+        goBack() {
+            this.$router.go(-1);
+        },
+    },
+
     // mounted() {
     //     console.log(this.horse);
     // },
@@ -127,6 +148,23 @@ export default {
 </script>
 
 <style scoped>
+.back-to-previous {
+    margin-bottom: 40px;
+}
+
+.back-to-previous button {
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    text-transform: capitalize;
+}
+
+.back-to-previous button img {
+    margin-right: 6px;
+    vertical-align: -webkit-baseline-middle;
+    vertical-align: middle;
+}
+
 .horse-details-container {
     display: flex;
     justify-content: space-between;
