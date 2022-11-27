@@ -30,7 +30,7 @@
                     >
                         <router-link
                             :to="{
-                                name: 'StallionDetails',
+                                name: 'StudDetails',
                                 params: { id: horse.id },
                                 query: { category: studName },
                             }"
@@ -45,7 +45,7 @@
                             <h3>
                                 <router-link
                                     :to="{
-                                        name: 'StallionDetails',
+                                        name: 'StudDetails',
                                         params: { id: horse.id },
                                         query: { category: studName },
                                     }"

@@ -10,6 +10,7 @@ import StudDetailsView from '../views/StudDetailsView.vue'
 import ServicesView from '../views/ServicesView.vue'
 import GalleryView from '../views/GalleryView.vue'
 import ContactView from '../views/ContactView.vue'
+import BlogView from '../views/BlogView.vue'
 import FourZeroFour from '../views/FourZeroFour.vue'
 
 import $ from "jquery";
@@ -161,8 +162,8 @@ const routes = [
         },
     },
     {
-        path: '/stallion-details/:id',
-        name: 'StallionDetails',
+        path: '/stud-details/:id',
+        name: 'StudDetails',
         component: StudDetailsView,
         meta: {
             title: "Roberto Horse Riding | Stallion",
@@ -227,6 +228,26 @@ const routes = [
         component: ContactView,
         meta: {
             title: "Roberto Horse Riding | Contact Us",
+            metaTags: [
+                {
+                    name: "description",
+                    content:
+                        "Roberto Horse Riding",
+                },
+                {
+                    property: "og:description",
+                    content:
+                        "Roberto Horse Riding",
+                },
+            ],
+        },
+    },
+    {
+        path: '/blog',
+        name: 'Blog',
+        component: BlogView,
+        meta: {
+            title: "Roberto Horse Riding | Blog",
             metaTags: [
                 {
                     name: "description",

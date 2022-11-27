@@ -11,8 +11,9 @@
                 'Fillies',
                 'Services',
                 'Gallery',
+                'Blog',
             ].includes(currentSitePage),
-            ['Contact', 'StallionDetails', 'FourZeroFour'].includes(
+            ['Contact', 'StudDetails', 'FourZeroFour'].includes(
                 currentSitePage
             ),
         ]"
@@ -30,6 +31,7 @@
                     'Fillies',
                     'Services',
                     'Gallery',
+                    'Blog',
                 ].includes(currentSitePage)
             "
             v-once
@@ -37,7 +39,7 @@
 
         <BannerEmpty
             v-if="
-                ['Contact', 'StallionDetails', 'FourZeroFour'].includes(
+                ['Contact', 'StudDetails', 'FourZeroFour'].includes(
                     currentSitePage
                 )
             "

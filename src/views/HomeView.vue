@@ -6,7 +6,7 @@
         <GalleryPreview />
         <SectionProcess />
         <AllTestimonials />
-        <BlogAll />
+        <BlogHome />
     </div>
 </template>
 
@@ -17,7 +17,7 @@ import StudsPreview from "@/components/global/StudsPreview";
 import GalleryPreview from "@/components/global/GalleryPreview";
 import SectionProcess from "@/components/global/SectionProcess";
 import AllTestimonials from "@/components/testimonials/AllTestimonials";
-import BlogAll from "@/components/blogs/BlogAll";
+import BlogHome from "@/components/blogs/BlogHome";
 
 import "@/mixins";
 import { mapActions } from "vuex";
@@ -31,7 +31,7 @@ export default {
         GalleryPreview,
         SectionProcess,
         AllTestimonials,
-        BlogAll,
+        BlogHome,
     },
 
     methods: {

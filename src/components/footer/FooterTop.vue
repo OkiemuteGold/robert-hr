@@ -18,11 +18,11 @@
                 <h3>Quick Links</h3>
 
                 <ul class="quick-links">
-                    <li>
+                    <!-- <li>
                         <router-link :to="{ name: 'About' }" aria-label="About"
                             >About Us</router-link
                         >
-                    </li>
+                    </li> -->
                     <li>
                         <router-link :to="{ name: 'Studs' }" aria-label="Studs"
                             >Studs</router-link
@@ -40,6 +40,11 @@
                             :to="{ name: 'Gallery' }"
                             aria-label="Gallery"
                             >Gallery</router-link
+                        >
+                    </li>
+                    <li>
+                        <router-link :to="{ name: 'Blog' }" aria-label="Blog"
+                            >Blog</router-link
                         >
                     </li>
                     <li>
