@@ -8,6 +8,8 @@ export default [
         tag: "Training",
         link: "",
         imageUrl: require("@/assets/images/blog-1.jpg"),
+        totalLikes: 28,
+        totalComments: 8
     },
     {
         author: "Roberto Fernandez",
@@ -18,6 +20,8 @@ export default [
         tag: "Training",
         link: "",
         imageUrl: require("@/assets/images/blog-1.jpg"),
+        totalLikes: 33,
+        totalComments: 10
     },
     {
         author: "Roberto Fernandez",
@@ -28,5 +32,7 @@ export default [
         tag: "Training",
         link: "",
         imageUrl: require("@/assets/images/blog-1.jpg"),
+        totalLikes: 20,
+        totalComments: 5
     },
 ]

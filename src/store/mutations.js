@@ -21,6 +21,10 @@ export const ALL_GALLERY_IMAGES = (state, payload) => {
     state.galleryImages = payload;
 };
 
+export const ALL_BLOGS = (state, payload) => {
+    state.allBlogs = payload;
+};
+
 export const ALL_STALLION_HORSES = (state, payload) => {
     state.allStallionHorses = payload;
 };

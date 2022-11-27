@@ -14,6 +14,7 @@ export default {
 
     allStudItems: null,
     galleryImages: null,
+    allBlogs: null,
 
     allStallionHorses: null,
     // allMaresHorses: null,

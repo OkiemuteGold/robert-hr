@@ -20,6 +20,10 @@ export const getAllGalleryImages = (state) => {
     return state.galleryImages;
 };
 
+export const getAllBlogs = (state) => {
+    return state.allBlogs;
+};
+
 export const getAllStallionHorses = (state) => {
     return state.allStallionHorses;
 };

@@ -2,6 +2,8 @@
 // import $ from "jquery";
 import homeStud from "@/api/homeStuds";
 import galleryImages from "@/api/gallery";
+import blogs from "@/api/blogs";
+
 import stallionHorses from "@/api/stallion";
 import maresHorses from "@/api/mares";
 import foalsHorses from "@/api/foals";
@@ -22,6 +24,10 @@ export const setAllStudItems = ({ commit }, payload) => {
 
 export const setAllGalleryImages = ({ commit }) => {
     commit("ALL_GALLERY_IMAGES", galleryImages);
+};
+
+export const setAllBlogs = ({ commit }) => {
+    commit("ALL_BLOGS", blogs);
 };
 
 export const setAllStallionHorses = ({ commit }, payload) => {

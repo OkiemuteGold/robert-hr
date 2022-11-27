@@ -21,7 +21,7 @@
 
                 <div
                     class="col-md-8 col-sm-12 col-xs-12 process-box"
-                    v-if="allStudItems && allStudItems.length > 0"
+                    v-if="allStuds && allStuds.length > 0"
                 >
                     <carousel
                         :autoplay="false"
@@ -35,7 +35,7 @@
                         }"
                         class="process-carousel"
                     >
-                        <div v-for="(item, index) in allStudItems" :key="index">
+                        <div v-for="(item, index) in allStuds" :key="index">
                             <img
                                 :src="item.imageUrl"
                                 :alt="item.alt"
@@ -66,33 +66,30 @@
 
 <script>
 import carousel from "vue-owl-carousel";
-import { mapActions, mapState } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 
 export default {
     components: { carousel },
 
     computed: {
-        ...mapState(["allStudItems"]),
+        ...mapGetters(["getAllStudItems"]),
+
+        allStuds() {
+            let studs = null;
+
+            if (this.getAllStudItems) {
+                studs = this.getAllStudItems;
+            }
+            return studs;
+        },
     },
 
     created() {
         this.setAllStudItems();
     },
 
-    data() {
-        return {
-            studsItems: null,
-        };
-    },
-
     methods: {
         ...mapActions(["setAllStudItems"]),
-    },
-
-    mounted() {
-        if (this.allStudItems) {
-            this.studsItems = this.allStudItems;
-        }
     },
 };
 </script>

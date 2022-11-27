@@ -1,60 +1,67 @@
 <template>
     <div
-        id="#latest-blog"
+        id="latest-blog"
         class="latest-blog blog-section container-fluid no-padding"
     >
         <div class="section-padding"></div>
 
         <div class="container">
-            <div class="content-area col-md-8 col-sm-7 col-xs-12">
-                <article class="type-post">
+            <div
+                class="content-area col-md-8 col-sm-7 col-xs-12"
+                v-if="allBlogPosts && allBlogPosts.length > 0"
+            >
+                <article
+                    class="type-post"
+                    v-for="(blog, index) in allBlogPosts"
+                    :key="index"
+                >
                     <div class="entry-cover">
-                        <a title="Latest Blog" href="blog-post.html">
+                        <a :href="blog.link" :title="blog.title">
                             <img
+                                :alt="blog.title"
+                                :src="blog.imageUrl"
                                 width="810"
                                 height="405"
-                                alt="blog"
-                                src="@/assets/images/blog-3.jpg"
                             />
                         </a>
+
                         <div class="latest-blog-content">
-                            <span>Training</span>
+                            <span>{{ blog.tag }}</span>
+
                             <h3 class="entry-title">
-                                <a
-                                    title="If you have a problem if no one else can help and if you can find them maybe"
-                                    href="blog-post.html"
-                                    >If you have a problem if no one else can
-                                    help and if you can find them maybe</a
-                                >
+                                <a :title="blog.title" href="blog-post.html">{{
+                                    blog.title
+                                }}</a>
                             </h3>
+
                             <div class="post-date">
                                 <i class="fa fa-calendar" aria-hidden="true"></i
-                                >22 December, 2015
+                                >{{ blog.date }}
                             </div>
+
                             <div class="entry-meta">
                                 <a title="Stevan Smith" href="#"
                                     ><i
                                         class="fa fa-heart-o"
                                         aria-hidden="true"
                                     ></i
-                                    >Likes 33</a
+                                    >Likes: {{ blog.totalLikes }}</a
                                 >
                                 <a title="Comments" href="#"
-                                    ><i class="fa fa-commenting-o"></i>Comments
-                                    16</a
+                                    ><i class="fa fa-commenting-o"></i>Comments:
+                                    {{ blog.totalComments }}</a
                                 >
                             </div>
+
                             <div class="entry-content">
                                 <p>
-                                    The movie star the professor and Mary Ann
-                                    here on Gilligans Isle. Its mission - to
-                                    explore strange new worlds to seek out new
-                                    life and new civilizations
+                                    {{ blog.description }}
                                 </p>
                             </div>
+
                             <a
-                                title="Read More"
-                                href="blog-post.html"
+                                aria-label="Read More"
+                                :href="blog.link"
                                 class="read-more"
                                 >Read More</a
                             >
@@ -62,171 +69,6 @@
                     </div>
                 </article>
 
-                <article class="type-post">
-                    <div class="entry-cover">
-                        <a title="Latest Blog" href="blog-post.html">
-                            <img
-                                width="810"
-                                height="405"
-                                alt="blog"
-                                src="@/assets/images/blog-4.jpg"
-                            />
-                        </a>
-                        <div class="latest-blog-content">
-                            <span>Education</span>
-                            <h3 class="entry-title">
-                                <a
-                                    title="The first mate and his Skipper too will do their very best to make the others in their tropic"
-                                    href="blog-post.html"
-                                    >The first mate and his Skipper too will do
-                                    best to make the others in their tropic</a
-                                >
-                            </h3>
-                            <div class="post-date">
-                                <i class="fa fa-calendar" aria-hidden="true"></i
-                                >12 November, 2015
-                            </div>
-                            <div class="entry-meta">
-                                <a title="Stevan Smith" href="#"
-                                    ><i
-                                        class="fa fa-heart-o"
-                                        aria-hidden="true"
-                                    ></i
-                                    >Likes 16</a
-                                >
-                                <a title="Comments" href="#"
-                                    ><i class="fa fa-commenting-o"></i>Comments
-                                    10</a
-                                >
-                            </div>
-                            <div class="entry-content">
-                                <p>
-                                    Make all our dreams come true for me and
-                                    you. Boy the way Glen Miller played. Songs
-                                    that made the hit parade Guys like us we had
-                                    it made. Those were the days.
-                                </p>
-                            </div>
-                            <a
-                                title="Read More"
-                                href="blog-post.html"
-                                class="read-more"
-                                >Read More</a
-                            >
-                        </div>
-                    </div>
-                </article>
-
-                <article class="type-post">
-                    <div class="entry-cover">
-                        <a title="Latest Blog" href="blog-post.html">
-                            <img
-                                width="810"
-                                height="405"
-                                alt="blog"
-                                src="@/assets/images/blog-5.jpg"
-                            />
-                        </a>
-                        <div class="latest-blog-content">
-                            <span>Equine</span>
-                            <h3 class="entry-title">
-                                <a
-                                    title="These men promptly escaped from a maximum security stockade to the Los Angeles"
-                                    href="blog-post.html"
-                                    >These men promptly escaped from a maximum
-                                    security stockade to the Los Angeles</a
-                                >
-                            </h3>
-                            <div class="post-date">
-                                <i class="fa fa-calendar" aria-hidden="true"></i
-                                >18 October, 2015
-                            </div>
-                            <div class="entry-meta">
-                                <a title="Stevan Smith" href="#"
-                                    ><i
-                                        class="fa fa-heart-o"
-                                        aria-hidden="true"
-                                    ></i
-                                    >Likes 18</a
-                                >
-                                <a title="Comments" href="#"
-                                    ><i class="fa fa-commenting-o"></i>Comments
-                                    12</a
-                                >
-                            </div>
-                            <div class="entry-content">
-                                <p>
-                                    Michael Knight a young loner on a crusade to
-                                    the innocent. The helpless. The powerless in
-                                    a world of criminals who operate above the
-                                    law.
-                                </p>
-                            </div>
-                            <a
-                                title="Read More"
-                                href="blog-post.html"
-                                class="read-more"
-                                >Read More</a
-                            >
-                        </div>
-                    </div>
-                </article>
-
-                <article class="type-post">
-                    <div class="entry-cover">
-                        <a title="Latest Blog" href="blog-post.html">
-                            <img
-                                width="810"
-                                height="405"
-                                alt="blog"
-                                src="@/assets/images/blog-6.jpg"
-                            />
-                        </a>
-                        <div class="latest-blog-content">
-                            <span>Education</span>
-                            <h3 class="entry-title">
-                                <a
-                                    title="To explore strange new worlds to seek out new life and new civilizations to boldly go where no"
-                                    href="blog-post.html"
-                                    >To explore strange new worlds to seek new
-                                    life and new civilizations to boldly go
-                                    where no</a
-                                >
-                            </h3>
-                            <div class="post-date">
-                                <i class="fa fa-calendar" aria-hidden="true"></i
-                                >23 Sepptember, 2015
-                            </div>
-                            <div class="entry-meta">
-                                <a title="Stevan Smith" href="#"
-                                    ><i
-                                        class="fa fa-heart-o"
-                                        aria-hidden="true"
-                                    ></i
-                                    >Likes 16</a
-                                >
-                                <a title="Comments" href="#"
-                                    ><i class="fa fa-commenting-o"></i>Comments
-                                    18</a
-                                >
-                            </div>
-                            <div class="entry-content">
-                                <p>
-                                    They call him Flipper Flipper faster than
-                                    lightning. No one you see is smarter than
-                                    he. So lets make the most of this beautiful
-                                    day since we are together.
-                                </p>
-                            </div>
-                            <a
-                                title="Read More"
-                                href="blog-post.html"
-                                class="read-more"
-                                >Read More</a
-                            >
-                        </div>
-                    </div>
-                </article>
                 <nav class="ow-pagination">
                     <ul class="pagination">
                         <li><a href="#">1</a></li>
@@ -436,49 +278,36 @@
 </template>
 
 <script>
+import { mapActions, mapGetters } from "vuex";
+
 export default {
-    data() {
-        return {
-            allBlogPosts: [
-                {
-                    author: "Roberto Fernandez",
-                    title: "Blog Post 1",
-                    date: "20 October, 2022",
-                    description:
-                        "Great customer service, very healthy horse, and state of the art facilities.",
-                    tag: "Training",
-                    link: "",
-                    imageUrl: require("@/assets/images/blog-1.jpg"),
-                },
-                {
-                    author: "Roberto Fernandez",
-                    title: "Blog Post 2",
-                    date: "20 October, 2022",
-                    description:
-                        "Great customer service, very healthy horse, and state of the art facilities.",
-                    tag: "Training",
-                    link: "",
-                    imageUrl: require("@/assets/images/blog-1.jpg"),
-                },
-                {
-                    author: "Roberto Fernandez",
-                    title: "Blog Post 3",
-                    date: "20 October, 2022",
-                    description:
-                        "Great customer service, very healthy horse, and state of the art facilities.",
-                    tag: "Training",
-                    link: "",
-                    imageUrl: require("@/assets/images/blog-1.jpg"),
-                },
-            ],
-        };
+    computed: {
+        ...mapGetters(["getAllBlogs"]),
+
+        allBlogPosts() {
+            let blogs = null;
+
+            if (this.getAllBlogs) {
+                blogs = this.getAllBlogs;
+            }
+            console.log(blogs);
+            return blogs;
+        },
+    },
+
+    created() {
+        this.setAllBlogs();
+    },
+
+    methods: {
+        ...mapActions(["setAllBlogs"]),
     },
 };
 </script>
 
 <style scoped>
-.latest-blog .owl-carousel .owl-item img {
-    min-height: 300px;
+.latest-blog img {
+    min-height: 250px;
     -o-object-fit: cover;
     object-fit: cover;
 }
@@ -487,12 +316,27 @@ export default {
     background: rgba(247, 247, 247, 0.975);
 }
 
-.latest-blog .latest-blog-content {
+/* .latest-blog .latest-blog-content {
     padding-right: 10px;
+} */
+
+.blog-section .latest-blog-content .entry-meta a {
+    padding: 0;
+}
+
+.blog-section .latest-blog-content .entry-meta a:not(:first-child) {
+    padding-left: 10px;
+}
+
+.latest-blog .latest-blog-content .post-date {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .latest-blog .latest-blog-content h3.entry-title {
     font-family: "montserratlight";
+    display: block;
 }
 
 .latest-blog .latest-blog-content a.read-more {
@@ -505,10 +349,6 @@ export default {
 }
 
 @media (max-width: 479px) {
-    .latest-blog .latest-blog-content {
-        left: 48%;
-    }
-
     .latest-blog .latest-blog-content h3.entry-title {
         font-size: 15px;
         margin-top: 25px;
@@ -517,10 +357,6 @@ export default {
 
     .latest-blog .latest-blog-content .entry-content p {
         margin-bottom: 15px;
-    }
-
-    .latest-blog .latest-blog-content .post-date {
-        margin-bottom: 20px;
     }
 }
 </style>

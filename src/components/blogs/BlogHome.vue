@@ -1,5 +1,5 @@
 <template>
-    <div id="#latest-blog" class="latest-blog container-fluid no-padding">
+    <div id="latest-blog" class="latest-blog container-fluid no-padding">
         <div class="section-padding"></div>
 
         <div class="container">
@@ -9,7 +9,7 @@
                     <h3>From Our Blog</h3>
                 </div>
 
-                <div>
+                <div v-if="allBlogPosts && allBlogPosts.length > 0">
                     <carousel
                         :autoplay="true"
                         :nav="false"
@@ -41,7 +41,7 @@
 
                                         <h3 class="entry-title">
                                             <a
-                                                title="Mister We Could Use A Man Like Herbert"
+                                                :title="blog.title"
                                                 href="blog-post.html"
                                                 >{{ blog.title }}</a
                                             >
@@ -79,45 +79,30 @@
 
 <script>
 import carousel from "vue-owl-carousel";
+import { mapActions, mapGetters } from "vuex";
 
 export default {
     components: { carousel },
 
-    data() {
-        return {
-            allBlogPosts: [
-                {
-                    author: "Roberto Fernandez",
-                    title: "Blog Post 1",
-                    date: "20 October, 2022",
-                    description:
-                        "Great customer service, very healthy horse, and state of the art facilities.",
-                    tag: "Training",
-                    link: "",
-                    imageUrl: require("@/assets/images/blog-1.jpg"),
-                },
-                {
-                    author: "Roberto Fernandez",
-                    title: "Blog Post 2",
-                    date: "20 October, 2022",
-                    description:
-                        "Great customer service, very healthy horse, and state of the art facilities.",
-                    tag: "Training",
-                    link: "",
-                    imageUrl: require("@/assets/images/blog-1.jpg"),
-                },
-                {
-                    author: "Roberto Fernandez",
-                    title: "Blog Post 3",
-                    date: "20 October, 2022",
-                    description:
-                        "Great customer service, very healthy horse, and state of the art facilities.",
-                    tag: "Training",
-                    link: "",
-                    imageUrl: require("@/assets/images/blog-1.jpg"),
-                },
-            ],
-        };
+    computed: {
+        ...mapGetters(["getAllBlogs"]),
+
+        allBlogPosts() {
+            let blogs = null;
+
+            if (this.getAllBlogs) {
+                blogs = this.getAllBlogs;
+            }
+            return blogs;
+        },
+    },
+
+    created() {
+        this.setAllBlogs();
+    },
+
+    methods: {
+        ...mapActions(["setAllBlogs"]),
     },
 };
 </script>
