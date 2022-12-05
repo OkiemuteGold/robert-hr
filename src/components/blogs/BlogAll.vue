@@ -306,10 +306,11 @@ export default {
 </script>
 
 <style scoped>
-.latest-blog img {
-    min-height: 250px;
+.latest-blog .entry-cover img {
+    min-height: 220px;
     -o-object-fit: cover;
     object-fit: cover;
+    max-height: 350px;
 }
 
 .latest-blog .entry-cover::before {
