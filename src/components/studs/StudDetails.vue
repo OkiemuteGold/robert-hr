@@ -51,11 +51,19 @@
                         </carousel>
 
                         <div class="custom-nav">
-                            <a class="btn prev" @click="$refs.prev.click()">
+                            <a
+                                class="btn prev"
+                                @click="$refs.prev.click()"
+                                aria-label="slide to previous image"
+                            >
                                 <i class="fa fa-angle-left" aria-hidden="true">
                                 </i>
                             </a>
-                            <a class="btn next" @click="$refs.next.click()">
+                            <a
+                                class="btn next"
+                                @click="$refs.next.click()"
+                                aria-label="slide to next image"
+                            >
                                 <i class="fa fa-angle-right" aria-hidden="true">
                                 </i>
                             </a>
@@ -63,17 +71,23 @@
                     </div>
 
                     <div class="info">
-                        <h3>{{ currentHorse.name }}</h3>
+                        <h3 class="uppercase">{{ currentHorse.name }}</h3>
 
                         <div class="brief-details">
-                            <p><span>Breed:</span> {{ currentHorse.breed }}</p>
-                            <p>
+                            <p class="capitalize">
+                                <span>Breed:</span> {{ currentHorse.breed }}
+                            </p>
+                            <p class="capitalize">
                                 <span>Date of Birth:</span>
                                 {{ currentHorse.briefDetails.dateOfBirth }}
                             </p>
                             <p>
-                                <span>Coat:</span>
-                                {{ currentHorse.briefDetails.coat }}
+                                <span>Height:</span>
+                                {{ currentHorse.briefDetails.height }}
+                            </p>
+                            <p class="capitalize">
+                                <span>Layer</span>
+                                {{ currentHorse.briefDetails.layer }}
                             </p>
                             <p>
                                 <span>Father:</span>
@@ -83,10 +97,6 @@
                                 <span>Mother:</span>
                                 {{ currentHorse.briefDetails.mother }}
                             </p>
-                            <p>
-                                <span>Cross</span>
-                                {{ currentHorse.briefDetails.cross }}
-                            </p>
                         </div>
 
                         <div class="brief-description">
@@ -95,7 +105,6 @@
                                     currentHorse.horseDescription.description1
                                 "
                             >
-                                <span>{{ currentHorse.name }}</span> is a
                                 {{ currentHorse.horseDescription.description1 }}
                             </p>
                             <p

@@ -33,7 +33,7 @@ export default {
 
         setBannerStyles() {
             this.setBannerSettings({
-                title: "About Roberto Horse Riding",
+                title: "About the stud",
                 prevLinkText: "Home",
                 currentLinkText: "About Us",
                 description: null,

@@ -26,8 +26,8 @@
                         src="@/assets/images/slider-1.jpg"
                     />
                     <div class="carousel-caption">
-                        <!-- <h5>Welcome To Roberto Horse Riding</h5> -->
-                        <h3>Welcome To Roberto Horse Riding</h3>
+                        <!-- <h5>Welcome To Yeguada Fernández Millares</h5> -->
+                        <h3>Welcome To Yeguada Fernández Millares</h3>
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
                 </div>
@@ -39,7 +39,7 @@
                         src="@/assets/images/slider-2.jpg"
                     />
                     <div class="carousel-caption">
-                        <h5>Roberto Horse Riding</h5>
+                        <h5>Yeguada Fernández Millares</h5>
                         <h3>Lorem ipsum dolor sit.</h3>
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
@@ -52,7 +52,7 @@
                         src="@/assets/images/slider-3.jpg"
                     />
                     <div class="carousel-caption">
-                        <h5>Roberto Horse Riding</h5>
+                        <h5>Yeguada Fernández Millares</h5>
                         <h3>Lorem ipsum dolor sit.</h3>
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
                     </div>

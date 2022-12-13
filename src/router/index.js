@@ -23,17 +23,17 @@ const routes = [
         name: 'Home',
         component: HomeView,
         meta: {
-            title: "Roberto Horse Riding",
+            title: "Yeguada Fernández Millares",
             metaTags: [
                 {
                     name: "description",
                     content:
-                        "Roberto Horse Riding",
+                        "Yeguada Fernández Millares",
                 },
                 {
                     property: "og:description",
                     content:
-                        "Roberto Horse Riding",
+                        "Yeguada Fernández Millares",
                 },
             ],
         },
@@ -46,17 +46,17 @@ const routes = [
         // which is lazy-loaded when the route is visited.
         component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue'),
         meta: {
-            title: "Roberto Horse Riding | About Us",
+            title: "Yeguada Fernández Millares | About The Stud",
             metaTags: [
                 {
                     name: "description",
                     content:
-                        "About Roberto Horse Riding",
+                        "About The Stud",
                 },
                 {
                     property: "og:description",
                     content:
-                        "About Roberto Horse Riding",
+                        "About The Stud",
                 },
             ],
         },
@@ -66,17 +66,17 @@ const routes = [
         name: 'Studs',
         component: StudView,
         meta: {
-            title: "Roberto Horse Riding | Studs",
+            title: "Yeguada Fernández Millares | Studs",
             metaTags: [
                 {
                     name: "description",
                     content:
-                        "Roberto Horse Riding",
+                        "Yeguada Fernández Millares",
                 },
                 {
                     property: "og:description",
                     content:
-                        "Roberto Horse Riding",
+                        "Yeguada Fernández Millares",
                 },
             ],
         },
@@ -86,17 +86,17 @@ const routes = [
         name: 'Stallion',
         component: StallionView,
         meta: {
-            title: "Roberto Horse Riding | Stallion",
+            title: "Yeguada Fernández Millares | Stallion",
             metaTags: [
                 {
                     name: "description",
                     content:
-                        "Roberto Horse Riding",
+                        "Yeguada Fernández Millares",
                 },
                 {
                     property: "og:description",
                     content:
-                        "Roberto Horse Riding",
+                        "Yeguada Fernández Millares",
                 },
             ],
         },
@@ -106,17 +106,17 @@ const routes = [
         name: 'Mares',
         component: MaresView,
         meta: {
-            title: "Roberto Horse Riding | Mares",
+            title: "Yeguada Fernández Millares | Mares",
             metaTags: [
                 {
                     name: "description",
                     content:
-                        "Roberto Horse Riding",
+                        "Yeguada Fernández Millares",
                 },
                 {
                     property: "og:description",
                     content:
-                        "Roberto Horse Riding",
+                        "Yeguada Fernández Millares",
                 },
             ],
         },
@@ -126,17 +126,17 @@ const routes = [
         name: 'Foals',
         component: FoalsView,
         meta: {
-            title: "Roberto Horse Riding | Foals",
+            title: "Yeguada Fernández Millares | Foals",
             metaTags: [
                 {
                     name: "description",
                     content:
-                        "Roberto Horse Riding",
+                        "Yeguada Fernández Millares",
                 },
                 {
                     property: "og:description",
                     content:
-                        "Roberto Horse Riding",
+                        "Yeguada Fernández Millares",
                 },
             ],
         },
@@ -146,17 +146,17 @@ const routes = [
         name: 'Fillies',
         component: FilliesView,
         meta: {
-            title: "Roberto Horse Riding | Fillies",
+            title: "Yeguada Fernández Millares | Fillies",
             metaTags: [
                 {
                     name: "description",
                     content:
-                        "Roberto Horse Riding",
+                        "Yeguada Fernández Millares",
                 },
                 {
                     property: "og:description",
                     content:
-                        "Roberto Horse Riding",
+                        "Yeguada Fernández Millares",
                 },
             ],
         },
@@ -166,17 +166,17 @@ const routes = [
         name: 'StudDetails',
         component: StudDetailsView,
         meta: {
-            title: "Roberto Horse Riding | Stallion",
+            title: "Yeguada Fernández Millares | Stallion",
             metaTags: [
                 {
                     name: "description",
                     content:
-                        "Roberto Horse Riding",
+                        "Yeguada Fernández Millares",
                 },
                 {
                     property: "og:description",
                     content:
-                        "Roberto Horse Riding",
+                        "Yeguada Fernández Millares",
                 },
             ],
 
@@ -187,17 +187,17 @@ const routes = [
         name: 'Services',
         component: ServicesView,
         meta: {
-            title: "Roberto Horse Riding | Services",
+            title: "Yeguada Fernández Millares | Services",
             metaTags: [
                 {
                     name: "description",
                     content:
-                        "Roberto Horse Riding",
+                        "Yeguada Fernández Millares",
                 },
                 {
                     property: "og:description",
                     content:
-                        "Roberto Horse Riding",
+                        "Yeguada Fernández Millares",
                 },
             ],
         },
@@ -207,17 +207,17 @@ const routes = [
         name: 'Gallery',
         component: GalleryView,
         meta: {
-            title: "Roberto Horse Riding | Gallery",
+            title: "Yeguada Fernández Millares | Gallery",
             metaTags: [
                 {
                     name: "description",
                     content:
-                        "Roberto Horse Riding",
+                        "Yeguada Fernández Millares",
                 },
                 {
                     property: "og:description",
                     content:
-                        "Roberto Horse Riding",
+                        "Yeguada Fernández Millares",
                 },
             ],
         },
@@ -227,17 +227,17 @@ const routes = [
         name: 'Contact',
         component: ContactView,
         meta: {
-            title: "Roberto Horse Riding | Contact Us",
+            title: "Yeguada Fernández Millares | Contact Us",
             metaTags: [
                 {
                     name: "description",
                     content:
-                        "Roberto Horse Riding",
+                        "Yeguada Fernández Millares",
                 },
                 {
                     property: "og:description",
                     content:
-                        "Roberto Horse Riding",
+                        "Yeguada Fernández Millares",
                 },
             ],
         },
@@ -247,17 +247,17 @@ const routes = [
         name: 'Blog',
         component: BlogView,
         meta: {
-            title: "Roberto Horse Riding | Blog",
+            title: "Yeguada Fernández Millares | Blog",
             metaTags: [
                 {
                     name: "description",
                     content:
-                        "Roberto Horse Riding",
+                        "Yeguada Fernández Millares",
                 },
                 {
                     property: "og:description",
                     content:
-                        "Roberto Horse Riding",
+                        "Yeguada Fernández Millares",
                 },
             ],
         },
@@ -268,17 +268,17 @@ const routes = [
         component: FourZeroFour,
         meta: {
             transition: "fade",
-            title: "Roberto Horse Riding | 404 - Page Not Found",
+            title: "Yeguada Fernández Millares | 404 - Page Not Found",
             metaTags: [
                 {
                     name: "description",
                     content:
-                        "Roberto Horse Riding",
+                        "Yeguada Fernández Millares",
                 },
                 {
                     property: "og:description",
                     content:
-                        "Roberto Horse Riding",
+                        "Yeguada Fernández Millares",
                 },
             ],
         },
@@ -304,7 +304,7 @@ const router = new VueRouter({
     linkExactActiveClass: "exact-active",
 });
 
-const DEFAULT_TITLE = "Roberto Horse Riding";
+const DEFAULT_TITLE = "Yeguada Fernández Millares";
 
 router.afterEach((to) => {
     Vue.nextTick(() => {

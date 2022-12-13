@@ -11,7 +11,7 @@
                     </div>
                     <div class="col-md-8 col-sm-12 col-xs-12">
                         <div class="top-header">
-                            <h3>Welcome to Roberto Horse Riding</h3>
+                            <h3>Welcome to Yeguada Fernández Millares</h3>
 
                             <!-- <ul class="pull-right">
                                 <li>

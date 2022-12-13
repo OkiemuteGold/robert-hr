@@ -39,6 +39,8 @@ export default {
 </script>
 
 <style>
+@import url(./assets/css/utilities.css);
+
 :root {
     --yellowLight: #ffc619;
     --yellowDark: #dd9218;
