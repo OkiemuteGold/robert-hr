@@ -7,7 +7,7 @@
                 <div class="col-md-7 col-sm-12 col-xs-12">
                     <div class="section-header left-header">
                         <!-- <h5>Our Pleasure to Say</h5> -->
-                        <h3>About the stud</h3>
+                        <h3 class="capitalize">About the stud</h3>
                     </div>
 
                     <div class="intro-about-content">
@@ -54,7 +54,7 @@
                             Zubialdea Arabians Stud, from internationally
                             multi-awarded lines such as Ajman Moniscione and Aja
                             Sanagor. <br />
-                            With this basis the beginning of horse breeding of
+                            With this basis, the beginning of horse breeding of
                             the pure Arabian breed is established as base race
                             to bring horses with class, nobles and beauty
                             combined with functionality and quality of balanced
@@ -88,7 +88,4 @@ export default {};
 </script>
 
 <style scoped>
-.section-header h3 {
-    text-transform: capitalize;
-}
 </style>

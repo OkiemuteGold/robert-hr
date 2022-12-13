@@ -4,7 +4,7 @@
         <HomeAbout />
         <StudsPreview />
         <GalleryPreview />
-        <SectionProcess />
+        <!-- <SectionProcess /> -->
         <AllTestimonials />
         <BlogHome />
     </div>
@@ -15,7 +15,7 @@ import HomeIntro from "@/components/home/HomeIntro";
 import HomeAbout from "@/components/home/HomeAbout";
 import StudsPreview from "@/components/global/StudsPreview";
 import GalleryPreview from "@/components/global/GalleryPreview";
-import SectionProcess from "@/components/global/SectionProcess";
+// import SectionProcess from "@/components/global/SectionProcess";
 import AllTestimonials from "@/components/testimonials/AllTestimonials";
 import BlogHome from "@/components/blogs/BlogHome";
 
@@ -29,7 +29,7 @@ export default {
         HomeAbout,
         StudsPreview,
         GalleryPreview,
-        SectionProcess,
+        // SectionProcess,
         AllTestimonials,
         BlogHome,
     },

@@ -117,9 +117,6 @@ body {
 
 a {
     text-decoration-skip-ink: auto;
-}
-
-a:hover {
     -o-transition: 0.3s ease;
     -moz-transition: 0.3s ease;
     -webkit-transition: 0.3s ease;
@@ -129,6 +126,13 @@ a:hover {
 img {
     max-width: 100%;
     height: auto;
+}
+
+/* section */
+.section-header h2 {
+    font-size: 36px;
+    font-family: "MontserratUltraLight";
+    font-weight: 500;
 }
 
 .latest-blog .blog-carousel .owl-carousel .owl-dots {

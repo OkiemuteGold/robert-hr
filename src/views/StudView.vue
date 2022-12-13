@@ -1,257 +1,158 @@
 <template>
-    <div class="studs">
-        <!-- Feature Section -->
-        <div
-            class="
-                intro-about
-                info-section
-                feature-section
-                container-fluid
-                no-padding
-            "
-        >
-            <div class="padding-70"></div>
+    <div class="studs-view pt-100 pb-100">
+        <div class="intro-about info-section container-fluid no-padding">
+            <div class="container all-studs">
+                <div class="row mb-70">
+                    <div class="col-xs-12">
+                        <div class="section-header mb-10 left-header">
+                            <h2 class="mt-0 mb-0">The Studs</h2>
+                        </div>
 
-            <div class="container">
-                <div class="section-header">
-                    <!-- <h5>Advantages</h5> -->
-                    <h3>Our Special Features</h3>
-                </div>
-
-                <div class="intro-about-content">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Est nesciunt quasi hic dolor pariatur.
-                        <span>Lorem ipsum dolor sit amet.</span> Lorem autem
-                        culpa consequuntur tempore vel laudantium.
-                    </p>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6 info-content">
-                    <div class="info-box">
-                        <img src="@/assets/images/info-ic-1.png" alt="intro" />
-                        <h5>Experienced</h5>
-                        <h3>Instructors</h3>
+                        <div class="intro-about-content text-left">
+                            <p class="mt-0 mb-0">
+                                Yeguada Fernández Millares boasts of purebred
+                                Arabian and Hispano-Arabian horses that are well
+                                trained and healthy. Through our studs farm, we
+                                are bring horses with class, nobles and beauty
+                                combined with functionality and quality of
+                                balanced movements.
+                            </p>
+                        </div>
                     </div>
-                    <span class="corner-left-top"></span>
-                    <span class="corner-left-bottom"></span>
-                    <span class="corner-right-top"></span>
-                    <span class="corner-right-bottom"></span>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6 info-content">
-                    <div class="info-box">
-                        <img src="@/assets/images/info-ic-2.png" alt="intro" />
-                        <h5>Professional</h5>
-                        <h3>Training</h3>
-                    </div>
-                    <span class="corner-left-top"></span>
-                    <span class="corner-left-bottom"></span>
-                    <span class="corner-right-top"></span>
-                    <span class="corner-right-bottom"></span>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6 info-content">
-                    <div class="info-box">
-                        <img src="@/assets/images/info-ic-3.png" alt="intro" />
-                        <h5>Specialized</h5>
-                        <h3>Courses</h3>
-                    </div>
-                    <span class="corner-left-top"></span>
-                    <span class="corner-left-bottom"></span>
-                    <span class="corner-right-top"></span>
-                    <span class="corner-right-bottom"></span>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6 info-content">
-                    <div class="info-box">
-                        <img src="@/assets/images/info-ic-4.png" alt="intro" />
-                        <h5>Horse Rider</h5>
-                        <h3>Clubs</h3>
-                    </div>
-                    <span class="corner-left-top"></span>
-                    <span class="corner-left-bottom"></span>
-                    <span class="corner-right-top"></span>
-                    <span class="corner-right-bottom"></span>
-                </div>
-            </div>
-        </div>
-        <!-- Feature Section -->
 
-        <!-- Chooseus Section -->
-        <div class="chooseus-section container-fluid no-padding">
-            <div class="padding-70"></div>
-
-            <div class="container">
-                <div class="section-header">
-                    <!-- <h5>Sports Society</h5> -->
-                    <h3>Reasons to Choose Us</h3>
-                </div>
-
-                <!-- <div class="col-md-6 col-sm-12 col-xs-12">
                     <div
-                        class="panel-group"
-                        id="accordion"
-                        role="tablist"
-                        aria-multiselectable="true"
+                        v-for="(item, index) in studs"
+                        :key="index"
+                        class="col-md-3 col-sm-6 col-xs-12 mt-30"
                     >
-                        <div class="panel panel-default">
-                            <div
-                                class="panel-heading"
-                                role="tab"
-                                id="faqheading1"
-                            >
-                                <h4 class="panel-title">
-                                    <a
-                                        class="collapsed"
-                                        role="button"
-                                        data-toggle="collapse"
-                                        data-parent="#accordion"
-                                        href="#faqcontent1"
-                                        aria-expanded="false"
-                                    >
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing?
-                                    </a>
-                                </h4>
+                        <router-link
+                            :to="{
+                                name: item.name,
+                            }"
+                        >
+                            <div class="image">
+                                <img :src="item.url" :alt="item.name" />
                             </div>
-                            <div
-                                id="faqcontent1"
-                                class="panel-collapse collapse"
-                                role="tabpanel"
-                                aria-labelledby="faqheading1"
-                            >
-                                <div class="panel-body">
-                                    Lorem ipsum dolor sit, amet consectetur
-                                    adipisicing elit. Nam eos perferendis
-                                    laboriosam quod consequuntur sunt? Provident
-                                    odit nisi asperiores repudiandae.
-                                </div>
+                            <div class="info">
+                                <h3 class="capitalize text-left">
+                                    {{ item.name }}
+                                </h3>
                             </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div
-                                class="panel-heading"
-                                role="tab"
-                                id="faqheading2"
-                            >
-                                <h4 class="panel-title">
-                                    <a
-                                        role="button"
-                                        data-toggle="collapse"
-                                        data-parent="#accordion"
-                                        href="#faqcontent2"
-                                        aria-expanded="true"
-                                    >
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div
-                                id="faqcontent2"
-                                class="panel-collapse collapse in"
-                                role="tabpanel"
-                                aria-labelledby="faqheading2"
-                            >
-                                <div class="panel-body">
-                                    Lorem ipsum dolor sit, amet consectetur
-                                    adipisicing elit. Nam eos perferendis
-                                    laboriosam quod consequuntur sunt? Provident
-                                    odit nisi asperiores repudiandae.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div
-                                class="panel-heading"
-                                role="tab"
-                                id="faqheading3"
-                            >
-                                <h4 class="panel-title">
-                                    <a
-                                        class="collapsed"
-                                        role="button"
-                                        data-toggle="collapse"
-                                        data-parent="#accordion"
-                                        href="#faqcontent3"
-                                        aria-expanded="false"
-                                    >
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div
-                                id="faqcontent3"
-                                class="panel-collapse collapse"
-                                role="tabpanel"
-                                aria-labelledby="faqheading3"
-                            >
-                                <div class="panel-body">
-                                    Lorem ipsum dolor sit, amet consectetur
-                                    adipisicing elit. Nam eos perferendis
-                                    laboriosam quod consequuntur sunt? Provident
-                                    odit nisi asperiores repudiandae.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div
-                                class="panel-heading"
-                                role="tab"
-                                id="faqheading4"
-                            >
-                                <h4 class="panel-title">
-                                    <a
-                                        class="collapsed"
-                                        role="button"
-                                        data-toggle="collapse"
-                                        data-parent="#accordion"
-                                        href="#faqcontent4"
-                                        aria-expanded="false"
-                                    >
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div
-                                id="faqcontent4"
-                                class="panel-collapse collapse"
-                                role="tabpanel"
-                                aria-labelledby="faqheading4"
-                            >
-                                <div class="panel-body">
-                                    Lorem ipsum dolor sit, amet consectetur
-                                    adipisicing elit. Nam eos perferendis
-                                    laboriosam quod consequuntur sunt? Provident
-                                    odit nisi asperiores repudiandae.
-                                </div>
-                            </div>
-                        </div>
+                        </router-link>
                     </div>
-                </div> -->
-
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <!-- Video Section -->
-                    <div class="video-section">
-                        <div class="video-section-content">
-                            <img
-                                src="@/assets/images/choose-us.jpg"
-                                alt="choose-us"
-                                width="565"
-                                height="352"
-                            />
-                            <!-- https://vimeo.com/45830194 -->
-                            <a class="popup-vimeo" href="javascript:void(0)"
-                                ><i class="fa fa-play"></i
-                            ></a>
-                        </div>
-                    </div>
-                    <!-- Video Section /- -->
                 </div>
             </div>
 
-            <div class="section-padding"></div>
+            <div class="container characteristics">
+                <div class="row mb-60">
+                    <div class="col-xs-12">
+                        <div class="section-header mb-40 left-header">
+                            <h2 class="mt-0 mb-0">
+                                Characteristics of the Yeguada Fernández
+                                Millares
+                            </h2>
+                        </div>
+
+                        <div class="intro-about-content text-left">
+                            <p class="mt-0 mb-0">
+                                To get <span>the best Arabian horses</span>, our
+                                selection criteria have been based on three
+                                fundamental characteristics:
+                                <span>morphology, functionality and breed</span
+                                >.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-60">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="section-header left-header">
+                            <h4>Morphology</h4>
+                        </div>
+
+                        <div class="intro-about-content text-left">
+                            <p>
+                                The influence of the Yeguada Ybarra in our
+                                beginning is manifest. After several visits to
+                                "La Cascajera" in Seville, the couple decides to
+                                acquire a batch of mares from the most
+                                outstanding mares and a stallion Kirov son of
+                                Vigia, one of the most important horses of the
+                                stud farm.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div>
+                            <img
+                                src="@/assets/images/slider-1.jpg"
+                                alt="about intro image"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-60">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div>
+                            <img
+                                src="@/assets/images/slider-1.jpg"
+                                alt="about intro image"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="section-header left-header">
+                            <h4>Functionality</h4>
+                        </div>
+
+                        <div class="intro-about-content text-left">
+                            <p>
+                                The influence of the Yeguada Ybarra in our
+                                beginning is manifest. After several visits to
+                                "La Cascajera" in Seville, the couple decides to
+                                acquire a batch of mares from the most
+                                outstanding mares and a stallion Kirov son of
+                                Vigia, one of the most important horses of the
+                                stud farm.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="section-header left-header">
+                            <h4>Breed</h4>
+                        </div>
+
+                        <div class="intro-about-content text-left">
+                            <p>
+                                The influence of the Yeguada Ybarra in our
+                                beginning is manifest. After several visits to
+                                "La Cascajera" in Seville, the couple decides to
+                                acquire a batch of mares from the most
+                                outstanding mares and a stallion Kirov son of
+                                Vigia, one of the most important horses of the
+                                stud farm.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div>
+                            <img
+                                src="@/assets/images/slider-1.jpg"
+                                alt="about intro image"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Chooseus Section -->
     </div>
 </template>
 
@@ -260,6 +161,28 @@ import "@/mixins";
 import { mapActions } from "vuex";
 
 export default {
+    data() {
+        return {
+            studs: [
+                {
+                    name: "Stallion",
+                    url: require("@/assets/images/feature-banner.jpg"),
+                },
+                {
+                    name: "Mares",
+                    url: require("@/assets/images/feature-banner.jpg"),
+                },
+                {
+                    name: "Foals",
+                    url: require("@/assets/images/feature-banner.jpg"),
+                },
+                {
+                    name: "Fillies",
+                    url: require("@/assets/images/feature-banner.jpg"),
+                },
+            ],
+        };
+    },
     methods: {
         ...mapActions(["setCurrentPage", "setBannerSettings"]),
 
@@ -282,8 +205,31 @@ export default {
 </script>
 
 <style scoped>
-.video-section {
-    max-width: 500px;
-    margin: auto;
+.all-studs a {
+    color: var(--black1);
+    text-decoration: none;
+}
+
+.all-studs a:hover h3 {
+    color: var(--yellowDark);
+}
+
+.image img {
+    height: 200px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+h4 {
+    font-weight: 400;
+    color: var(--black1);
+}
+
+.info h3 {
+    font-weight: 400;
+    -o-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
 }
 </style>
