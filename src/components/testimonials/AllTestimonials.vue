@@ -19,7 +19,7 @@
                         col-md-6 col-sm-6 col-xs-12
                         testimonial-carousel-wrapper
                     "
-                    v-if="AllTestimonials && AllTestimonials.length > 0"
+                    v-if="testimonials && testimonials.length > 0"
                 >
                     <div class="quote-icon">
                         <i class="fa fa-quote-left" aria-hidden="true"></i>
@@ -37,7 +37,7 @@
                         class="testimonial-carousel"
                     >
                         <div
-                            v-for="(testimonial, index) in AllTestimonials"
+                            v-for="(testimonial, index) in testimonials"
                             :key="index"
                         >
                             <div class="words">
@@ -91,27 +91,30 @@
 
 <script>
 import carousel from "vue-owl-carousel";
+import { mapActions, mapGetters } from "vuex";
 
 export default {
     components: { carousel },
 
-    data() {
-        return {
-            AllTestimonials: [
-                {
-                    name: "Roberto Fernandez",
-                    role: "Dev Manager, Google Inc",
-                    imageUrl: require("@/assets/images/testi-1.jpg"),
-                    words: "Great customer service, very healthy horse, and state of the art facilities.",
-                },
-                {
-                    name: "Okiemute Gold",
-                    role: "Dev Manager, Google Inc",
-                    imageUrl: require("@/assets/images/testi-1.jpg"),
-                    words: "Great customer service, very healthy horse, and state of the art facilities.",
-                },
-            ],
-        };
+    computed: {
+        ...mapGetters(["getTestimonials"]),
+
+        testimonials() {
+            let testimonials = [];
+
+            if (this.getTestimonials) {
+                testimonials = this.getTestimonials;
+            }
+            return testimonials;
+        },
+    },
+
+    methods: {
+        ...mapActions(["setTestimonials"]),
+    },
+
+    mounted() {
+        this.setTestimonials();
     },
 };
 </script>

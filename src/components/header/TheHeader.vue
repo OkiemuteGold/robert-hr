@@ -258,9 +258,9 @@ export default {
     border-color: #eaeaea;
 }
 
-/* .whatsapp a:hover i {
+.whatsapp a:hover i {
     color: var(--yellowLight);
-} */
+}
 
 .ow-navigation .logo-block {
     display: flex;

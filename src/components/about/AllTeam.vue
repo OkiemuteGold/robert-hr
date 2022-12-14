@@ -48,7 +48,8 @@
 </template>
 
 <script>
-import team from "@/api/team";
+import { mapActions, mapState } from "vuex";
+// import team from "@/api/team";
 
 export default {
     data() {
@@ -57,8 +58,20 @@ export default {
         };
     },
 
+    computed: {
+        ...mapState(["teamMembers"]),
+    },
+
+    methods: {
+        ...mapActions(["setTeamMembers"]),
+    },
+
     mounted() {
-        this.allTeamMembers = team;
+        this.setTeamMembers();
+
+        if (this.teamMembers) {
+            this.allTeamMembers = this.teamMembers;
+        }
     },
 };
 </script>

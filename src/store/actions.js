@@ -3,6 +3,8 @@
 import homeStud from "@/api/homeStuds";
 import galleryImages from "@/api/gallery";
 import blogs from "@/api/blogs";
+import teamMembers from "@/api/team";
+import testimonials from "@/api/testimonials";
 
 import stallionHorses from "@/api/stallion";
 import maresHorses from "@/api/mares";
@@ -28,6 +30,14 @@ export const setAllGalleryImages = ({ commit }) => {
 
 export const setAllBlogs = ({ commit }) => {
     commit("ALL_BLOGS", blogs);
+};
+
+export const setTeamMembers = ({ commit }) => {
+    commit("TEAM_MEMBERS", teamMembers);
+};
+
+export const setTestimonials = ({ commit }) => {
+    commit("TESTIMONIALS", testimonials);
 };
 
 export const setAllStallionHorses = ({ commit }, payload) => {

@@ -24,6 +24,14 @@ export const getAllBlogs = (state) => {
     return state.allBlogs;
 };
 
+export const getTeamMembers = (state) => {
+    return state.teamMembers;
+};
+
+export const getTestimonials = (state) => {
+    return state.testimonials;
+};
+
 export const getAllStallionHorses = (state) => {
     return state.allStallionHorses;
 };

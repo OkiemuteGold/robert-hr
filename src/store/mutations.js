@@ -25,6 +25,14 @@ export const ALL_BLOGS = (state, payload) => {
     state.allBlogs = payload;
 };
 
+export const TEAM_MEMBERS = (state, payload) => {
+    state.teamMembers = payload;
+};
+
+export const TESTIMONIALS = (state, payload) => {
+    state.testimonials = payload;
+};
+
 export const ALL_STALLION_HORSES = (state, payload) => {
     state.allStallionHorses = payload;
 };
