@@ -46,6 +46,16 @@ export default {};
     z-index: 1;
 } */
 
+/* page-banner */
+.page-banner {
+    max-height: 300px;
+    min-height: 300px;
+}
+
+.page-banner .banner-content {
+    padding: 100px 0 0;
+}
+
 .page-banner .banner-content p {
     color: #fff;
     font-family: "Crimson Text", serif;

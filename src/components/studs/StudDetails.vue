@@ -1,8 +1,6 @@
 <template>
-    <div class="horse-details" v-if="currentHorse">
+    <div class="horse-details pt-50 pb-100" v-if="currentHorse">
         <div class="info-section feature-section container-fluid no-padding">
-            <div class="padding-70"></div>
-
             <div class="container">
                 <div class="back-to-previous">
                     <button
@@ -19,8 +17,8 @@
                     </button>
                 </div>
 
-                <div class="horse-details-container">
-                    <div class="image">
+                <div class="row horse-details-container">
+                    <div class="col-xs-12 col-sm-6 col-md-7 image">
                         <carousel
                             :items="1"
                             :autoplay="false"
@@ -71,7 +69,7 @@
                             </a>
                         </div>
 
-                        <div class="thumbnails">
+                        <div class="thumbnails mb-20">
                             <div
                                 v-for="(
                                     image, index
@@ -92,7 +90,7 @@
                         </div>
                     </div>
 
-                    <div class="info">
+                    <div class="col-xs-12 col-sm-6 col-md-5 info">
                         <!-- <h3 class="uppercase mt-0 mb-20">
                             {{ currentHorse.name }}
                         </h3> -->
@@ -156,9 +154,7 @@
                     </div>
                 </div>
 
-                <div class="padding-70"></div>
-
-                <div class="row">
+                <div class="row pt-50">
                     <div class="col-xs-12 genealogy">
                         <h2 class="capitalize mt-0 mb-30">Genealogy</h2>
 
@@ -172,8 +168,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="padding-70"></div>
     </div>
 </template>
 
@@ -258,14 +252,14 @@ export default {
     vertical-align: middle;
 }
 
-.horse-details-container {
+/* .horse-details-container {
     display: flex;
     justify-content: space-between;
 }
 
 .horse-details-container .image {
     width: 55%;
-}
+} */
 
 .custom-nav {
     position: relative;
@@ -293,14 +287,8 @@ img {
 }
 
 .testimonial-carousel img {
-    min-height: 360px;
+    min-height: 350px;
 }
-
-/* .genealogy .image img {
-    object-fit: contain;
-    height: 500px;
-    width: 600px;
-} */
 
 .thumbnails {
     display: flex;
@@ -355,10 +343,10 @@ img {
     background: none;
 }
 
-.horse-details-container .info {
+/* .horse-details-container .info {
     width: 45%;
     padding: 0px 10px 10px 50px;
-}
+} */
 
 .horse-details-container .info h3 {
     font-size: 26px;
