@@ -1,7 +1,5 @@
 <template>
-    <div class="our-courses container-fluid no-padding">
-        <div class="section-padding"></div>
-
+    <div class="our-courses container-fluid no-padding pt-100 pb-100">
         <div class="container">
             <div class="section-header">
                 <h5>Our Process</h5>
@@ -22,8 +20,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="section-padding"></div>
     </div>
 </template>
 

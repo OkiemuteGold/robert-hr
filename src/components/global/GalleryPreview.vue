@@ -1,7 +1,5 @@
 <template>
-    <div class="gallery-section container-fluid no-padding">
-        <div class="padding-70"></div>
-
+    <div class="gallery-section container-fluid no-padding pt-70 pb-70">
         <div class="container">
             <div class="section-header">
                 <h3>From Our Training Center</h3>
@@ -35,8 +33,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="padding-70"></div>
     </div>
 </template>
 

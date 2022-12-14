@@ -1,11 +1,9 @@
 <template>
-    <div class="intro-about container-fluid no-padding">
-        <div class="section-padding"></div>
-
+    <div class="intro-about container-fluid no-padding pt-100 pb-100">
         <div class="container">
             <div class="section-header">
                 <h5>From the Founders!</h5>
-                <h3>About the stud</h3>
+                <h3>Origin of Yeguada Fernández Millares</h3>
             </div>
 
             <div class="intro-about-content">
@@ -34,8 +32,6 @@
                 >
             </div>
         </div>
-
-        <div class="section-padding"></div>
     </div>
 </template>
 
@@ -44,7 +40,11 @@ export default {};
 </script>
 
 <style scoped>
-.section-header h3 {
+/* .section-header h3 {
     text-transform: capitalize;
+} */
+
+.intro-about-content p:not(:last-of-type) {
+    margin-bottom: 20px;
 }
 </style>

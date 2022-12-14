@@ -1,13 +1,13 @@
 <template>
-    <div class="intro-about info-section container-fluid no-padding">
-        <div class="section-padding"></div>
-
+    <div
+        class="intro-about info-section container-fluid no-padding pt-100 pb-40"
+    >
         <div class="container">
             <div class="row">
                 <div class="col-md-7 col-sm-12 col-xs-12">
                     <div class="section-header left-header">
                         <!-- <h5>Our Pleasure to Say</h5> -->
-                        <h3 class="capitalize">About the stud</h3>
+                        <h3 class="capitalize">The Origin</h3>
                     </div>
 
                     <div class="intro-about-content">
@@ -78,8 +78,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- <div class="padding-70"></div> -->
     </div>
 </template>
 

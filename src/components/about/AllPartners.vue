@@ -1,7 +1,5 @@
 <template>
-    <div class="clients container-fluid no-padding">
-        <div class="section-padding"></div>
-
+    <div class="clients container-fluid no-padding pt-100 pb-100">
         <div class="container">
             <div class="row">
                 <div class="section-header">
@@ -57,8 +55,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="section-padding"></div>
     </div>
 </template>
 

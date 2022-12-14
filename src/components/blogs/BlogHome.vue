@@ -1,7 +1,8 @@
 <template>
-    <div id="latest-blog" class="latest-blog container-fluid no-padding">
-        <div class="section-padding"></div>
-
+    <div
+        id="latest-blog"
+        class="latest-blog container-fluid no-padding pt-100 pb-100"
+    >
         <div class="container">
             <div class="row">
                 <div class="section-header">
@@ -72,8 +73,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="section-padding"></div>
     </div>
 </template>
 
