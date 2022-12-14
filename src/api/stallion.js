@@ -26,13 +26,21 @@ export default [
                 alt: "alt text",
                 src: require("@/assets/images/slider-2.jpg"),
             },
+            {
+                alt: "alt text",
+                src: require("@/assets/images/slider-3.jpg"),
+            },
+            {
+                alt: "alt text",
+                src: require("@/assets/images/slider-2.jpg"),
+            },
         ],
-        historyImage: require("@/assets/images/gallery-1.jpg"),
+        historyImage: require("@/assets/images/stallion/kirov-genealogy.png"),
     },
 
     {
         code: "stallion",
-        id: "kirov001",
+        id: "kirov002",
         name: "Kirov",
         breed: "Arabian stallion",
         briefDetails: {
@@ -57,13 +65,21 @@ export default [
                 alt: "alt text",
                 src: require("@/assets/images/slider-2.jpg"),
             },
+            {
+                alt: "alt text",
+                src: require("@/assets/images/slider-3.jpg"),
+            },
+            {
+                alt: "alt text",
+                src: require("@/assets/images/slider-2.jpg"),
+            },
         ],
-        historyImage: require("@/assets/images/gallery-1.jpg"),
+        historyImage: require("@/assets/images/stallion/kirov-genealogy.png"),
     },
 
     {
         code: "stallion",
-        id: "kirov001",
+        id: "kirov003",
         name: "Kirov",
         breed: "Arabian stallion",
         briefDetails: {
@@ -88,15 +104,21 @@ export default [
                 alt: "alt text",
                 src: require("@/assets/images/slider-2.jpg"),
             },
+            {
+                alt: "alt text",
+                src: require("@/assets/images/slider-3.jpg"),
+            },
+            {
+                alt: "alt text",
+                src: require("@/assets/images/slider-2.jpg"),
+            },
         ],
-        historyImage: require("@/assets/images/gallery-1.jpg"),
+        historyImage: require("@/assets/images/stallion/kirov-genealogy.png"),
     },
-
-
 
     {
         code: "stallion",
-        id: "kirov001",
+        id: "kirov004",
         name: "Kirov",
         breed: "Arabian stallion",
         briefDetails: {
@@ -121,12 +143,21 @@ export default [
                 alt: "alt text",
                 src: require("@/assets/images/slider-2.jpg"),
             },
+            {
+                alt: "alt text",
+                src: require("@/assets/images/slider-3.jpg"),
+            },
+            {
+                alt: "alt text",
+                src: require("@/assets/images/slider-2.jpg"),
+            },
         ],
-        historyImage: require("@/assets/images/gallery-1.jpg"),
+        historyImage: require("@/assets/images/stallion/kirov-genealogy.png"),
     },
+
     {
         code: "stallion",
-        id: "kirov001",
+        id: "kirov005",
         name: "Kirov",
         breed: "Arabian stallion",
         briefDetails: {
@@ -151,14 +182,21 @@ export default [
                 alt: "alt text",
                 src: require("@/assets/images/slider-2.jpg"),
             },
+            {
+                alt: "alt text",
+                src: require("@/assets/images/slider-3.jpg"),
+            },
+            {
+                alt: "alt text",
+                src: require("@/assets/images/slider-2.jpg"),
+            },
         ],
-        historyImage: require("@/assets/images/gallery-1.jpg"),
+        historyImage: require("@/assets/images/stallion/kirov-genealogy.png"),
     },
-
 
     {
         code: "stallion",
-        id: "kirov001",
+        id: "kirov006",
         name: "Kirov",
         breed: "Arabian stallion",
         briefDetails: {
@@ -183,7 +221,15 @@ export default [
                 alt: "alt text",
                 src: require("@/assets/images/slider-2.jpg"),
             },
+            {
+                alt: "alt text",
+                src: require("@/assets/images/slider-3.jpg"),
+            },
+            {
+                alt: "alt text",
+                src: require("@/assets/images/slider-2.jpg"),
+            },
         ],
-        historyImage: require("@/assets/images/gallery-1.jpg"),
+        historyImage: require("@/assets/images/stallion/kirov-genealogy.png"),
     },
 ]

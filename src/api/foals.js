@@ -1,14 +1,15 @@
 export default [
     {
+        code: "foals",
         id: "horse-name5",
-        name: "Horse Name5",
-        breed: "Arabian Horse",
+        name: "Horse name5",
+        breed: "Hispano-Arabian Horse",
         briefDetails: {
             dateOfBirth: "11/2/1992",
-            coat: "Chestnut",
+            height: "154cm",
+            layer: "Thrush",
             father: "Twinkle",
             mother: "little boat",
-            cross: "1.70 m approx",
         },
         horseDescription: {
             description1: "some description texts",
@@ -28,15 +29,16 @@ export default [
         historyImage: require("@/assets/images/gallery-1.jpg"),
     },
     {
+        code: "foals",
         id: "horse-name6",
         name: "Horse Name6",
-        breed: "Hispano Horse",
+        breed: "Hispano-Arabian Horse",
         briefDetails: {
             dateOfBirth: "11/2/1992",
-            coat: "Chestnut",
+            height: "154cm",
+            layer: "Thrush",
             father: "Twinkle",
             mother: "little boat",
-            cross: "1.70 m approx",
         },
         horseDescription: {
             description1: "some description texts",

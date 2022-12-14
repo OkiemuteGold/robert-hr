@@ -44,7 +44,10 @@ export default {
 :root {
     --yellowLight: #ffc619;
     --yellowDark: #dd9218;
+    --black0: #000;
     --black1: #111;
+    --white: #fff;
+    --transparentWhite: rgba(213, 213, 213, 0.4);
     --error: #ff3232;
 }
 

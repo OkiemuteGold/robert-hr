@@ -32,46 +32,70 @@
                             }"
                             class="testimonial-carousel"
                         >
+                            <!-- :src="image.src" -->
                             <img
                                 v-for="(
                                     image, index
                                 ) in currentHorse.slideImages"
                                 :key="index"
-                                :src="image.src"
+                                :src="currentImage"
                                 :alt="image.alt"
-                                :aria-label="image.alt"
                             />
 
-                            <template slot="prev">
+                            <!-- <template slot="prev">
                                 <span hidden ref="prev" class="prev">prev</span>
                             </template>
                             <template slot="next">
                                 <span hidden ref="next" class="next">next</span>
-                            </template>
+                            </template> -->
                         </carousel>
 
                         <div class="custom-nav">
+                            <!-- @click="$refs.prev.click()" -->
                             <a
                                 class="btn prev"
-                                @click="$refs.prev.click()"
+                                @click="prevImage(activeImage)"
                                 aria-label="slide to previous image"
                             >
                                 <i class="fa fa-angle-left" aria-hidden="true">
                                 </i>
                             </a>
+                            <!-- @click="$refs.next.click()" -->
                             <a
                                 class="btn next"
-                                @click="$refs.next.click()"
+                                @click="nextImage(activeImage)"
                                 aria-label="slide to next image"
                             >
                                 <i class="fa fa-angle-right" aria-hidden="true">
                                 </i>
                             </a>
                         </div>
+
+                        <div class="thumbnails">
+                            <div
+                                v-for="(
+                                    image, index
+                                ) in currentHorse.slideImages"
+                                :key="index"
+                                :class="[
+                                    'thumbnail-image',
+                                    activeImage == index ? 'active' : '',
+                                ]"
+                                @click="activateImage(index)"
+                            >
+                                <img
+                                    :src="image.src"
+                                    :alt="image.alt"
+                                    :aria-label="`slide to ${image.alt}`"
+                                />
+                            </div>
+                        </div>
                     </div>
 
                     <div class="info">
-                        <h3 class="uppercase">{{ currentHorse.name }}</h3>
+                        <!-- <h3 class="uppercase mt-0 mb-20">
+                            {{ currentHorse.name }}
+                        </h3> -->
 
                         <div class="brief-details">
                             <p class="capitalize">
@@ -81,7 +105,7 @@
                                 <span>Date of Birth:</span>
                                 {{ currentHorse.briefDetails.dateOfBirth }}
                             </p>
-                            <p>
+                            <p class="capitalize">
                                 <span>Height:</span>
                                 {{ currentHorse.briefDetails.height }}
                             </p>
@@ -121,6 +145,28 @@
                             >
                                 {{ currentHorse.horseDescription.description3 }}
                             </p>
+                            <p
+                                v-if="
+                                    currentHorse.horseDescription.description4
+                                "
+                            >
+                                {{ currentHorse.horseDescription.description4 }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="padding-70"></div>
+
+                <div class="row">
+                    <div class="col-xs-12 genealogy">
+                        <h2 class="capitalize mt-0 mb-30">Genealogy</h2>
+
+                        <div class="image">
+                            <img
+                                :src="currentHorse.historyImage"
+                                :alt="currentHorse.name"
+                            />
                         </div>
                     </div>
                 </div>
@@ -136,17 +182,55 @@ import carousel from "vue-owl-carousel";
 
 export default {
     props: ["horse", "category"],
+
     components: { carousel },
+
+    computed: {
+        // currentImage gets called whenever activeImage changes
+        // and is the reason why we don't have to worry about the
+        // big image getting updated
+        currentImage() {
+            return this.currentHorse.slideImages[this.activeImage].src;
+        },
+    },
 
     data() {
         return {
             currentHorse: this.horse,
+            activeImage: 0,
         };
     },
 
     methods: {
         goBack() {
             this.$router.go(-1);
+        },
+
+        // Go forward on the images array
+        // or go at the first image if you can't go forward
+        nextImage() {
+            let active = this.activeImage + 1;
+
+            if (active >= this.currentHorse.slideImages.length) {
+                active = 0;
+            }
+            this.activateImage(active);
+        },
+
+        // Go backwards on the images array
+        // or go at the last image
+        prevImage() {
+            let active = this.activeImage - 1;
+
+            if (active < 0) {
+                active = this.currentHorse.slideImages.length - 1;
+            }
+            this.activateImage(active);
+        },
+
+        activateImage(imageIndex) {
+            this.activeImage = imageIndex;
+            // console.log(this.activeImage, imageIndex);
         },
     },
 
@@ -183,14 +267,101 @@ export default {
     width: 55%;
 }
 
+.custom-nav {
+    position: relative;
+    top: -70px;
+    right: 0;
+    margin-top: 0;
+    z-index: 2;
+}
+
+.custom-nav .btn {
+    height: 40px;
+    width: 40px;
+    padding: 0px 12px;
+    background: var(--transparentWhite);
+    color: var(--black0);
+    border-color: var(--white);
+    line-height: 40px;
+}
+
+img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+}
+
+.testimonial-carousel img {
+    min-height: 360px;
+}
+
+/* .genealogy .image img {
+    object-fit: contain;
+    height: 500px;
+    width: 600px;
+} */
+
+.thumbnails {
+    display: flex;
+    overflow-x: auto;
+}
+
+.thumbnails::-webkit-scrollbar {
+    width: 10px;
+}
+
+.thumbnail-image {
+    position: relative;
+    height: 105px;
+    min-width: 160px;
+    cursor: pointer;
+}
+
+.thumbnail-image img {
+    height: 100%;
+    width: 100%;
+}
+
+.thumbnail-image:not(:last-child) {
+    margin-right: 15px;
+}
+
+.thumbnail-image::after {
+    -o-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.thumbnail-image.active::after,
+.thumbnail-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+.thumbnail-image::after {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.thumbnail-image.active::after {
+    background: none;
+}
+
 .horse-details-container .info {
     width: 45%;
-    padding: 10px 10px 10px 50px;
+    padding: 0px 10px 10px 50px;
 }
 
 .horse-details-container .info h3 {
-    margin-top: 0;
-    margin-bottom: 15px;
+    font-size: 26px;
 }
 
 .horse-details-container .info p {
@@ -210,10 +381,14 @@ export default {
     margin-bottom: 0;
 }
 
-.brief-description p:nth-child(2) {
+.brief-details p + p {
+    margin-top: 15px;
+}
+
+.brief-description p + p {
     margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 @import url(../../assets/css/custom-nav.css);
 </style>
+
