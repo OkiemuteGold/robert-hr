@@ -121,6 +121,13 @@ export default {
     margin-bottom: 0;
 }
 
+.process-section .custom-nav a {
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    line-height: 40px;
+}
+
 .process-carousel .image {
     height: 220px;
     width: 100%;

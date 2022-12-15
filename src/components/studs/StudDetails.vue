@@ -264,19 +264,15 @@ export default {
 .custom-nav {
     position: relative;
     top: -50px;
-    right: 0;
+    right: 8px;
     margin-top: 0;
     z-index: 2;
 }
 
-.custom-nav .btn {
-    height: 40px;
-    width: 40px;
-    padding: 0px 12px;
+.custom-nav a {
     background: var(--transparentWhite);
     color: var(--black0);
     border-color: var(--white);
-    line-height: 40px;
 }
 
 img {
