@@ -263,7 +263,7 @@ export default {
 
 .custom-nav {
     position: relative;
-    top: -70px;
+    top: -50px;
     right: 0;
     margin-top: 0;
     z-index: 2;
@@ -287,7 +287,12 @@ img {
 }
 
 .testimonial-carousel img {
-    min-height: 350px;
+    height: 480px;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 50% 15%;
+    object-position: 50% 15%;
 }
 
 .thumbnails {
@@ -309,6 +314,8 @@ img {
 .thumbnail-image img {
     height: 100%;
     width: 100%;
+    -o-object-position: 50% 15%;
+    object-position: 50% 15%;
 }
 
 .thumbnail-image:not(:last-child) {
@@ -356,12 +363,12 @@ img {
     font-size: 15px;
 }
 
-.horse-details-container .info p span {
-    font-weight: 500;
-}
-
 .brief-details {
     margin-bottom: 20px;
+}
+
+.brief-details p span {
+    font-weight: 500;
 }
 
 .brief-details p:last-child,

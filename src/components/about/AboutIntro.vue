@@ -7,7 +7,7 @@
                 <div class="col-md-7 col-sm-12 col-xs-12">
                     <div class="section-header left-header">
                         <!-- <h5>Our Pleasure to Say</h5> -->
-                        <h3 class="capitalize">The Origin</h3>
+                        <h3 class="capitalize mt-0">The Origin</h3>
                     </div>
 
                     <div class="intro-about-content">

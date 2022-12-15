@@ -1,9 +1,62 @@
 <template>
     <div class="horses-container pt-100 pb-100">
-        <div class="info-section feature-section container-fluid no-padding">
+        <div class="info-section container-fluid no-padding">
             <div class="container">
+                <div class="row mb-60">
+                    <div class="col-md-7 col-sm-12 col-xs-12">
+                        <div class="section-header mb-30 left-header">
+                            <h2 class="capitalize mt-0 mb-0">Our Mares</h2>
+                        </div>
+
+                        <div class="intro-about-content text-left">
+                            <p>
+                                The base of our mares combines the best
+                                qualities of the pure Arabian breed.
+                                Morphologically very fixed characteristics,
+                                balanced proportions, strong extremities and
+                                proceeding from the most spectacular stallions.
+                                Castropol, one of the most outstanding stallions
+                                of the Yeguada Ybarra is the father of our
+                                mares.
+                            </p>
+
+                            <p>
+                                We probe functionality to all the mares to
+                                remain as mothers for breeding. Morphologically
+                                proportioned, they have inherited the
+                                morphological structure, of their ancestors.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-12 col-xs-12">
+                        <div>
+                            <img
+                                src="@/assets/images/mares/mares-image.jpg"
+                                width="350"
+                                height="250"
+                                alt="about intro image"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-60">
+                    <div class="col-xs-12">
+                        <div class="intro-about-content">
+                            <p>
+                                Noble and extraordinary personality, provides
+                                also great characteristics for dressage, great
+                                ease of movement. We combined the tradition with
+                                the modern trends of pure arabian breeding. In
+                                our group of mares we have blood of recognised
+                                champions as Aja Sanajor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="section-header mb-10 text-left">
-                    <h2 class="mt-0">All Mares Horses</h2>
+                    <h2 class="mt-0 mb-0">All Mares Horses</h2>
                 </div>
 
                 <div

@@ -2,10 +2,23 @@
   margin-bottom: 0;
 }
 
+.intro-about-content p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 15px;
+  color: #777;
+  margin-bottom: 40px;
+  padding: 0 7%;
+  line-height: 32px;
+  letter-spacing: 0.45px;
+}
+
 .all-horses-wrapper .image img {
   height: 230px;
+  width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: 50% 15%;
+  object-position: 50% 15%;
 }
 
 .all-horses-wrapper h3 {

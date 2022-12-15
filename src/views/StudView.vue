@@ -1,8 +1,8 @@
 <template>
     <div class="studs-view pt-100 pb-100">
         <div class="intro-about info-section container-fluid no-padding">
-            <div class="container all-studs">
-                <div class="row mb-70">
+            <div class="container">
+                <div class="row">
                     <div class="col-xs-12">
                         <div class="section-header mb-10 left-header">
                             <h2 class="mt-0 mb-0">The Studs</h2>
@@ -19,7 +19,12 @@
                             </p>
                         </div>
                     </div>
+                </div>
 
+                <div
+                    class="row all-studs mb-70"
+                    v-if="studs && studs.length > 0"
+                >
                     <div
                         v-for="(item, index) in studs"
                         :key="index"
@@ -158,33 +163,27 @@
 
 <script>
 import "@/mixins";
-import { mapActions } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 
 export default {
-    data() {
-        return {
-            studs: [
-                {
-                    name: "Stallion",
-                    url: require("@/assets/images/feature-banner.jpg"),
-                },
-                {
-                    name: "Mares",
-                    url: require("@/assets/images/feature-banner.jpg"),
-                },
-                {
-                    name: "Foals",
-                    url: require("@/assets/images/feature-banner.jpg"),
-                },
-                {
-                    name: "Fillies",
-                    url: require("@/assets/images/feature-banner.jpg"),
-                },
-            ],
-        };
+    computed: {
+        ...mapGetters(["getAllStudItems"]),
+
+        studs() {
+            let studs = [];
+            if (this.getAllStudItems) {
+                studs = this.getAllStudItems;
+            }
+            return studs;
+        },
     },
+
     methods: {
-        ...mapActions(["setCurrentPage", "setBannerSettings"]),
+        ...mapActions([
+            "setCurrentPage",
+            "setBannerSettings",
+            "setAllStudItems",
+        ]),
 
         setBannerStyles() {
             this.setBannerSettings({
@@ -200,6 +199,7 @@ export default {
     mounted() {
         this.setCurrentPage(this.$router.history.current.name);
         this.setBannerStyles();
+        this.setAllStudItems();
     },
 };
 </script>
@@ -216,6 +216,7 @@ export default {
 
 .image img {
     height: 200px;
+    width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
 }

@@ -35,17 +35,21 @@
                         }"
                         class="process-carousel"
                     >
-                        <div v-for="(item, index) in allStuds" :key="index">
-                            <img
-                                :src="item.imageUrl"
-                                :alt="item.alt"
-                                width="253"
-                                height="244"
-                            />
+                        <router-link
+                            v-for="(item, index) in allStuds"
+                            :key="index"
+                            :to="{
+                                name: item.name,
+                            }"
+                        >
+                            <div class="image">
+                                <img :src="item.url" :alt="item.alt" />
+                            </div>
+
                             <div class="process-content">
                                 <h3>{{ item.name }}</h3>
                             </div>
-                        </div>
+                        </router-link>
 
                         <template slot="prev"
                             ><span hidden ref="prev" class="prev"
@@ -117,11 +121,23 @@ export default {
     margin-bottom: 0;
 }
 
-/* .process-carousel img {
-    border-radius: 10px 10px 0 0;
-} */
+.process-carousel .image {
+    height: 220px;
+    width: 100%;
+}
+
+.process-carousel .image img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 50% 15%;
+    object-position: 50% 15%;
+    /* border-radius: 10px 10px 0 0; */
+}
 
 .process-content {
+    max-width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
     /* border-radius: 0 0 10px 10px; */

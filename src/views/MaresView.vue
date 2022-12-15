@@ -23,7 +23,7 @@ export default {
                 prevLinkText: "Home",
                 currentLinkText: "Mares",
                 description: null,
-                imageUrl: require("@/assets/images/feature-banner.jpg"),
+                imageUrl: require("@/assets/images/mares/mares-image.jpg"),
             });
         },
     },
