@@ -1,60 +1,120 @@
 export default [
     {
         code: "mares",
-        id: "horse-name3",
-        name: "Horse Name3",
-        breed: "Hispano-Arabian Horse",
+        id: "masca",
+        name: "Masca",
+        breed: "Arabian",
         briefDetails: {
-            dateOfBirth: "11/2/1992",
-            height: "154cm",
+            dateOfBirth: "17/01/2016",
+            height: "156cm",
             layer: "Thrush",
-            father: "Twinkle",
-            mother: "little boat",
+            father: "",
+            mother: "",
         },
         horseDescription: {
             description1: "some description texts",
             description2: "another description texts",
-            description3: "last description texts"
+            description3: "last description texts",
+            description4: "some more description",
         },
         slideImages: [
             {
-                alt: "alt text",
-                src: require("@/assets/images/slider-1.jpg"),
+                alt: "masca-1",
+                src: require("@/assets/images/mares/masca-1.png"),
             },
             {
-                alt: "alt text",
-                src: require("@/assets/images/slider-2.jpg"),
+                alt: "masca-2",
+                src: require("@/assets/images/mares/masca-2.jpg"),
+            },
+            {
+                alt: "masca-3",
+                src: require("@/assets/images/mares/masca-3.jpg"),
+            },
+            {
+                alt: "masca-4",
+                src: require("@/assets/images/mares/masca-4.jpg"),
+            },
+            {
+                alt: "masca-5",
+                src: require("@/assets/images/mares/masca-5.jpg"),
             },
         ],
-        historyImage: require("@/assets/images/gallery-1.jpg"),
+        historyImage: require("@/assets/images/mares/masca-genealogy.png"),
     },
     {
         code: "mares",
-        id: "horse-name4",
-        name: "Horse Name4",
+        id: "nueva-caledonia",
+        name: "Nueva Caledonia",
         breed: "Hispano-Arabian Horse",
         briefDetails: {
-            dateOfBirth: "11/2/1992",
-            height: "154cm",
+            dateOfBirth: "17/04/2017",
+            height: "155cm",
             layer: "Thrush",
-            father: "Twinkle",
-            mother: "little boat",
+            father: "",
+            mother: "",
         },
         horseDescription: {
             description1: "some description texts",
             description2: "another description texts",
-            description3: "last description texts"
+            description3: "last description texts",
+            description4: "some more description texts",
         },
         slideImages: [
             {
-                alt: "alt text",
-                src: require("@/assets/images/slider-1.jpg"),
+                alt: "nueva-1",
+                src: require("@/assets/images/mares/nueva-1.jpg"),
             },
             {
-                alt: "alt text",
-                src: require("@/assets/images/slider-2.jpg"),
+                alt: "nueva-2",
+                src: require("@/assets/images/mares/nueva-2.jpg"),
+            },
+            {
+                alt: "nueva-3",
+                src: require("@/assets/images/mares/nueva-3.jpg"),
             },
         ],
-        historyImage: require("@/assets/images/gallery-1.jpg"),
+        historyImage: require("@/assets/images/mares/nueva-genealogy.png"),
+    },
+    {
+        code: "mares",
+        id: "inarah-al-zubi",
+        name: "Inarah Al Zubi",
+        breed: "Arabian Horse",
+        briefDetails: {
+            dateOfBirth: "26/04/2019",
+            height: "159cm",
+            layer: "Chesnut",
+            father: "",
+            mother: "",
+        },
+        horseDescription: {
+            description1: "some description texts",
+            description2: "another description texts",
+            description3: "last description texts",
+            description4: "some more description texts",
+        },
+        slideImages: [
+            {
+                alt: "inarah-1",
+                src: require("@/assets/images/mares/inarah-1.jpg"),
+            },
+            {
+                alt: "inarah-2",
+                src: require("@/assets/images/mares/inarah-2.jpg"),
+            },
+            {
+                alt: "inarah-3",
+                src: require("@/assets/images/mares/inarah-3.jpg"),
+            },
+            {
+                alt: "inarah-4",
+                src: require("@/assets/images/mares/inarah-4.png"),
+            },
+            {
+                alt: "inarah-5",
+                src: require("@/assets/images/mares/inarah-5.jpg"),
+            },
+        ],
+        historyImage: require("@/assets/images/mares/inarah-genealogy.png"),
     },
 ]

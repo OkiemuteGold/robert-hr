@@ -161,7 +161,7 @@
                         <div class="image">
                             <img
                                 :src="currentHorse.historyImage"
-                                :alt="currentHorse.name"
+                                :alt="currentHorse.name + ' genealogy'"
                             />
                         </div>
                     </div>
@@ -287,8 +287,8 @@ img {
     width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
-    -o-object-position: 50% 15%;
-    object-position: 50% 15%;
+    -o-object-position: 60% 20%;
+    object-position: 60% 20%;
 }
 
 .thumbnails {

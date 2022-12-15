@@ -19,48 +19,40 @@ export default [
         },
         slideImages: [
             {
-                alt: "alt text",
+                alt: "kirov-0",
                 src: require("@/assets/images/stallion/kirov-0.jpg"),
             },
             {
-                alt: "alt text",
+                alt: "kirov-1",
                 src: require("@/assets/images/stallion/kirov-1.jpg"),
             },
             {
-                alt: "alt text",
+                alt: "kirov-2",
                 src: require("@/assets/images/stallion/kirov-2.jpg"),
             },
             {
-                alt: "alt text",
+                alt: "kirov-3",
                 src: require("@/assets/images/stallion/kirov-3.jpg"),
             },
             {
-                alt: "alt text",
+                alt: "kirov-4",
                 src: require("@/assets/images/stallion/kirov-4.jpg"),
             },
             {
-                alt: "alt text",
+                alt: "kirov-5",
                 src: require("@/assets/images/stallion/kirov-5.jpg"),
             },
             {
-                alt: "alt text",
+                alt: "kirov-6",
                 src: require("@/assets/images/stallion/kirov-6.jpg"),
             },
             {
-                alt: "alt text",
+                alt: "kirov-7",
                 src: require("@/assets/images/stallion/kirov-7.jpg"),
             },
             {
-                alt: "alt text",
+                alt: "kirov-8",
                 src: require("@/assets/images/stallion/kirov-8.jpg"),
-            },
-            {
-                alt: "alt text",
-                src: require("@/assets/images/stallion/kirov-9.jpg"),
-            },
-            {
-                alt: "alt text",
-                src: require("@/assets/images/stallion/kirov-10.jpg"),
             },
         ],
         historyImage: require("@/assets/images/stallion/kirov-genealogy.png"),

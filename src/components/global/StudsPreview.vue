@@ -24,7 +24,7 @@
                     v-if="allStuds && allStuds.length > 0"
                 >
                     <carousel
-                        :autoplay="false"
+                        :autoplay="true"
                         :nav="false"
                         :dots="false"
                         :margin="30"
