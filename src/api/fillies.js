@@ -1,60 +1,54 @@
 export default [
     {
         code: "fillies",
-        id: "horse-name7",
-        name: "Horse Name7",
+        id: "algarabía-yb",
+        name: "Algarabía YB",
         breed: "Arabian Horse",
         briefDetails: {
-            dateOfBirth: "11/2/1992",
-            height: "154cm",
+            dateOfBirth: "04/01/2022",
+            height: "",
             layer: "Thrush",
-            father: "Twinkle",
-            mother: "little boat",
+            father: "",
+            mother: "",
         },
         horseDescription: {
             description1: "some description texts",
             description2: "another description texts",
-            description3: "last description texts"
+            description3: "last description texts",
+            description4: "some more texts",
         },
         slideImages: [
             {
-                alt: "alt text",
+                alt: "algarabia",
                 src: require("@/assets/images/slider-1.jpg"),
             },
-            {
-                alt: "alt text",
-                src: require("@/assets/images/slider-2.jpg"),
-            },
         ],
-        historyImage: require("@/assets/images/gallery-1.jpg"),
+        historyImage: require("@/assets/images/fillies/algarabia-genealogy.png"),
     },
     {
         code: "fillies",
-        id: "horse-name8",
-        name: "Horse Name8",
+        id: "agadir-yb",
+        name: "Agadir YB",
         breed: "Arabian Horse",
         briefDetails: {
-            dateOfBirth: "11/2/1992",
-            height: "154cm",
+            dateOfBirth: "14/03/2022",
+            height: "",
             layer: "Thrush",
-            father: "Twinkle",
-            mother: "little boat",
+            father: "",
+            mother: "",
         },
         horseDescription: {
             description1: "some description texts",
             description2: "another description texts",
-            description3: "last description texts"
+            description3: "last description texts",
+            description4: "some more texts",
         },
         slideImages: [
             {
-                alt: "alt text",
+                alt: "agadir",
                 src: require("@/assets/images/slider-1.jpg"),
             },
-            {
-                alt: "alt text",
-                src: require("@/assets/images/slider-2.jpg"),
-            },
         ],
-        historyImage: require("@/assets/images/gallery-1.jpg"),
+        historyImage: require("@/assets/images/fillies/agadir-genealogy.png"),
     },
 ]
