@@ -87,7 +87,11 @@ export default {
                     // categories.add(image.categoryCode);
                     let code = image.categoryCode;
 
-                    if (categories.indexOf(code) == -1) {
+                    // if (!categories.includes(code)) {
+                    //     categories.push(code);
+                    // }
+
+                    if (categories.indexOf(code) === -1) {
                         categories.push(code);
                     }
                 });

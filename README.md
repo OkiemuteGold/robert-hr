@@ -30,14 +30,20 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Plugins
 
-vue-owl-carousel
+#### vue-owl-carousel
 
 ```
 https://www.npmjs.com/package/vue-owl-carousel
 ```
 
-vue-masonry-css
+#### vue-masonry-css
 
 ```
 https://www.npmjs.com/package/vue-masonry-css
+```
+
+#### Vue Pagination 2 Plugin:
+
+```
+https://www.npmjs.com/package/vue-pagination-2
 ```

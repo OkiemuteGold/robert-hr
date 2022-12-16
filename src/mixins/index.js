@@ -21,14 +21,6 @@ Vue.mixin({
             return phoneRegex.test(phone);
         },
 
-        eliminateDuplicateCodes(arr) {
-            return arr
-                .map((e) => e["groupId"])
-                .map((e, i, final) => final.indexOf(e) === i && i)
-                .filter((obj) => arr[obj])
-                .map((e) => arr[e]);
-        },
-
         capitalizeTexts(texts) {
             let words = texts.split(" ");
 
@@ -39,20 +31,6 @@ Vue.mixin({
             // let words = texts.charAt(0).toUpperCase() + texts.slice(1);
             let sender = words.join(" ");
             return sender;
-        },
-
-        shuffleArray: function (array) {
-            var ctr = array.length,
-                temp,
-                index;
-            while (ctr > 0) {
-                index = Math.floor(Math.random() * ctr);
-                ctr--;
-                temp = array[ctr];
-                array[ctr] = array[index];
-                array[index] = temp;
-            }
-            return array;
         },
     },
 });
