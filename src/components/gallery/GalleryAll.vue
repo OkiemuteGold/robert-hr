@@ -1,5 +1,5 @@
 <template>
-    <div class="gallery-section container pb-50">
+    <div class="gallery-section container">
         <div class="row">
             <div class="col-xs-12">
                 <div class="category-buttons pb-40" v-if="allCategories">
@@ -62,6 +62,38 @@
                 <LoadingComponent v-else />
             </div>
         </div>
+
+        <div class="pagination-wrapper">
+            <nav
+                class="ow-pagination"
+                v-if="
+                    galleryImages && isCategoryAll && totalImageAll > pageSize
+                "
+            >
+                <MyPagination
+                    v-model="page"
+                    :records="totalImageAll"
+                    :per-page="pageSize"
+                    @paginate="paginateAllImages"
+                />
+            </nav>
+
+            <nav
+                class="ow-pagination"
+                v-if="
+                    galleryImages &&
+                    !isCategoryAll &&
+                    totalImageCategory > pageSize
+                "
+            >
+                <MyPagination
+                    v-model="page"
+                    :records="totalImageCategory"
+                    :per-page="pageSize"
+                    @paginate="paginateCategoryImages"
+                />
+            </nav>
+        </div>
     </div>
 </template>
 
@@ -116,6 +148,14 @@ export default {
         return {
             galleryImages: [],
             isLoading: false,
+            isCategoryAll: true,
+            categoryCode: null,
+
+            // ------ pagination ------
+            page: 1,
+            pageSize: 6,
+            totalImageAll: null,
+            totalImageCategory: null,
         };
     },
 
@@ -136,21 +176,20 @@ export default {
                 });
                 categoryButton.classList.add("active-button");
 
-                this.isLoading = true;
+                if (categoryCode === "all") {
+                    this.isCategoryAll = true;
+                    this.page = 1;
+                    this.pageSize = 6;
 
-                setTimeout(() => {
-                    this.isLoading = false;
+                    this.paginateAllImages();
+                } else {
+                    this.categoryCode = categoryCode;
+                    this.isCategoryAll = false;
+                    this.page = 1;
+                    this.pageSize = 2;
 
-                    if (categoryCode === "all") {
-                        this.galleryImages = this.allGalleryImages;
-                    } else {
-                        this.galleryImages = this.allGalleryImages.filter(
-                            (image) => {
-                                return image.categoryCode === categoryCode;
-                            }
-                        );
-                    }
-                }, 1000);
+                    this.paginateCategoryImages();
+                }
             }
 
             // console.log(
@@ -160,6 +199,35 @@ export default {
             //     this.allGalleryImages
             // );
         },
+
+        // ------ pagination ------
+        getCurrentImages() {
+            this.isLoading = true;
+
+            setTimeout(() => {
+                this.isLoading = false;
+            }, 500);
+
+            return (this.galleryImages = this.galleryImages.slice(
+                (this.page - 1) * this.pageSize,
+                this.page * this.pageSize
+            ));
+        },
+
+        paginateAllImages() {
+            this.galleryImages = this.allGalleryImages;
+            this.totalImageAll = this.galleryImages.length;
+            this.getCurrentImages();
+        },
+
+        paginateCategoryImages() {
+            this.galleryImages = this.allGalleryImages.filter((image) => {
+                return image.categoryCode === this.categoryCode;
+            });
+
+            this.totalImageCategory = this.galleryImages.length;
+            this.getCurrentImages();
+        },
     },
 
     beforeMount() {
@@ -168,7 +236,7 @@ export default {
 
     mounted() {
         if (this.allGalleryImages) {
-            this.galleryImages = this.allGalleryImages;
+            this.paginateAllImages();
         }
     },
 };

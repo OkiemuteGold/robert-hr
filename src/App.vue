@@ -146,6 +146,38 @@ img {
     color: var(--black1);
 }
 
+/* pagination */
+.pagination li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* line-height: 43px; */
+}
+
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover {
+    background: var(--yellowLight);
+    color: var(--white);
+}
+
+.pagination li:not(.active) a:hover {
+    background: var(--transparentWhite);
+    color: var(--yellowLight);
+}
+
+.pagination:not(:disabled) a {
+    cursor: pointer;
+}
+
+.pagination > .active > a {
+    cursor: default;
+}
+
+.pagination:disabled a {
+    cursor: not-allowed;
+}
+
 @media (max-width: 991px) {
     .ow-navigation .nav.navbar-nav li.dropdown li > a:hover,
     .ow-navigation .nav.navbar-nav li.dropdown li > a:focus,

@@ -5,8 +5,10 @@ import router from './router'
 import store from './store'
 
 import VueMasonry from 'vue-masonry-css'
+import Pagination from 'vue-pagination-2';
 
 Vue.use(VueMasonry);
+Vue.component('MyPagination', Pagination);
 
 Vue.config.productionTip = false
 

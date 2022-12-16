@@ -13,24 +13,6 @@
         </div> -->
 
         <GalleryAll />
-
-        <div class="container">
-            <nav class="ow-pagination">
-                <ul class="pagination">
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li>
-                        <a href="#"
-                            ><i
-                                class="fa fa-angle-double-right"
-                                aria-hidden="true"
-                            ></i
-                        ></a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
     </div>
 </template>
 
@@ -67,12 +49,4 @@ export default {
 </script>
 
 <style scoped>
-.ow-pagination {
-    margin-top: -20px;
-    margin-bottom: 0;
-}
-
-.pagination {
-    margin-top: 0;
-}
 </style>
