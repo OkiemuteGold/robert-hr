@@ -13,9 +13,9 @@
 <script>
 import HomeIntro from "@/components/home/HomeIntro";
 import HomeAbout from "@/components/home/HomeAbout";
-import StudsPreview from "@/components/global/StudsPreview";
-import GalleryPreview from "@/components/global/GalleryPreview";
-// import SectionProcess from "@/components/global/SectionProcess";
+import StudsPreview from "@/components/studs/StudsPreview";
+import GalleryPreview from "@/components/gallery/GalleryPreview";
+// import SectionProcess from "@/components/extra/SectionProcess";
 import AllTestimonials from "@/components/testimonials/AllTestimonials";
 import BlogHome from "@/components/blogs/BlogHome";
 

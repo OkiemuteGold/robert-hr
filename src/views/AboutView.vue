@@ -10,7 +10,7 @@
 <script>
 import AboutIntro from "@/components/about/AboutIntro";
 import AllTeam from "@/components/about/AllTeam";
-import SectionProcess from "@/components/global/SectionProcess";
+import SectionProcess from "@/components/extra/SectionProcess";
 import AllPartners from "@/components/about/AllPartners";
 
 import "@/mixins";

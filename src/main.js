@@ -4,6 +4,10 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 
+import VueMasonry from 'vue-masonry-css'
+
+Vue.use(VueMasonry);
+
 Vue.config.productionTip = false
 
 new Vue({

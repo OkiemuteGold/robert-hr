@@ -1,6 +1,18 @@
 <template>
-    <div class="gallery-section gallery-section-1 container-fluid no-padding">
-        <GalleryPreview />
+    <div
+        class="
+            gallery-section gallery-section-1
+            container-fluid
+            no-padding
+            pt-70
+            pb-70
+        "
+    >
+        <!-- <div class="section-header">
+            <h3>We preserve every moment at Yeguada Fernández Millares</h3>
+        </div> -->
+
+        <GalleryAll />
 
         <div class="container">
             <nav class="ow-pagination">
@@ -19,20 +31,18 @@
                 </ul>
             </nav>
         </div>
-
-        <div class="padding-70"></div>
     </div>
 </template>
 
 <script>
-import GalleryPreview from "@/components/global/GalleryPreview";
+import GalleryAll from "@/components/gallery/GalleryAll";
 
 import "@/mixins";
 import { mapActions } from "vuex";
 
 export default {
     components: {
-        GalleryPreview,
+        GalleryAll,
     },
 
     methods: {

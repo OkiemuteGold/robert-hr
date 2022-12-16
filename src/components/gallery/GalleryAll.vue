@@ -1,16 +1,19 @@
 <template>
-    <div class="gallery-section container-fluid no-padding pt-70 pb-70">
-        <div class="container">
-            <div class="section-header">
-                <h3>From Our Training Center</h3>
-            </div>
+    <div class="gallery-section container pb-50">
+        <div class="row" v-if="allGalleryItems && allGalleryItems.length">
+            <!-- <div
+                class="col-md-4 col-sm-6 col-xs-6"
+                v-for="(item, index) in allGalleryItems"
+                :key="index"
+            >
+            </div> -->
 
-            <div class="row" v-if="allGalleryItems && allGalleryItems.length">
-                <div
-                    class="col-md-4 col-sm-6 col-xs-6"
-                    v-for="(item, index) in allGalleryItems"
-                    :key="index"
-                >
+            <!-- :cols="3" :gutter="30" -->
+            <masonry
+                :cols="{ default: 3, 991: 2, 541: 1, 475: 1 }"
+                :gutter="{ default: '30px', 700: '15px' }"
+            >
+                <div v-for="(item, index) in allGalleryItems" :key="index">
                     <div class="gallery-box">
                         <img
                             :src="item.imageUrl"
@@ -31,7 +34,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </masonry>
         </div>
     </div>
 </template>
@@ -69,16 +72,16 @@ export default {
 
 <style scoped>
 .gallery-content .inner {
-    background-color: #ffc619;
-    border-radius: 100%;
-    color: var(--black1);
-    display: inline-block;
-    font-size: 18px;
+    position: relative;
     width: 71px;
     height: 71px;
+    display: inline-block;
+    font-size: 18px;
+    background-color: var(--yellowLight);
+    color: var(--black1);
+    border-radius: 100%;
     margin-top: -35px;
     line-height: 71px;
-    position: relative;
 }
 
 .gallery-section .gallery-box-hover p {
