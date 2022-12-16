@@ -11,11 +11,12 @@ export default [
             father: "Twinkle",
             mother: "little boat",
         },
-        horseDescription: {
-            description1: "some description texts",
-            description2: "another description texts",
-            description3: "last description texts"
-        },
+        horseDescription: [
+            "some description texts",
+            "another description texts",
+            "last description texts",
+            "some more texts",
+        ],
         slideImages: [
             {
                 alt: "alt text",
@@ -40,11 +41,12 @@ export default [
             father: "Twinkle",
             mother: "little boat",
         },
-        horseDescription: {
-            description1: "some description texts",
-            description2: "another description texts",
-            description3: "last description texts"
-        },
+        horseDescription: [
+            "some description texts",
+            "another description texts",
+            "last description texts",
+            "some more texts",
+        ],
         slideImages: [
             {
                 alt: "alt text",

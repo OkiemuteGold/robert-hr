@@ -34,7 +34,7 @@
                                 src="@/assets/images/mares/mares-image.jpg"
                                 width="350"
                                 height="250"
-                                alt="about intro image"
+                                alt="mares intro image"
                             />
                         </div>
                     </div>

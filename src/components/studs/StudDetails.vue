@@ -121,34 +121,17 @@
                             </p>
                         </div>
 
-                        <div class="brief-description">
+                        <div
+                            class="brief-description"
+                            v-if="currentHorse.horseDescription"
+                        >
                             <p
-                                v-if="
-                                    currentHorse.horseDescription.description1
-                                "
+                                v-for="(
+                                    description, index
+                                ) in currentHorse.horseDescription"
+                                :key="index"
                             >
-                                {{ currentHorse.horseDescription.description1 }}
-                            </p>
-                            <p
-                                v-if="
-                                    currentHorse.horseDescription.description2
-                                "
-                            >
-                                {{ currentHorse.horseDescription.description2 }}
-                            </p>
-                            <p
-                                v-if="
-                                    currentHorse.horseDescription.description3
-                                "
-                            >
-                                {{ currentHorse.horseDescription.description3 }}
-                            </p>
-                            <p
-                                v-if="
-                                    currentHorse.horseDescription.description4
-                                "
-                            >
-                                {{ currentHorse.horseDescription.description4 }}
+                                {{ description }}
                             </p>
                         </div>
                     </div>
@@ -360,7 +343,7 @@ img {
 }
 
 .brief-details {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .brief-details p span {

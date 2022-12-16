@@ -11,12 +11,12 @@ export default [
             father: "Vigia, Hispalis",
             mother: "Suriman or Urif",
         },
-        horseDescription: {
-            description1: "As a purebred Arabian stallion, Kirov concentrates on his genealogy the result of the selection of the great arabian historical horses.",
-            description2: "Standing out for physical, aesthetic and functional harmony, nobility, intelligence, and charisma join movements and unique beauty, which will make him a reference stallion.",
-            description3: "Names such as Vigia, Hispalis on the father's side and Suriman or Urif on the maternal line have given Kirov exceptional qualities.",
-            description4: "Kirov is providing extraordinary fillies and foals.",
-        },
+        horseDescription: [
+            "As a purebred Arabian stallion, Kirov concentrates on his genealogy the result of the selection of the great arabian historical horses.",
+            "Standing out for physical, aesthetic and functional harmony, nobility, intelligence, and charisma join movements and unique beauty, which will make him a reference stallion.",
+            "Names such as Vigia, Hispalis on the father's side and Suriman or Urif on the maternal line have given Kirov exceptional qualities.",
+            "Kirov is providing extraordinary fillies and foals.",
+        ],
         slideImages: [
             {
                 alt: "kirov-0",
@@ -70,12 +70,12 @@ export default [
             father: "Vigia, Hispalis",
             mother: "Suriman or Urif",
         },
-        horseDescription: {
-            description1: "As a purebred Arabian stallion, Kirov concentrates on his genealogy the result of the selection of the great arabian historical horses.",
-            description2: "Standing out for physical, aesthetic and functional harmony, nobility, intelligence, and charisma join movements and unique beauty, which will make him a reference stallion.",
-            description3: "Names such as Vigia, Hispalis on the father's side and Suriman or Urif on the maternal line have given Kirov exceptional qualities.",
-            description4: "Kirov is providing extraordinary fillies and foals.",
-        },
+        horseDescription: [
+            "As a purebred Arabian stallion, Kirov concentrates on his genealogy the result of the selection of the great arabian historical horses.",
+            "Standing out for physical, aesthetic and functional harmony, nobility, intelligence, and charisma join movements and unique beauty, which will make him a reference stallion.",
+            "Names such as Vigia, Hispalis on the father's side and Suriman or Urif on the maternal line have given Kirov exceptional qualities.",
+            "Kirov is providing extraordinary fillies and foals.",
+        ],
         slideImages: [
             {
                 alt: "alt text",
@@ -109,12 +109,12 @@ export default [
             father: "Vigia, Hispalis",
             mother: "Suriman or Urif",
         },
-        horseDescription: {
-            description1: "As a purebred Arabian stallion, Kirov concentrates on his genealogy the result of the selection of the great arabian historical horses.",
-            description2: "Standing out for physical, aesthetic and functional harmony, nobility, intelligence, and charisma join movements and unique beauty, which will make him a reference stallion.",
-            description3: "Names such as Vigia, Hispalis on the father's side and Suriman or Urif on the maternal line have given Kirov exceptional qualities.",
-            description4: "Kirov is providing extraordinary fillies and foals.",
-        },
+        horseDescription: [
+            "As a purebred Arabian stallion, Kirov concentrates on his genealogy the result of the selection of the great arabian historical horses.",
+            "Standing out for physical, aesthetic and functional harmony, nobility, intelligence, and charisma join movements and unique beauty, which will make him a reference stallion.",
+            "Names such as Vigia, Hispalis on the father's side and Suriman or Urif on the maternal line have given Kirov exceptional qualities.",
+            "Kirov is providing extraordinary fillies and foals.",
+        ],
         slideImages: [
             {
                 alt: "alt text",

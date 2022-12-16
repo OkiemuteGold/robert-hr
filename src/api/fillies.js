@@ -11,12 +11,12 @@ export default [
             father: "",
             mother: "",
         },
-        horseDescription: {
-            description1: "some description texts",
-            description2: "another description texts",
-            description3: "last description texts",
-            description4: "some more texts",
-        },
+        horseDescription: [
+            "some description texts",
+            "another description texts",
+            "last description texts",
+            "some more texts",
+        ],
         slideImages: [
             {
                 alt: "algarabia",
@@ -37,12 +37,12 @@ export default [
             father: "",
             mother: "",
         },
-        horseDescription: {
-            description1: "some description texts",
-            description2: "another description texts",
-            description3: "last description texts",
-            description4: "some more texts",
-        },
+        horseDescription: [
+            "some description texts",
+            "another description texts",
+            "last description texts",
+            "some more texts",
+        ],
         slideImages: [
             {
                 alt: "agadir",
