@@ -179,6 +179,10 @@
 }
 
 /* margin top */
+.mt-auto {
+  margin-top: auto;
+}
+
 .mt-0 {
   margin-top: 0px;
 }
@@ -224,6 +228,10 @@
 }
 
 /* margin bottom */
+.mb-auto {
+  margin-bottom: auto;
+}
+
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -269,6 +277,10 @@
 }
 
 /* margin left */
+.ml-auto {
+  margin-left: auto;
+}
+
 .ml-0 {
   margin-left: 0px;
 }
@@ -314,6 +326,10 @@
 }
 
 /* margin right */
+.mr-auto {
+  margin-right: auto;
+}
+
 .mr-0 {
   margin-right: 0px;
 }

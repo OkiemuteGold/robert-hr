@@ -1,6 +1,6 @@
 <template>
     <div class="horses-container pt-100 pb-100">
-        <div class="info-section feature-section container-fluid no-padding">
+        <div class="info-section container-fluid no-padding">
             <div class="container">
                 <div class="section-header mb-10 text-left">
                     <h2 class="mt-0 mb-0">All Stallion Horses</h2>

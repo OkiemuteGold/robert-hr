@@ -93,7 +93,7 @@
                         <div>
                             <img
                                 src="@/assets/images/slider-1.jpg"
-                                alt="about intro image"
+                                alt="morphology characteristics image"
                             />
                         </div>
                     </div>
@@ -104,7 +104,7 @@
                         <div>
                             <img
                                 src="@/assets/images/slider-1.jpg"
-                                alt="about intro image"
+                                alt="functionality characteristics image"
                             />
                         </div>
                     </div>
@@ -151,7 +151,7 @@
                         <div>
                             <img
                                 src="@/assets/images/slider-1.jpg"
-                                alt="about intro image"
+                                alt="breed characteristics image"
                             />
                         </div>
                     </div>

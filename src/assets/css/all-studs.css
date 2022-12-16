@@ -30,6 +30,7 @@
   color: var(--black1);
 }
 
+.all-horses-wrapper .image:hover + .info h3 a,
 .all-horses-wrapper h3 a:hover {
   color: var(--yellowDark);
   text-decoration: none;

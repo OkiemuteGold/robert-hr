@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <div class="col-md-5 col-sm-12 col-xs-12">
-                    <div>
+                    <div class="text-center">
                         <img
                             src="@/assets/images/process-1.jpg"
                             width="350"
