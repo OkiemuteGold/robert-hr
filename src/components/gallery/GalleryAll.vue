@@ -196,7 +196,7 @@ export default {
     color: var(--black1);
     outline: none;
     border: 1px solid transparent;
-    line-height: 18px;
+    line-height: 24px;
     letter-spacing: 1.95px;
     text-align: center;
     text-transform: uppercase;
