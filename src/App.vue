@@ -8,6 +8,9 @@
             <transition name="fade" mode="out-in">
                 <router-view />
             </transition>
+
+            <MessageLoadingOverlay />
+            <ActionLoadingOverlay />
         </main>
 
         <TheFooter />
@@ -19,6 +22,9 @@ import TheHeader from "@/components/header/TheHeader";
 import ThePageBanner from "@/components/banners/ThePageBanner";
 import TheFooter from "@/components/footer/TheFooter";
 
+import MessageLoadingOverlay from "@/components/extra/MessageLoadingOverlay";
+import ActionLoadingOverlay from "@/components/extra/ActionLoadingOverlay";
+
 // import { mapActions } from "vuex";
 
 export default {
@@ -26,6 +32,8 @@ export default {
         TheHeader,
         ThePageBanner,
         TheFooter,
+        MessageLoadingOverlay,
+        ActionLoadingOverlay,
     },
 
     // methods: {
@@ -118,12 +126,16 @@ body {
     color: var(--yellowLight);
 }
 
-a {
-    text-decoration-skip-ink: auto;
+a,
+button {
     -o-transition: 0.3s ease;
     -moz-transition: 0.3s ease;
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
+}
+
+a {
+    text-decoration-skip-ink: auto;
 }
 
 img {

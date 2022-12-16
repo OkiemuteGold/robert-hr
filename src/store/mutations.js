@@ -13,6 +13,18 @@ export const BANNER_SETTINGS = (state, payload) => {
     };
 };
 
+export const SET_ACTION_LOADING = (state, payload) => {
+    setTimeout(() => {
+        state.actionProcessing = payload;
+    }, 200);
+};
+
+export const SET_ALERT_MODAL_STATUS = (state, payload) => {
+    state.alertModalStatus = payload.status;
+    state.alertModalType = payload.type;
+    state.alertModalMessage = payload.message;
+};
+
 export const ALL_STUD_ITEMS = (state, payload) => {
     state.allStudItems = payload;
 };

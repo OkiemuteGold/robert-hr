@@ -83,7 +83,7 @@ export default [
         briefDetails: {
             dateOfBirth: "26/04/2019",
             height: "159cm",
-            layer: "Chesnut",
+            layer: "Chestnut",
             father: "",
             mother: "",
         },

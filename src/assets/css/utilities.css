@@ -1,4 +1,8 @@
 /* padding top */
+.p-0 {
+  padding: 0;
+}
+
 .pt-0 {
   padding-top: 0px;
 }
@@ -179,6 +183,10 @@
 }
 
 /* margin top */
+.m-0 {
+  margin: 0;
+}
+
 .mt-auto {
   margin-top: auto;
 }

@@ -7,7 +7,10 @@
                     <div class="address-content">
                         <span class="icon icon-Pointer"></span>
                         <h3>Address:</h3>
-                        <p>09 Some Street, Germany.</p>
+                        <p>
+                            Yeguada Fernández Millares, <br />
+                            Cortijo los millares s/n trigueros (Huelva).
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-6 address-content-1">
@@ -15,15 +18,12 @@
                         <span class="icon icon-Phone2"></span>
                         <h3>Phone:</h3>
                         <p>
-                            <a href="tel:+0112543678" title="+01 125 436 78"
-                                >+01 125 436 78</a
+                            <a
+                                href="tel:+34617375921"
+                                aria-label="+34 617 375 921"
+                                >+34 617 375 921</a
                             >
                         </p>
-                        <!-- <p>
-                            <a href="tel:+0112543678" title="+01 125 436 78"
-                                >+01 125 436 78</a
-                            >
-                        </p> -->
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-6">
@@ -32,9 +32,9 @@
                         <h3>Email Address:</h3>
                         <p>
                             <a
-                                href="mailto:info@roberthr.com"
-                                title="mailto:info@roberthr.com"
-                                >Info@roberthr.Com</a
+                                href="mailto:info@yeguadafernandezmillares.com"
+                                title="mailto:info@yeguadafernandezmillares.com"
+                                >info@yeguadafernandezmillares.com</a
                             >
                         </p>
                     </div>
@@ -43,7 +43,7 @@
         </div>
         <!-- Container /- -->
         <div class="footer-copyright">
-            <p>&copy; copyright 2022. All rights reserved</p>
+            <p>copyright &copy; 2022 | yeguadafernandezmillares</p>
         </div>
     </div>
 </template>
@@ -52,5 +52,14 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
+.address-content p {
+    text-transform: capitalize;
+}
+
+.address-content p a {
+    -ms-word-break: break-all;
+    word-break: break-all;
+    text-transform: lowercase;
+}
 </style>

@@ -1,12 +1,18 @@
 <template>
-    <footer class="footer-main container-fluid no-padding">
+    <footer class="footer-main container-fluid no-padding pt-20 pb-20">
         <div class="container">
             <!-- Widget About -->
             <aside class="col-md-4 col-sm-6 col-xs-6 ftr-widget about-widget">
                 <h3>About Us</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Deleniti eligendi vitae accusantium laboriosam rem magnam.
+                    The Stud Fernández Millares are born from the motivation and
+                    admiration of Roberto Fernandez and Mónica Millares for
+                    purebred Arabian horses. In 2018 they start breeding
+                    purebred Arabian horses...
+
+                    <router-link :to="{ name: 'About' }" aria-label="About"
+                        >Read more</router-link
+                    >
                 </p>
             </aside>
             <!-- Widget About /- -->
@@ -64,8 +70,7 @@
             >
                 <h3>Follow us</h3>
                 <p>
-                    Sign up for our mailing list to get latest updates and
-                    offers.
+                    Follow us on social media to get latest updates and offers.
                 </p>
 
                 <!-- <div class="input-group">
@@ -89,17 +94,29 @@
 
                 <ul class="socials">
                     <li>
-                        <a title="Facebook" href="#"
+                        <a
+                            title="Facebook"
+                            href=""
+                            target="_blank"
+                            rel="noopener noreferrer"
                             ><i class="fa fa-facebook"></i
                         ></a>
                     </li>
                     <li>
-                        <a title="Twitter" href="#"
+                        <a
+                            title="Twitter"
+                            href=""
+                            target="_blank"
+                            rel="noopener noreferrer"
                             ><i class="fa fa-twitter"></i
                         ></a>
                     </li>
                     <li>
-                        <a title="Linkedin" href="#"
+                        <a
+                            title="Linkedin"
+                            href=""
+                            target="_blank"
+                            rel="noopener noreferrer"
                             ><i class="fa fa-linkedin"></i
                         ></a>
                     </li>
@@ -157,6 +174,16 @@ export default {};
 </script>
 
 <style scoped>
+.about-widget p a {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+.about-widget p a:hover {
+    color: var(--yellowLight);
+    text-decoration: none;
+}
+
 .ftr-widget p {
     color: #ccc;
 }

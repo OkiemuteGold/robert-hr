@@ -12,6 +12,22 @@ export const bannerSettings = (state) => {
     return state.bannerSettings;
 };
 
+export const actionProcessing = (state) => {
+    return state.actionProcessing;
+};
+
+export const alertModalStatus = (state) => {
+    return state.alertModalStatus;
+};
+
+export const alertModalType = (state) => {
+    return state.alertModalType;
+};
+
+export const alertModalMessage = (state) => {
+    return state.alertModalMessage;
+};
+
 export const getAllStudItems = (state) => {
     return state.allStudItems;
 };

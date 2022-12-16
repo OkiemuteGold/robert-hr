@@ -1,5 +1,5 @@
 import Vue from "vue";
-import { mapGetters } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 
 Vue.mixin({
     computed: {
@@ -10,6 +10,23 @@ Vue.mixin({
     },
 
     methods: {
+        ...mapActions([
+            "setActionLoading",
+            "setAlertModalStatus",
+        ]),
+
+        serverErrorMessage: function () {
+            this.setActionLoading(false);
+            setTimeout(() => {
+                let payload = {
+                    status: true,
+                    type: "error",
+                    message: "Server Error. Please try again later",
+                };
+                this.setAlertModalStatus(payload);
+            }, 200);
+        },
+
         validEmail: function (email) {
             var emailReg = /^([\w-.]+@([\w-]+\.)+[\w-]{2,4})?$/;
             return emailReg.test(email);

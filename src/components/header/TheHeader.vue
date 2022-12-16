@@ -5,8 +5,14 @@
                 <nav class="navbar ow-navigation">
                     <div class="col-md-3 col-sm-12 col-xs-12 logo-block">
                         <router-link :to="{ name: 'Home' }" aria-label="Home">
-                            <img src="@/assets/images/logo.png" alt="logo" />
-                            <span>Roberto Logo</span>
+                            <img
+                                src="@/assets/logo.png"
+                                width="80px"
+                                height="80px"
+                                alt="logo"
+                            />
+                            <!-- <span>Yeguada Fernández Millares</span> -->
+                            <span> logo </span>
                         </router-link>
                     </div>
                     <div class="col-md-8 col-sm-12 col-xs-12">
@@ -72,7 +78,8 @@
                                     aria-label="Home"
                                     class="navbar-brand"
                                 >
-                                    <span>Roberto HR</span>
+                                    <!-- <span>Yeguada Fernández Millares</span> -->
+                                    <span>Logo</span>
                                 </router-link>
                             </div>
 
@@ -185,11 +192,14 @@
                     >
                         <div class="whatsapp">
                             <a
-                                href="http://"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                                href="tel:+34617375921"
+                                aria-label="+34 617 375 921"
                             >
-                                <i class="fa fa-phone"></i>
+                                <i class="fa fa-phone"
+                                    ><span class="sr-only"
+                                        >+34 617 375 921</span
+                                    ></i
+                                >
                             </a>
                         </div>
                     </div>

@@ -12,6 +12,11 @@ export default {
         imageUrl: null,
     },
 
+    actionProcessing: false,
+    alertModalStatus: false,
+    alertModalType: "",
+    alertModalMessage: "",
+
     allStudItems: null,
     galleryImages: null,
     allBlogs: null,

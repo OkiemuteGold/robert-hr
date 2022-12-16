@@ -1,94 +1,124 @@
 <template>
     <form @submit.prevent="submitForm" class="contact-form">
         <div class="row">
-            <div class="form-group col-sm-12">
-                <p>All fields marked <span>*</span> are required</p>
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <p>All fields marked <span>*</span> are required</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="input_name">Full name <span>*</span></label>
+                    <!-- :class="[
+                        'form-control',
+                        errors.email ? 'invalid' : '',
+                    ]" -->
+                    <input
+                        type="text"
+                        id="input_name"
+                        name="input_name"
+                        :class="['form-control', form.name ? 'valid' : '']"
+                        placeholder="Your Name"
+                        aria-placeholder="Your Name"
+                        aria-required="true"
+                        v-model="form.name"
+                        @input="checkName"
+                    />
+                    <p class="error" v-show="errors.name">
+                        Kindly enter your name
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="input_email"
+                        >Email address <span>*</span></label
+                    >
+                    <input
+                        type="email"
+                        id="input_email"
+                        name="input_email"
+                        :class="['form-control', form.email ? 'valid' : '']"
+                        placeholder="Your e-mail"
+                        aria-placeholder="Your e-mail"
+                        aria-required="true"
+                        v-model="form.email"
+                        @input="checkEmail"
+                    />
+                    <p class="error" v-show="errors.email">
+                        {{ errorMessage }}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="input_phone">Phone number</label>
+                    <input
+                        type="number"
+                        id="input_phone"
+                        name="input_phone"
+                        :class="['form-control', form.phone ? 'valid' : '']"
+                        placeholder="Phone number"
+                        aria-placeholder="Phone number"
+                        min="0"
+                        v-model="form.phone"
+                    />
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="input_subject">Subject</label>
+                    <input
+                        type="text"
+                        id="input_subject"
+                        name="input_subject"
+                        :class="['form-control', form.subject ? 'valid' : '']"
+                        placeholder="Subject"
+                        aria-placeholder="Subject"
+                        v-model="form.subject"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label for="textarea_message">Message <span>*</span></label>
+                    <textarea
+                        id="textarea_message"
+                        name="textarea_message"
+                        :class="['form-control', form.message ? 'valid' : '']"
+                        rows="4"
+                        placeholder="Message"
+                        aria-placeholder="Message"
+                        aria-required="true"
+                        v-model="form.message"
+                        @input="checkMessage"
+                    ></textarea>
+                    <p class="error" v-show="errors.message">
+                        Please enter a brief message
+                    </p>
+                </div>
             </div>
 
-            <div class="form-group col-sm-6">
-                <label for="input_name">Full name <span>*</span></label>
-                <input
-                    type="text"
-                    id="input_name"
-                    name="input_name"
-                    class="form-control"
-                    placeholder="Your Name"
-                    required
-                    v-model.lazy="form.name"
-                    @change="addValidClass"
-                />
-                <div class="error" v-if="errorMessage">
-                    {{ errorMessage }}
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <input
+                        type="submit"
+                        id="btn_submit"
+                        name="btn_submit"
+                        value="Send Message"
+                        class="text-center"
+                        title="Send Message"
+                    />
                 </div>
-            </div>
-            <div class="form-group col-sm-6">
-                <label for="input_email">Email address <span>*</span></label>
-                <input
-                    type="email"
-                    id="input_email"
-                    name="input_email"
-                    class="form-control"
-                    placeholder="Your e-mail"
-                    required
-                    v-model.lazy="form.email"
-                    @change="addValidClass"
-                />
-                <div class="error" v-if="errorMessage">
-                    {{ errorMessage }}
-                </div>
-            </div>
-            <div class="form-group col-sm-6">
-                <label for="input_phone">Phone number</label>
-                <input
-                    type="text"
-                    id="input_phone"
-                    name="input_phone"
-                    class="form-control"
-                    placeholder="Phone"
-                    v-model.lazy="form.phone"
-                    @change="addValidClass"
-                />
-            </div>
-            <div class="form-group col-sm-6">
-                <label for="input_subject">Subject</label>
-                <input
-                    type="text"
-                    id="input_subject"
-                    name="input_subject"
-                    class="form-control"
-                    placeholder="Subject"
-                    v-model.lazy="form.subject"
-                    @change="addValidClass"
-                />
-                <div class="error" v-if="errorMessage">
-                    {{ errorMessage }}
-                </div>
-            </div>
-            <div class="form-group col-sm-12">
-                <label for="textarea_message">Message <span>*</span></label>
-                <textarea
-                    id="textarea_message"
-                    name="textarea_message"
-                    class="form-control"
-                    rows="5"
-                    placeholder="Message"
-                    v-model.lazy="form.message"
-                    @change="addValidClass"
-                ></textarea>
-                <div class="error" v-if="errorMessage">
-                    {{ errorMessage }}
-                </div>
-            </div>
-
-            <div class="form-group">
-                <input
-                    type="submit"
-                    id="btn_submit"
-                    name="btn_submit"
-                    value="Send Message"
-                    class="text-center"
-                    title="Send Message"
-                />
             </div>
             <!-- <div class="alert-msg" id="alert-msg"></div> -->
         </div>
@@ -96,46 +126,133 @@
 </template>
 
 <script>
+import "@/mixins";
+
 export default {
     computed: {
         isValid() {
-            return this.form !== null;
+            return (
+                this.form.name !== "" &&
+                this.form.email !== "" &&
+                this.form.message !== "" &&
+                this.errors.name === false &&
+                this.errors.email === false &&
+                this.errors.message === false
+            );
         },
     },
 
     data() {
         return {
+            isSubmitting: false,
             errorMessage: null,
+
             form: {
-                name: null,
-                phone: null,
-                email: null,
-                subject: null,
-                message: null,
+                name: "",
+                phone: "",
+                email: "",
+                subject: "",
+                message: "",
+            },
+
+            errors: {
+                name: false,
+                email: false,
+                message: false,
             },
         };
     },
 
     methods: {
-        addValidClass(e) {
-            // console.log(e);
-            const input = e.target,
-                placeholder = e.target.placeholder,
-                value = e.target.value,
-                validInput = e.target.validity.valid;
+        clearFields() {
+            this.form = {
+                name: "",
+                phone: "",
+                email: "",
+                subject: "",
+                message: "",
+            };
+        },
 
-            if (value !== null && validInput !== true) {
-                this.errorMessage = placeholder + " must be valid!";
-                input.classList.add("invalid");
+        checkName() {
+            const value = this.form.name;
+
+            if (!value || value === "") {
+                this.errors.name = true;
             } else {
-                input.classList.add("valid");
+                this.errors.name = false;
             }
         },
 
+        checkEmail() {
+            const value = this.form.email;
+
+            const isValid = this.validEmail(value);
+
+            if (!value || value === "") {
+                this.errors.email = true;
+                this.errorMessage = "Please enter your email address";
+            } else if (!isValid) {
+                this.errors.email = true;
+                this.errorMessage = "Email address must be valid!";
+            } else {
+                this.errors.email = false;
+            }
+        },
+
+        checkMessage() {
+            const value = this.form.message;
+
+            if (!value || value === "") {
+                this.errors.message = true;
+            } else {
+                this.errors.message = false;
+            }
+        },
+
+        // addValidClass(e) {
+        //     // console.log(e);
+        //     const input = e.target,
+        //         placeholder = e.target.placeholder,
+        //         value = e.target.value,
+        //         validInput = e.target.validity.valid;
+
+        //     if (value !== null && validInput !== true) {
+        //         this.errorMessage = placeholder + " must be valid!";
+        //         input.classList.add("invalid");
+        //     } else {
+        //         input.classList.add("valid");
+        //     }
+        // },
+
         submitForm() {
-            console.log(this.form);
+            this.checkName();
+            this.checkEmail();
+            this.checkMessage();
+
+            if (this.isValid) {
+                this.setActionLoading(true);
+
+                setTimeout(() => {
+                    this.setActionLoading(false);
+                    let payload;
+
+                    payload = {
+                        status: true,
+                        type: "success",
+                        message: "Message Sent! We will notify you shortly.",
+                    };
+
+                    console.log(this.form);
+
+                    this.clearFields();
+                    this.setAlertModalStatus(payload);
+                }, 2000);
+            }
         },
     },
+
+    // mounted() {},
 };
 </script>
 
@@ -146,8 +263,13 @@ export default {
     margin-right: auto;
 }
 
-.contact-us .form-group {
-    margin-bottom: 25px;
+.contact-form .form-group {
+    margin-bottom: 0;
+    padding-bottom: 25px;
+}
+
+.form-control {
+    border-color: #ececec;
 }
 
 .form-control:focus,
@@ -160,21 +282,24 @@ export default {
     border-color: var(--error);
 }
 
-.contact-us .form-group p {
+.contact-form .form-group p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.contact-form .form-group p:not(.error) {
     font-family: "Crimson Text", serif;
-    font-size: 13px;
     font-style: italic;
     color: #444;
-    margin: 0;
     letter-spacing: 1.36px;
     text-decoration: underline;
     text-decoration-skip-ink: all;
 }
 
-.contact-us .form-group label {
+.contact-form .form-group label {
     font-family: "montserratlight";
     font-weight: normal;
-    font-size: 13px;
+    font-size: 14px;
     display: inline-block;
     width: 100%;
     color: #444;
@@ -182,9 +307,25 @@ export default {
     letter-spacing: 0.5px;
 }
 
-.error,
-.contact-us .form-group p span,
-.contact-us .form-group label span {
+textarea {
+    resize: vertical;
+    max-height: 150px;
+    margin-bottom: 0;
+}
+
+.contact-form .form-group p.error {
+    font-size: 13px;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+}
+
+.contact-form .form-group p.error,
+.contact-form .form-group p span,
+.contact-form .form-group label span {
     color: var(--error);
+}
+
+.contact-form .form-group input {
+    margin: 0;
 }
 </style>

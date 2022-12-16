@@ -19,6 +19,14 @@ export const setBannerSettings = ({ commit }, payload) => {
     commit("BANNER_SETTINGS", payload);
 };
 
+export const setActionLoading = ({ commit }, status) => {
+    commit("SET_ACTION_LOADING", status);
+};
+
+export const setAlertModalStatus = ({ commit }, status) => {
+    commit("SET_ALERT_MODAL_STATUS", status);
+};
+
 export const setAllStudItems = ({ commit }, payload) => {
     payload = homeStud;
     commit("ALL_STUD_ITEMS", payload);
