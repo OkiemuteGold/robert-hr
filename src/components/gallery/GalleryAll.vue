@@ -111,7 +111,7 @@ export default {
     data() {
         return {
             galleryImages: [],
-            isLoading: true,
+            isLoading: false,
         };
     },
 
@@ -146,7 +146,7 @@ export default {
                             }
                         );
                     }
-                }, 400);
+                }, 1000);
             }
 
             // console.log(
